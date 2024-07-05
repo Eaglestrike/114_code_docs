@@ -37,7 +37,7 @@ a:hover {
 .wy-nav-top {
     background-color: var(--primary-color);
     color: var(--background-color);
-    font-family: 'Georgia', serif;
+    font-family: 'Lato', serif;
 
 }
 
@@ -65,7 +65,7 @@ a:hover {
 
 .wy-nav-side {
     background-color: var(--primary-color);
-    font-family: 'Georgia', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .wy-nav-side a {
