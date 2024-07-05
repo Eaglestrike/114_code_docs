@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap');
+
 /* Base colors */
 :root {
-    --primary-color: #1f4b99;
+    --primary-color: #44576D;
     /* Dark blue */
-    --secondary-color: #e0f2ff;
+    --secondary-color: #768A96;
     /* Light blue */
-    --background-color: #ffffff;
+    --background-color: #E6E6E6;
     /* White */
-    --header-background-color: #133b80;
+    --header-background-color: #44576D;
     /* Darker blue */
-    --text-color: #333333;
+    --text-color: #29353C;
     /* Dark grey */
-    --link-color: #1a73e8;
+    --link-color: #AAC7D8;
     /* Medium blue */
 }
 
@@ -18,6 +20,7 @@
 body {
     background-color: var(--background-color);
     color: var(--text-color);
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -32,6 +35,8 @@ a:hover {
 .wy-nav-top {
     background-color: var(--header-background-color);
     color: var(--background-color);
+    font-family: 'Georgia', serif;
+
 }
 
 .wy-nav-top a {
@@ -58,6 +63,7 @@ a:hover {
 
 .wy-nav-side {
     background-color: var(--primary-color);
+    font-family: 'Open Sans', sans-serif;
 }
 
 .wy-nav-side a {
@@ -76,7 +82,7 @@ a:hover {
 
 /* Main content styling */
 .wy-nav-content {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding: 1rem;
 }
 
@@ -84,6 +90,7 @@ a:hover {
 .wy-nav-content h2,
 .wy-nav-content h3 {
     border-bottom: 2px solid var(--primary-color);
+    font-family: 'Georgia', serif;
 }
 
 .wy-nav-content h1 {
@@ -104,6 +111,7 @@ a:hover {
     color: var(--background-color);
     padding: 1rem;
     text-align: center;
+    font-family: 'Georgia', serif;
 }
 
 .footer a {
