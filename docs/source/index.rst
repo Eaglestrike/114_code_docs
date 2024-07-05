@@ -10,7 +10,7 @@ Welcome to 114 Code's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   114CodeDocs.md
+   114CodeDocs
 
 Indices and tables
 ==================
