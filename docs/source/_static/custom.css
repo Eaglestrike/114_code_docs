@@ -33,7 +33,7 @@ a:hover {
 
 /* Header styling */
 .wy-nav-top {
-    background-color: var(--header-background-color);
+    background-color: var(--primary-color);
     color: var(--background-color);
     font-family: 'Georgia', serif;
 
@@ -84,8 +84,7 @@ a:hover {
 .wy-nav-content {
     font-family: 'Open Sans', sans-serif;
     padding: 1rem 3rem;
-    background-color: var(--background-color);
-    /* Main content background color */
+    background-color: var(--primary-color);
 }
 
 .wy-nav-content h1,
