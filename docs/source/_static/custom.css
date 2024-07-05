@@ -83,7 +83,9 @@ a:hover {
 /* Main content styling */
 .wy-nav-content {
     font-family: 'Open Sans', sans-serif;
-    padding: 1rem;
+    padding: 1rem 3rem;
+    background-color: var(--background-color);
+    /* Main content background color */
 }
 
 .wy-nav-content h1,
