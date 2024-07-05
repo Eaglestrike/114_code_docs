@@ -16,6 +16,7 @@ author = 'Sunayna Singh'
 extensions = [
     'recommonmark',
     'sphinx_markdown_tables',
+    'sphinx_rtd_theme',
 ]
 
 source_suffix = {
@@ -32,5 +33,16 @@ exclude_patterns = []
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'
+html_theme_options = {
+    'collapse_navigation': False,
+    'sticky_navigation': True,
+    'navigation_depth': 4,
+    'includehidden': True,
+    'titles_only': False
+}
 html_static_path = ['_static']
+
+html_css_files = [
+    'custom.css',
+]

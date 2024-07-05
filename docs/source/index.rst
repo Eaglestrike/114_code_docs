@@ -6,26 +6,19 @@
 Welcome to 114 Code's documentation!
 ====================================
 
-.. sidebar:: Navigation
+.. toctree::
+   :maxdepth: 1
+   :titlesonly:
+   :hidden:
+   :caption: Introduction
 
-   .. toctree::
-      :hidden:
-      :caption: Introduction
+   introduction/prerequisites
+   introduction/purpose_of_code
 
-      introduction/prerequisites
-      introduction/purpose_of_code
+.. toctree::
+   :maxdepth: 1
+   :titlesonly:
+   :hidden:
+   :caption: Getting Started
 
-   .. toctree::
-      :hidden:
-      :caption: Getting Started
-
-      getting_started/installation
-      getting_started/making_a_project
-      getting_started/building_and_deploying
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   getting_started/getting_started

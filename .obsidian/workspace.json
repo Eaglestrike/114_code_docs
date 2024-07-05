@@ -146,8 +146,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3b3afcd8c38a3812",
+  "active": "dc66ee80abde8362",
   "lastOpenFiles": [
+    "docs/source/_static/custom.css",
     "docs/source/getting_started/getting_started.md",
     "docs/source/introduction/prerequisites.md",
     "docs/source/introduction/purpose_of_code.md"
