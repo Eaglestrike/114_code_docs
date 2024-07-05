@@ -10,7 +10,9 @@ Welcome to 114 Code's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   114CodeDocs
+   introduction/prerequisites
+   introduciton/purpose_of_code
+   getting_started
 
 Indices and tables
 ==================

@@ -1,0 +1,192 @@
+{
+  "main": {
+    "id": "19a191295a8b3435",
+    "type": "split",
+    "children": [
+      {
+        "id": "d3f26eb20df2cf6a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "978fc74e7ab9fca1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "introduction/The Purpose of Code (O).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3433ed5d6d98c9d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Getting started.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "e9b294b6048d88be",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "db2a82ff89d7c372",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "114CodeDocs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3f9c62c31e27cc38",
+    "type": "split",
+    "children": [
+      {
+        "id": "3f94469b5c3a8d7c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ad8be9a293ebc6b6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b43bc239de6416e5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "371d7a6438c7f8af",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 233.5
+  },
+  "right": {
+    "id": "0b843808d8b835be",
+    "type": "split",
+    "children": [
+      {
+        "id": "b5fd5d03453af0db",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e6995df9c5ebf435",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Getting started.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0a39dd3e3324eba5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Getting started.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "21018905b2ea0500",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "a1aa69370354b5cf",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Getting started.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "3433ed5d6d98c9d7",
+  "lastOpenFiles": [
+    "114CodeDocs.md",
+    "Getting started.md",
+    "introduction/The Purpose of Code (O).md",
+    "introduction/Prerequisites.md",
+    "team_practices",
+    "control_theory",
+    "coding_a_motor",
+    "getting_started",
+    "introduction"
+  ]
+}
