@@ -26,11 +26,11 @@ body {
 }
 
 a {
-    color: var(--link-color);
+    color: var(--secondary-color);
 }
 
 a:hover {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 /* Header styling */
@@ -94,7 +94,10 @@ a:hover {
 .wy-nav-content h1,
 .wy-nav-content h2,
 .wy-nav-content h3 {
-    border-bottom: 2px solid var(--primary-color);
     font-family: 'Georgia', serif;
     color: var(--text-color);
+}
+
+.wy-nav-content h1 {
+    border-bottom: 2px solid var(--primary-color);
 }

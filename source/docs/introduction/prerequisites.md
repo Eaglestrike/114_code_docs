@@ -31,10 +31,12 @@ languages.
 - Know how the games work
 	- Autonomous, Teleop
 
-**Knowing calculus is helpful but not necessary**
+Knowing calculus is helpful but **not necessary**
 
-Keep in mind anything you don’t know can pretty easily be found online,
-especially for syntax stuff and coding concepts.
-
-That being said, these docs are written with the assumption the reader
-understands everything mentioned at a very basic level.
+> [!Keep in mind]
+> Anything you don’t know can pretty easily be found online,
+> especially for syntax stuff and coding concepts.
+> 
+> [!That being said...]
+> These docs are written with the assumption the reader
+> understands everything mentioned at a very basic level.

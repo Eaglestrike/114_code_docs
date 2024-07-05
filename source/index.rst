@@ -21,4 +21,9 @@ Welcome to 114 Code's documentation!
    :hidden:
    :caption: Getting Started
 
-   docs/getting_started/getting_started
+   docs/getting_started/introduction
+   docs/getting_started/wpilib_vscode
+   docs/getting_started/making_project
+   docs/getting_started/filetypes
+   docs/getting_started/robot_class
+   docs/getting_started/build_and_deploy
