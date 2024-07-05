@@ -12,7 +12,7 @@ Welcome to 114 Code's documentation!
 
    introduction/prerequisites
    introduciton/purpose_of_code
-   getting_started
+   getting_started/getting_started
 
 Indices and tables
 ==================
