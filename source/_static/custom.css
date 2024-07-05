@@ -16,9 +16,13 @@
 
 /* General styling */
 body {
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
     color: var(--text-color);
     font-family: 'Open Sans', sans-serif;
+}
+
+.wy-body-for-nav {
+    background-color: var(--primary-color);
 }
 
 a {
