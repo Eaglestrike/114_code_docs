@@ -7,12 +7,14 @@ Welcome to 114 Code's documentation!
 ====================================
 
 .. sidebar:: Navigation
-   .. toctree::
-         :hidden:
-         :caption: Introduction
 
-         introduction/prerequisites
-         introduction/purpose_of_code
+   .. toctree::
+      :hidden:
+      :caption: Introduction
+
+      introduction/prerequisites
+      introduction/purpose_of_code
+
    .. toctree::
       :hidden:
       :caption: Getting Started
