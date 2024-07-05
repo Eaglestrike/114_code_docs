@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WPILib VScode &mdash; 114 Code  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=cc2022c9" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="The Purpose of Code" href="../introduction/purpose_of_code.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            114 Code
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/prerequisites.html">Informal Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/purpose_of_code.html">The Purpose of Code</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">WPILib VScode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#making-a-project">Making a project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#h-and-cpp-files">.h and .cpp files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#the-robot-class">The Robot Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#building-and-deploying-code">🕳️Building and Deploying Code</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">114 Code</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">WPILib VScode</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/docs/getting_started/getting_started.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <p>Understand how we write code that gets on the robot in the simplest
+terms, and try deploying some code yourself.</p>
+<section id="wpilib-vscode">
+<h1>WPILib VScode<a class="headerlink" href="#wpilib-vscode" title="Link to this heading"></a></h1>
+<p>VScode is a code editing software that WPILib has built off of with
+robotics and FRC in mind. WPILib VScode is the software we use to write
+and edit all our code, manage projects, to build code, deploy code on
+the robot, and more.</p>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h2>
+<p>Follow WPILib’s <a class="reference external" href="https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html"><u>installation
+guide</u></a>
+to install it.</p>
+<p>It’s a really large file and will take a long time to download, so I’d
+recommend <strong>downloading at home</strong>.</p>
+<p>I’d also recommend <strong>pinning the application</strong> to a doc or keeping a
+shortcut on your desktop. It’s time consuming to dig through all your
+files to find the app otherwise.</p>
+<p>If you already have the normal version of VSCode downloaded, I’d
+recommend renaming the WPILib version to ‘WPILib VSCode &lt;year&gt;’ so you
+can tell them apart.</p>
+</section>
+</section>
+<section id="making-a-project">
+<h1>Making a project<a class="headerlink" href="#making-a-project" title="Link to this heading"></a></h1>
+<p>Open WPILib VScode and click the
+<img src="media/image4.png" style="width:0.42708in;height:0.46875in" />
+button in the top right corner.</p>
+<p>A navigation bar should pop up. Type in or select Create New Project
+like
+this:<img src="media/image9.png" style="width:6.5in;height:1.80556in" /></p>
+<p>Edit the settings as follows:</p>
+<img src="media/image15.png" style="width:6.5in;height:2.22917in" /><p>Then select the base folder this project will be held in (it’s good
+practice to keep all your projects in an isolated folder called
+“robotics” or something), and name the project depending on what you’re
+doing. When all the settings are correct, click “generate
+project”.<img src="media/image1.png" style="width:1.81871in;height:2.77721in" /></p>
+<p>After navigating to the project in VSCode, open the explorer</p>
+<p>(on the left) with these files:</p>
+<ul class="simple">
+<li><p>src/main/cpp/Robot.cpp</p></li>
+<li><p>src/main/include/Robot.h</p></li>
+</ul>
+<p>Don’t worry too much about the other folders and files; they’re just
+specific to running robot
+code.<img src="media/image7.png" style="width:2.33333in;height:1.73247in" /></p>
+<p>Robot.h should look something like this:</p>
+<img src="media/image8.png" style="width:2.33333in;height:2.103in" /><p>And Robot.cpp something like this:</p>
+</section>
+<section id="h-and-cpp-files">
+<h1>.h and .cpp files<a class="headerlink" href="#h-and-cpp-files" title="Link to this heading"></a></h1>
+<p>C++ has header (.h) and source code files (.cpp), which serve to make
+build time quicker and to make the code cleaner to write and for others
+to read and use.</p>
+<p>A header file serves as a skeleton of the source code. It
+defines/declares data structures like classes, although it should not
+implement any of the things it defines (though it can).</p>
+<p><strong>A source file implements the methods the header file defines</strong>. This
+is where all the logic and inner workings of the class is done.</p>
+<p>For example if you look at Robot.h, the class Robot is declared to have
+methods like RobotInit which are defined but not implemented. Although
+the methods in Robot.cpp are currently empty, this is where the code
+would be written.</p>
+<section id="why-separate">
+<h2>Why separate?<a class="headerlink" href="#why-separate" title="Link to this heading"></a></h2>
+<p>You can skip this part if you don’t care why (it’s not that important)</p>
+<p>By separating the skeleton from the body of the code, it creates an
+easily readable view of what a class is capable of doing, which makes
+the class easier to understand for other people who want to use your
+class. It also makes you more intentional about abstraction and
+encapsulation when you’re writing a class.</p>
+<p>On the more technical side, classes depend on each other and so when a
+class changes something that other classes depend on, the compiler needs
+to rebuild the code of every class that uses it to make sure nothing
+broke. However, since we separated the implementation from the
+definition of the class, the compiler only needs to rebuild dependencies
+if the definition of the class changes. This really saves build time
+since the majority of changes are made in the source code.</p>
+</section>
+</section>
+<section id="the-robot-class">
+<h1>The Robot Class<a class="headerlink" href="#the-robot-class" title="Link to this heading"></a></h1>
+<p>The robot class is a special class because each method inherited from
+TimedRobot is executed conditionally at runtime without you as a coder
+having to call them. This is akin to main() being run when you run a
+java or c++ program. You don’t need to worry about how this happens,
+just understand what functions are called and when.</p>
+<p>Driver Station has a display of the different states the robot can have:
+<img src="media/image14.png" style="width:6.5in;height:1.50019in" /></p>
+<p>You can enable the robot in different states (TeleOperated, Autonomous,
+Practice, and Test) or keep it in the disabled state.</p>
+<p>Every state has an Init and Periodic function. As soon as you put the
+robot in one of these states, its init function will be called. After
+the state is entered, the periodic function for that state will
+continuously be called every 20ms while the state is active.</p>
+<p>For example, if I enable the robot and TeleOperated is selected on
+Driver Station, as soon as I enable TeleopInit() will be called once.
+Then every 20ms while the robot remains enabled and in the TeleOperated
+state, TeleopPeriodic() will be called.</p>
+<p>The RobotInit() and RobotPeriodic() functions are the only functions not
+tied to a state. RobotInit is called as soon as the robot is powered on,
+and RobotPeriodic is called every 20ms while the robot is on, regardless
+of the state.</p>
+<p>We don’t use the practice or simulation states, although if you’d like
+to you are free to figure out how.</p>
+</section>
+<section id="building-and-deploying-code">
+<h1>🕳️Building and Deploying Code<a class="headerlink" href="#building-and-deploying-code" title="Link to this heading"></a></h1>
+<p>To build or deploy, press the
+<img src="media/image4.png" style="width:0.42708in;height:0.38761in" />
+in the top right corner and search for “build” or “deploy”</p>
+<p><strong>Building</strong> the project simply compiles it. Since there’s nothing in
+the project at this point, it should succeed and show you a message like
+this:</p>
+<img src="media/image6.png" style="width:6.5in;height:0.72222in" /><p><strong>Deploying</strong> is a little more complicated and loads the code onto the
+robot. It does this via ethernet, so your computer has to be connected
+to the radio on the robot like this:</p>
+<p>INSERT PIC</p>
+<p>If the robot isn’t connected, the deploy will give you an error message
+like this:</p>
+<img src="media/image2.png" style="width:6.5in;height:1.70833in" /><p>Keep in mind deploying builds before it deploys the code to the robot,
+and will not work if your code does not build.</p>
+<p>If the deploy works, it’ll open a RioLog that shows you all the error
+messages and warnings and prints the code is outputting as it runs. It
+looks something like this:</p>
+<p>INSERT PIC</p>
+<p>I would recommend setting up keyboard shortcuts for building and
+deploying (you can ask me if you’re confused on how to). I personally
+use cmd+shift+d for deploy and cmd+shift+b for build.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../introduction/purpose_of_code.html" class="btn btn-neutral float-left" title="The Purpose of Code" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Sunayna Singh.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

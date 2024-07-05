@@ -11,12 +11,8 @@
             "id": "3b3afcd8c38a3812",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/source/introduction/purpose_of_code.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/source/introduction/purpose_of_code.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/source/introduction/purpose_of_code.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docs/source/introduction/purpose_of_code.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,12 +138,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dc66ee80abde8362",
+  "active": "3b3afcd8c38a3812",
   "lastOpenFiles": [
-    "docs/source/_static/custom2.css",
-    "docs/source/_static/custom.css",
+    "source/_static/custom2.css",
+    "build/html/_static/custon2.css",
+    "source/_static/custon2.css",
+    "build/html/_sources/docs/introduction/purpose_of_code.md.txt",
+    "build/html/_sources/docs/introduction/prerequisites.md.txt",
+    "build/html/_sources/docs/introduction",
+    "build/html/docs/introduction/purpose_of_code.html",
+    "build/html/docs/introduction/prerequisites.html",
+    "build/html/docs/introduction",
+    "build/html/_sources/docs/getting_started/getting_started.md.txt",
+    "build/html/_sources/docs/getting_started",
+    "build/html/_static/css/fonts/fontawesome-webfont.svg",
+    "source/docs/114CodeDocs.md",
+    "source/docs/introduction/purpose_of_code.md",
+    "source/docs/introduction/prerequisites.md",
+    "source/docs/getting_started/getting_started.md",
+    "docs/source/introduction/purpose_of_code.md",
+    "source/introduction/prerequisites.md",
+    "source/getting_started/getting_started.md",
+    "source/introduction/purpose_of_code.md",
+    "source/114CodeDocs.md",
     "docs/source/getting_started/getting_started.md",
-    "docs/source/introduction/prerequisites.md",
-    "docs/source/introduction/purpose_of_code.md"
+    "docs/source/introduction/prerequisites.md"
   ]
 }

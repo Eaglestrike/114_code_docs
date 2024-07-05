@@ -1,0 +1,82 @@
+/* Define custom colors */
+:root {
+    --color-royal: #334EAC;
+    --color-moon: #F7F2EB;
+    --color-asian-pear: #F2F0DE;
+    --color-midnight: #081F5C;
+    --color-text: #081F5C;
+    /* For elegant text color */
+    --color-background: #F7F2EB;
+    /* For background color */
+}
+
+/* Apply custom fonts */
+body {
+    font-family: 'Georgia', serif;
+    /* An elegant serif font */
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Times New Roman', Times, serif;
+    /* Elegant heading font */
+    color: var(--color-royal);
+}
+
+a {
+    color: var(--color-royal);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-midnight);
+}
+
+.wy-nav-side,
+.wy-nav-content-wrap {
+    background-color: var(--color-background);
+}
+
+.wy-side-nav-search .wy-form {
+    background-color: var(--color-asian-pear);
+}
+
+.wy-side-nav-search .wy-input {
+    color: var(--color-midnight);
+    border: 1px solid var(--color-royal);
+}
+
+.wy-menu-vertical .current ul li a,
+.wy-menu-vertical li.toctree-l1 a,
+.wy-menu-vertical li.toctree-l1 a:hover {
+    color: var(--color-midnight);
+}
+
+.wy-menu-vertical ul li a,
+.wy-menu-vertical ul li a:hover {
+    background: var(--color-asian-pear);
+}
+
+.rst-content {
+    background-color: var(--color-moon);
+    color: var(--color-text);
+}
+
+footer {
+    background-color: var(--color-royal);
+    color: var(--color-moon);
+}
+
+footer a {
+    color: var(--color-moon);
+}
+
+footer a:hover {
+    color: var(--color-asian-pear);
+}

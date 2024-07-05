@@ -7,14 +7,18 @@ Welcome to 114 Code's documentation!
 ====================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
+   :titlesonly:
+   :hidden:
+   :caption: Introduction
 
-   114CodeDocs.md
+   docs/introduction/prerequisites
+   docs/introduction/purpose_of_code
 
-Indices and tables
-==================
+.. toctree::
+   :maxdepth: 1
+   :titlesonly:
+   :hidden:
+   :caption: Getting Started
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   docs/getting_started/getting_started

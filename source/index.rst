@@ -12,8 +12,8 @@ Welcome to 114 Code's documentation!
    :hidden:
    :caption: Introduction
 
-   introduction/prerequisites
-   introduction/purpose_of_code
+   docs/introduction/prerequisites
+   docs/introduction/purpose_of_code
 
 .. toctree::
    :maxdepth: 1
@@ -21,4 +21,4 @@ Welcome to 114 Code's documentation!
    :hidden:
    :caption: Getting Started
 
-   getting_started/getting_started
+   docs/getting_started/getting_started

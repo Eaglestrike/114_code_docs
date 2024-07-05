@@ -1,1 +1,103 @@
-/* This file intentionally left blank. */
+@import url('https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/* Base colors */
+:root {
+    --primary-color: #44576D;
+    /* Dark blue */
+    --secondary-color: #768A96;
+    /* Light blue */
+    --background-color: #E6E6E6;
+    /* White */
+    --text-color: #29353C;
+    /* Dark grey */
+    --link-color: #AAC7D8;
+    /* Medium blue */
+}
+
+/* General styling */
+.wy-body-for-nav {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+/* Sidebar styling */
+.wy-side-nav-search {
+    background-color: var(--primary-color);
+}
+
+.wy-side-nav-search input {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.wy-side-nav-search input::placeholder {
+    color: var(--text-color);
+}
+
+.wy-nav-side {
+    background-color: var(--primary-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wy-menu-vertical .current a {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Main content styling */
+.wy-nav-content {
+    font-family: 'Open Sans', sans-serif;
+    padding: 1rem 3rem;
+    background-color: var(--primary-color);
+    max-width: 1000px;
+}
+
+.wy-nav-content h1,
+.wy-nav-content h2,
+.wy-nav-content h3 {
+    border-bottom: 2px solid var(--primary-color);
+    font-family: 'Georgia', serif;
+}
+
+.wy-nav-content h1 {
+    color: var(--primary-color);
+}
+
+.wy-nav-content h2 {
+    color: var(--secondary-color);
+}
+
+.wy-nav-content h3 {
+    color: var(--link-color);
+}
+
+.wy-grid-for-nav {
+    background-color: var(--primary-color);
+    display: block;
+}
+
+/* Footer styling
+.footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
+
+.footer a {
+    color: var(--secondary-color);
+}
+
+.footer a:hover {
+    color: var(--background-color);
+} */
