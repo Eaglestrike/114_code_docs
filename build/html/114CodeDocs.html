@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Table of contents &#8212; 114 Code  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to 114 Code’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="table-of-contents">
+<h1>Table of contents<a class="headerlink" href="#table-of-contents" title="Link to this heading">¶</a></h1>
+<p><a class="reference external" href="#table-of-contents"><strong>Table of contents 2</strong></a></p>
+<p><a class="reference external" href="#informal-prerequisites"><strong>Informal Prerequisites 4</strong></a></p>
+<p><a class="reference external" href="#the-purpose-of-code"><strong>The Purpose of Code 5</strong></a></p>
+<p><a class="reference external" href="#getting-started"><strong>Getting started 6</strong></a></p>
+<blockquote>
+<div><p><a class="reference external" href="#wpilib-vscode">WPILib VScode 6</a></p>
+<p><a class="reference external" href="#installation">Installation 6</a></p>
+<p><a class="reference external" href="#making-a-project">Making a project 6</a></p>
+<p><a class="reference external" href="#h-and-.cpp-files">.h and .cpp files 8</a></p>
+<p><a class="reference external" href="#why-separate">Why separate? 8</a></p>
+<p><a class="reference external" href="#the-robot-class">The Robot Class 8</a></p>
+<p><a class="reference external" href="#building-and-deploying-code">Building and Deploying Code 9</a></p>
+</div></blockquote>
+<p><a class="reference external" href="#coding-a-motor"><strong>Coding a motor 11</strong></a></p>
+<blockquote>
+<div><p><a class="reference external" href="#motors-motor-controllers">Motors + Motor Controllers 11</a></p>
+<p><a class="reference external" href="#installing-vendor-libraries">Installing Vendor Libraries 12</a></p>
+<p><a class="reference external" href="#using-vendor-libraries">Using Vendor Libraries 12</a></p>
+<p><a class="reference external" href="#phoenix6">TalonFX 12</a></p>
+<p><a class="reference external" href="#revlib">REVLib 12</a></p>
+</div></blockquote>
+<p><a class="reference external" href="#control-theory"><strong>Motion Control</strong> <strong>13</strong></a></p>
+<blockquote>
+<div><p><a class="reference external" href="#feedback-control">Feedback Control 13</a></p>
+<p><a class="reference external" href="#bang-bang-control">Bang-Bang Control 13</a></p>
+<p><a class="reference external" href="#pid-control">PID Control 13</a></p>
+<p><a class="reference external" href="#tuning-tips">Tuning tips 16</a></p>
+<p><a class="reference external" href="#implementation-tips">Implementation tips 17</a></p>
+<p><a class="reference external" href="#shortcomings-of-pid">Shortcomings of PID 17</a></p>
+<p><a class="reference external" href="#motion-profiles">Motion Profiles 17</a></p>
+<p><a class="reference external" href="#trapezoidal-motion-profile">Trapezoidal motion profile 17</a></p>
+<p><a class="reference external" href="#feedforward-control">Feedforward Control 17</a></p>
+</div></blockquote>
+<p><a class="reference external" href="#coding-as-a-team"><strong>Coding as a team 19</strong></a></p>
+<blockquote>
+<div><p><a class="reference external" href="#git-and-github">Git and GitHub 19</a></p>
+<p><a class="reference external" href="#git-overview">Git Terms: 19</a></p>
+<p><a class="reference external" href="#try-it-yourself">Git Actions: 19</a></p>
+<p><a class="reference external" href="#s-git-workflow">114’s Git Workflow 19</a></p>
+<p><a class="reference external" href="#team-practices">Team practices 20</a></p>
+<p><a class="reference external" href="#style-practices">Style practices: 20</a></p>
+<p><a class="reference external" href="#conceptual-practices">Conceptual practices: 20</a></p>
+<p><a class="reference external" href="#the-mechanism-class">The Mechanism class 21</a></p>
+<p><a class="reference external" href="#the-controller-class">The Controller class 21</a></p>
+<p><a class="reference external" href="#shuffleboard-sender">Shuffleboard Sender 21</a></p>
+<p><a class="reference external" href="#team-utils">Team Utils: 21</a></p>
+<p><a class="reference external" href="#trapezoidal-motion-profile-1">Trapezoidal motion profile 21</a></p>
+<p><a class="reference external" href="#timer">Timer 21</a></p>
+<p><a class="reference external" href="#logger">Logger 21</a></p>
+<p><a class="reference external" href="#poses">Poses 21</a></p>
+<p><a class="reference external" href="#feedforward-auto-tuner">Feedforward Auto Tuner 21</a></p>
+</div></blockquote>
+<p><a class="reference external" href="#other-resources"><strong>Other Resources 22</strong></a></p>
+</section>
+<section id="informal-prerequisites">
+<h1>Informal Prerequisites<a class="headerlink" href="#informal-prerequisites" title="Link to this heading">¶</a></h1>
+<p>Keep in mind that a lot of this can be learned on the go so if you don’t
+know everything don’t sweat it. I’ve also provided links to learn these
+things with c++ syntax for those of you who know the concepts in other
+languages.</p>
+<ul>
+<li><p>Code knowledge (C++ specific)</p>
+<ul>
+<li><p>Basics</p>
+<ul>
+<li><p>primitive data types, if statements, variables, switch statements,</p>
+<blockquote>
+<div><p>for loops, while loops</p>
+</div></blockquote>
+</li>
+<li><p><a class="reference external" href="https://www.geeksforgeeks.org/vector-in-cpp-stl/"><u>vectors</u></a>/arrays,</p>
+<blockquote>
+<div><p>functions, printing to console (std::cout &lt;&lt; “text” &lt;&lt;
+std::endl)</p>
+</div></blockquote>
+</li>
+</ul>
+</li>
+<li><p>Scope</p>
+<ul>
+<li><p>[<u>Access</p>
+<blockquote>
+<div><p>specifiers</u>](https://www.w3schools.com/cpp/cpp_access_specifiers.asp#:~:text=public%20%2D%20members%20are%20accessible%20from,be%20accessed%20in%20inherited%20classes.)
+(public/private/protected)</p>
+</div></blockquote>
+</li>
+</ul>
+</li>
+<li><p>Object oriented programming</p>
+<ul>
+<li><p><a class="reference external" href="https://www.w3schools.com/cpp/cpp_classes.asp"><u>Classes</u></a>,</p>
+<blockquote>
+<div><p><a class="reference external" href="https://www.geeksforgeeks.org/inheritance-in-c/"><u>inheritance</u></a>
+(C++ supports <a class="reference external" href="https://www.geeksforgeeks.org/multiple-inheritance-in-c/"><u>multiple
+inheritance</u></a>,
+unlike Java),
+<a class="reference external" href="https://learn.microsoft.com/en-us/cpp/cpp/constructors-cpp?view=msvc-170"><u>constructors</u></a></p>
+</div></blockquote>
+</li>
+<li><p>Encapsulation (creating meaningful classes) and abstraction</p>
+<blockquote>
+<div><p>(keeping internal stuff hidden) are practices we follow but not
+super important and will improve the more you code</p>
+</div></blockquote>
+</li>
+</ul>
+</li>
+<li><p>Data structures</p>
+<ul>
+<li><p><a class="reference external" href="https://cplusplus.com/doc/oldtutorial/namespaces/"><u>Namespaces</u></a>,</p>
+<blockquote>
+<div><p><a class="reference external" href="https://www.geeksforgeeks.org/enumeration-in-cpp/"><u>Enums</u></a></p>
+</div></blockquote>
+</li>
+</ul>
+</li>
+<li><p>Optional stuff that will be useful later</p>
+<ul>
+<li><p><a class="reference external" href="https://www.w3schools.com/cpp/cpp_structs.asp"><u>Structs</u></a> if</p>
+<blockquote>
+<div><p>you’re extra. It’s basically the same thing as a class but we
+use them like little folders for variables. If that’s confusing,
+ask me and I’ll show you an example.</p>
+</div></blockquote>
+</li>
+<li><p>[<u>Virtual</p>
+<blockquote>
+<div><p>functions</u>](https://www.geeksforgeeks.org/virtual-function-cpp/)
+(basically c++ equivalent of an abstract method in Java)</p>
+</div></blockquote>
+</li>
+<li><p>[<u>Pointers vs</p>
+<blockquote>
+<div><p>references</u>](https://www.geeksforgeeks.org/pointers-vs-references-cpp/)
+(and <a class="reference external" href="https://www.geeksforgeeks.org/cpp-functions-pass-by-reference/"><u>passing by
+reference</u></a>)</p>
+</div></blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>A basic understanding of physics</p>
+<ul class="simple">
+<li><p>Kinematics: know what position, velocity, and acceleration are</p>
+<ul>
+<li><p><a class="reference external" href="https://youtu.be/198u1x8TBTo"><u>Lecture Video</u></a></p></li>
+</ul>
+</li>
+<li><p>Know that friction exists and always opposes motion</p></li>
+<li><p>Know that gravity exists and acts on an object’s center of mass</p></li>
+</ul>
+</li>
+<li><p>How FRC games work</p>
+<ul class="simple">
+<li><p>Autonomous, Teleop</p></li>
+</ul>
+</li>
+<li><p>Knowing calculus is helpful but not necessary</p></li>
+</ul>
+<p>Keep in mind anything you don’t know can pretty easily be found online,
+especially for syntax stuff and coding concepts.</p>
+<p>That being said, these docs are written with the assumption the reader
+understands everything mentioned at a very basic level.</p>
+</section>
+<section id="the-purpose-of-code">
+<h1>🟠The Purpose of Code<a class="headerlink" href="#the-purpose-of-code" title="Link to this heading">¶</a></h1>
+<p>From the code’s POV, the robot’s composed of <strong>moving parts</strong>: motors
+and pneumatics, sensors: cameras, encoders and miscellaneous other
+parts, and inputs from the driver. Coding is about utilizing and
+integrating all the information given by the sensors and driver input to
+make the moving parts move—that is how the robot functions. As such, to
+actually make working code on the robot, a coder (you) must understand
+how each part functions.</p>
+</section>
+<section id="getting-started">
+<h1>⚪Getting started<a class="headerlink" href="#getting-started" title="Link to this heading">¶</a></h1>
+<p>Understand how we write code that gets on the robot in the simplest
+terms, and try deploying some code yourself.</p>
+<section id="wpilib-vscode">
+<h2>WPILib VScode<a class="headerlink" href="#wpilib-vscode" title="Link to this heading">¶</a></h2>
+<p>VScode is a code editing software that WPILib has built off of with
+robotics and FRC in mind. WPILib VScode is the software we use to write
+and edit all our code, manage projects, to build code, deploy code on
+the robot, and more.</p>
+<section id="installation">
+<h3>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h3>
+<p>Follow WPILib’s <a class="reference external" href="https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html"><u>installation
+guide</u></a>
+to install it.</p>
+<p>It’s a really large file and will take a long time to download, so I’d
+recommend <strong>downloading at home</strong>.</p>
+<p>I’d also recommend <strong>pinning the application</strong> to a doc or keeping a
+shortcut on your desktop. It’s time consuming to dig through all your
+files to find the app otherwise.</p>
+<p>If you already have the normal version of VSCode downloaded, I’d
+recommend renaming the WPILib version to ‘WPILib VSCode &lt;year&gt;’ so you
+can tell them apart.</p>
+</section>
+</section>
+<section id="making-a-project">
+<h2>Making a project<a class="headerlink" href="#making-a-project" title="Link to this heading">¶</a></h2>
+<p>Open WPILib VScode and click the
+<img src="media/image4.png" style="width:0.42708in;height:0.46875in" />
+button in the top right corner.</p>
+<p>A navigation bar should pop up. Type in or select Create New Project
+like
+this:<img src="media/image9.png" style="width:6.5in;height:1.80556in" /></p>
+<p>Edit the settings as follows:</p>
+<img src="media/image15.png" style="width:6.5in;height:2.22917in" /><p>Then select the base folder this project will be held in (it’s good
+practice to keep all your projects in an isolated folder called
+“robotics” or something), and name the project depending on what you’re
+doing. When all the settings are correct, click “generate
+project”.<img src="media/image1.png" style="width:1.81871in;height:2.77721in" /></p>
+<p>After navigating to the project in VSCode, open the explorer</p>
+<p>(on the left) with these files:</p>
+<ul class="simple">
+<li><p>src/main/cpp/Robot.cpp</p></li>
+<li><p>src/main/include/Robot.h</p></li>
+</ul>
+<p>Don’t worry too much about the other folders and files; they’re just
+specific to running robot
+code.<img src="media/image7.png" style="width:2.33333in;height:1.73247in" /></p>
+<p>Robot.h should look something like this:</p>
+<img src="media/image8.png" style="width:2.33333in;height:2.103in" /><p>And Robot.cpp something like this:</p>
+</section>
+<section id="h-and-cpp-files">
+<h2>.h and .cpp files<a class="headerlink" href="#h-and-cpp-files" title="Link to this heading">¶</a></h2>
+<p>C++ has header (.h) and source code files (.cpp), which serve to make
+build time quicker and to make the code cleaner to write and for others
+to read and use.</p>
+<p>A header file serves as a skeleton of the source code. It
+defines/declares data structures like classes, although it should not
+implement any of the things it defines (though it can).</p>
+<p><strong>A source file implements the methods the header file defines</strong>. This
+is where all the logic and inner workings of the class is done.</p>
+<p>For example if you look at Robot.h, the class Robot is declared to have
+methods like RobotInit which are defined but not implemented. Although
+the methods in Robot.cpp are currently empty, this is where the code
+would be written.</p>
+<section id="why-separate">
+<h3>Why separate?<a class="headerlink" href="#why-separate" title="Link to this heading">¶</a></h3>
+<p>You can skip this part if you don’t care why (it’s not that important)</p>
+<p>By separating the skeleton from the body of the code, it creates an
+easily readable view of what a class is capable of doing, which makes
+the class easier to understand for other people who want to use your
+class. It also makes you more intentional about abstraction and
+encapsulation when you’re writing a class.</p>
+<p>On the more technical side, classes depend on each other and so when a
+class changes something that other classes depend on, the compiler needs
+to rebuild the code of every class that uses it to make sure nothing
+broke. However, since we separated the implementation from the
+definition of the class, the compiler only needs to rebuild dependencies
+if the definition of the class changes. This really saves build time
+since the majority of changes are made in the source code.</p>
+</section>
+</section>
+<section id="the-robot-class">
+<h2>The Robot Class<a class="headerlink" href="#the-robot-class" title="Link to this heading">¶</a></h2>
+<p>The robot class is a special class because each method inherited from
+TimedRobot is executed conditionally at runtime without you as a coder
+having to call them. This is akin to main() being run when you run a
+java or c++ program. You don’t need to worry about how this happens,
+just understand what functions are called and when.</p>
+<p>Driver Station has a display of the different states the robot can have:
+<img src="media/image14.png" style="width:6.5in;height:1.50019in" /></p>
+<p>You can enable the robot in different states (TeleOperated, Autonomous,
+Practice, and Test) or keep it in the disabled state.</p>
+<p>Every state has an Init and Periodic function. As soon as you put the
+robot in one of these states, its init function will be called. After
+the state is entered, the periodic function for that state will
+continuously be called every 20ms while the state is active.</p>
+<p>For example, if I enable the robot and TeleOperated is selected on
+Driver Station, as soon as I enable TeleopInit() will be called once.
+Then every 20ms while the robot remains enabled and in the TeleOperated
+state, TeleopPeriodic() will be called.</p>
+<p>The RobotInit() and RobotPeriodic() functions are the only functions not
+tied to a state. RobotInit is called as soon as the robot is powered on,
+and RobotPeriodic is called every 20ms while the robot is on, regardless
+of the state.</p>
+<p>We don’t use the practice or simulation states, although if you’d like
+to you are free to figure out how.</p>
+</section>
+<section id="building-and-deploying-code">
+<h2>🕳️Building and Deploying Code<a class="headerlink" href="#building-and-deploying-code" title="Link to this heading">¶</a></h2>
+<p>To build or deploy, press the
+<img src="media/image4.png" style="width:0.42708in;height:0.38761in" />
+in the top right corner and search for “build” or “deploy”</p>
+<p><strong>Building</strong> the project simply compiles it. Since there’s nothing in
+the project at this point, it should succeed and show you a message like
+this:</p>
+<img src="media/image6.png" style="width:6.5in;height:0.72222in" /><p><strong>Deploying</strong> is a little more complicated and loads the code onto the
+robot. It does this via ethernet, so your computer has to be connected
+to the radio on the robot like this:</p>
+<p>INSERT PIC</p>
+<p>If the robot isn’t connected, the deploy will give you an error message
+like this:</p>
+<img src="media/image2.png" style="width:6.5in;height:1.70833in" /><p>Keep in mind deploying builds before it deploys the code to the robot,
+and will not work if your code does not build.</p>
+<p>If the deploy works, it’ll open a RioLog that shows you all the error
+messages and warnings and prints the code is outputting as it runs. It
+looks something like this:</p>
+<p>INSERT PIC</p>
+<p>I would recommend setting up keyboard shortcuts for building and
+deploying (you can ask me if you’re confused on how to). I personally
+use cmd+shift+d for deploy and cmd+shift+b for build.</p>
+</section>
+</section>
+<section id="coding-a-motor">
+<h1>⚪Coding a motor<a class="headerlink" href="#coding-a-motor" title="Link to this heading">¶</a></h1>
+<p>Intro here</p>
+<section id="motors-motor-controllers">
+<h2>Motors + Motor Controllers<a class="headerlink" href="#motors-motor-controllers" title="Link to this heading">¶</a></h2>
+<p>A motor is a device that takes voltage and applies rotational force.
+Basically it’s a thing that spins.</p>
+<p>A motor controller is what regulates the voltage supplied to the motor.
+This is what code interacts with to manipulate how the motor moves.</p>
+<p>We mainly use motors from CTRE and REV Robotics. Though code only
+interacts with the motor controllers, it’s important to know which
+controllers correspond to which motors. In order to communicate with the
+controllers, code has to use 3rd party libraries (in the rightmost
+column) supplied by the motor vendors (leftmost column).</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 38%" />
+<col style="width: 31%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Supplier</th>
+<th>Motor(s)</th>
+<th>Motor controller</th>
+<th>Software library</th>
+</tr>
+<tr class="odd">
+<th rowspan="2"><p>CTRE</p>
+<p>(+ vex)</p>
+<p>(+ WCP)</p></th>
+<th><p>Falcon 500</p>
+<p><img src="media/image10.png"
+style="width:2.30729in;height:2.07897in" /></p></th>
+<th rowspan="2"><p>TalonFX (built on the motor)</p>
+<p><img src="media/image11.png"
+style="width:1.87716in;height:1.82952in" /></p></th>
+<th rowspan="2">Phoenix6</th>
+</tr>
+<tr class="header">
+<th><p>Kraken</p>
+<p><img src="media/image13.png"
+style="width:2.32675in;height:1.72722in" /></p></th>
+</tr>
+<tr class="odd">
+<th rowspan="2">REV robotics</th>
+<th><p>NEO V1.1</p>
+<p><img src="media/image12.png"
+style="width:2.18265in;height:1.60447in" /></p></th>
+<th rowspan="2"><p>SparkMax</p>
+<p><img src="media/image3.png"
+style="width:1.88021in;height:2.62497in" /></p></th>
+<th rowspan="2">REVlib</th>
+</tr>
+<tr class="header">
+<th><p>NEO 550</p>
+<p><img src="media/image5.png"
+style="width:2.32762in;height:1.54734in" /></p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table><p>There are definitely more motors (like mini NEOs and CIMs) and more
+controllers (like the TalonSRX) that we might use but they’re used way
+less often. If you want to know about those as well, let me know and
+I’ll add them.</p>
+</section>
+<section id="installing-vendor-libraries">
+<h2>🔴Installing Vendor Libraries<a class="headerlink" href="#installing-vendor-libraries" title="Link to this heading">¶</a></h2>
+</section>
+<section id="using-vendor-libraries">
+<h2>🔴Using Vendor Libraries<a class="headerlink" href="#using-vendor-libraries" title="Link to this heading">¶</a></h2>
+<section id="phoenix6">
+<h3>🔴Phoenix6<a class="headerlink" href="#phoenix6" title="Link to this heading">¶</a></h3>
+<p>The TalonFX class</p>
+<p>PutVoltage()</p>
+<p>GetPosition().ValueAsDouble()</p>
+</section>
+<section id="revlib">
+<h3>🔴REVLib<a class="headerlink" href="#revlib" title="Link to this heading">¶</a></h3>
+</section>
+</section>
+</section>
+<section id="control-theory">
+<h1>Control Theory<a class="headerlink" href="#control-theory" title="Link to this heading">¶</a></h1>
+<p>Getting the motor to move is cool and all, but not quite useful yet. As
+code we need to get the motors to DO something with which requires
+control and precision in order to produce reliable and consistent
+results. For example using a motor to extend an elevator to reach some
+height. And to produce consistent</p>
+<p>Anyway this is where we step away from syntax and boring stuff like that
+and get into the fun stuff.</p>
+<section id="feedback-control">
+<h2>Feedback Control<a class="headerlink" href="#feedback-control" title="Link to this heading">¶</a></h2>
+<p>Feedback control usually is the most intuitive type of control, as it is
+what us humans do. We respond to the environment around us and change
+our movement accordingly.</p>
+<p>The code changes how the robot behaves, which impacts the sensor data,
+which then is fed back into the robot code, hence the name “feedback”.</p>
+<section id="bang-bang-control">
+<h3>Bang-Bang Control<a class="headerlink" href="#bang-bang-control" title="Link to this heading">¶</a></h3>
+<p>The simplest control. <strong>Apply a constant output negative to the sign of
+the error.</strong> In other words, if it’s positive/ahead, go backwards and if
+it’s negative/behind, go forwards.</p>
+<p>One problem with bang-bang control is that since it does not slow down
+as it gets to the target, it will consistently overshoot. Once it
+overshoots, it will go in the opposite direction and overshoot again,
+oscillating and never reaching the target and coming to a stop like we
+want it to.</p>
+</section>
+<section id="pid-control">
+<h3>PID Control<a class="headerlink" href="#pid-control" title="Link to this heading">¶</a></h3>
+<p>PID consists of 3 parts: the proportional term (p), the integral term
+(i), and the derivative term (d), which have corresponding constants kp,
+ki, and kd respectively. <strong>The output of the controller or the voltage
+is the sum of the 3 terms.</strong></p>
+<p>p = kp * error</p>
+<p><strong>P</strong> is proportional to the error: <strong>when the mechanism is far away
+from its target, it will go fast and as it gets closer to the target it
+will go slow</strong>(since the error is smaller). Keep in mind that error has
+a sign (positive/negative) so it always moves the mechanism in the
+direction of the target.</p>
+<p><img src="media/image24.png" style="width:2.46397in;height:1.38596in" /><img src="media/image24.png" style="width:2.46397in;height:1.38596in" /><img src="media/image24.png" style="width:2.46397in;height:1.38596in" /></p>
+<p>When only using the p term, sometimes it is difficult to get to the
+setpoint quickly since it’s not slowing down fast enough and its
+momentum carries it past the setpoint, overshooting which leads to
+oscillation. This is where the d term comes into play.</p>
+<p>d= kd * (change in error)/timePassed</p>
+<p>d = kd * (0 - velocity)</p>
+<p>d = - kd * velocity</p>
+<p><strong>D</strong> is proportional to the derivative of the error. If you haven’t
+taken calculus, the derivative of the error is just the rate of change
+(or slope) of the error at some point in time. Since error is
+essentially position relative to the target (position if the target was
+the origin), the rate of change of this ’position’ is the velocity of
+the mechanism relative to the target. In simpler terms, D is
+proportional to the velocity error. The target velocity usually is 0, so
+the error in velocity is 0 - velocity, or just -velocity. <strong>This can
+then be seen just as a term to slow down the mechanism (going against
+the way it is moving).</strong> This allows us to get to the target quickly
+without oscillating.</p>
+<p><img src="media/image24.png" style="width:2.46397in;height:1.38596in" /><img src="media/image24.png" style="width:2.46397in;height:1.38596in" /></p>
+<p>i= ki * totalError</p>
+<p><strong>I</strong> is proportional to the total error, or the integral. Its purpose
+is to work against any constant forces such as friction, and to make up
+for being constantly off if the p and d terms are too small to move the
+mechanism. <strong>This consistent error is called steady-state error</strong>, which
+the i term combats by increasing the output over time until it is large
+enough to overcome it. Common symptoms of steady state error that
+indicate a need for an i term are being consistently off, often stuck,
+or heavily resistant.</p>
+<p>The constants for each term essentially give different weights to the
+p,i,and d terms, scaling their effects. <strong>We don’t want any term doing
+too much or too little since they all serve their own unique purpose.</strong></p>
+<p><img src="media/image21.jpg" style="width:0.71654in;height:0.89129in" /><img src="media/image24.png" style="width:2.46397in;height:1.38596in" /><img src="media/image24.png" style="width:1.88799in;height:1.38596in" /><img src="media/image21.jpg" style="width:0.71654in;height:0.89129in" /><img src="media/image21.jpg" style="width:0.71654in;height:0.89129in" /><img src="media/image24.png" style="width:1.88799in;height:1.38596in" /></p>
+<section id="tuning-tips">
+<h4>Tuning tips<a class="headerlink" href="#tuning-tips" title="Link to this heading">¶</a></h4>
+<p>A simple tuning process:</p>
+<ol class="simple">
+<li><p>Start with kp =0, ki =0, kd = 0</p></li>
+<li><p>Increase p until it starts oscillating</p></li>
+<li><p>Increase d until it stops oscillating</p></li>
+<li><p>Increase i if it’s consistently a little off</p></li>
+<li><p>Tweak values based on performance</p></li>
+</ol>
+<p>In general but specifically for the last step, knowing how each term is
+contributing to the motion of the mechanism is very useful. Since you
+know how each term contributes to the motion of the mechanism, you can
+respond to the speed and oscillation of the controller and manipulate
+the constants to minimize oscillation and maximize speed.</p>
+<p>From largest to smallest it should be: kp, kd, ki, although with weird
+mechanisms it can change. Always start small and increment with caution,
+especially for i.</p>
+<p>Mechanisms can also occasionally have no i and/or d terms.</p>
+</section>
+<section id="implementation-tips">
+<h4>Implementation tips<a class="headerlink" href="#implementation-tips" title="Link to this heading">¶</a></h4>
+<p>Make sure you are resetting your total error when the target changes.
+Otherwise the i term will get super large and break stuff.</p>
+</section>
+<section id="shortcomings-of-pid">
+<h4>Shortcomings of PID<a class="headerlink" href="#shortcomings-of-pid" title="Link to this heading">¶</a></h4>
+<p>PID assumes every position in a mechanism’s range takes the same effort
+to be at and to move to. If something like an intake has to resist
+gravity at different intensities based on its angle, PID cannot account
+for this.</p>
+</section>
+</section>
+</section>
+<section id="motion-profiles">
+<h2>🔴Motion Profiles<a class="headerlink" href="#motion-profiles" title="Link to this heading">¶</a></h2>
+<section id="trapezoidal-motion-profile">
+<h3>🔴Trapezoidal motion profile<a class="headerlink" href="#trapezoidal-motion-profile" title="Link to this heading">¶</a></h3>
+<p>Blaj blah</p>
+<p>You should try making your own before using this but we have a
+<a class="reference external" href="#trapezoidal-motion-profile-1"><u>util</u></a> that implements this
+reliably.</p>
+</section>
+</section>
+<section id="feedforward-control">
+<h2>🔴Feedforward Control<a class="headerlink" href="#feedforward-control" title="Link to this heading">¶</a></h2>
+<p>This may look a bit weird since there’s no way to know if the robot’s
+doing well (there’s no sensors). But, the core concept here is that the
+<strong>code can predict/understand where the robot will be, so it can
+confidently set an output that it will somewhat reach the target</strong>.
+Although, note, it may not actually be looking into the future (we’ll
+get into this later).</p>
+</section>
+</section>
+<section id="coding-as-a-team">
+<h1>⚪Coding as a team<a class="headerlink" href="#coding-as-a-team" title="Link to this heading">¶</a></h1>
+<p>Intro blah blah</p>
+<section id="git-and-github">
+<h2>Git and GitHub<a class="headerlink" href="#git-and-github" title="Link to this heading">¶</a></h2>
+<p>If you are already familiar with git and GitHub, skip to <a class="reference external" href="#s-git-workflow"><u>the section
+about our git workflow</u></a>.</p>
+<p>In order for the whole team to work on a single code project, we have to
+use some sort of software to manage multiple people making changes to
+one file or set of files. For this, most of the world (our team
+included) uses git and GitHub.</p>
+<p>git allows people to work on developments while preserving the latest
+working version, revision and restoration of version, and easy . It’s
+essentially like google drive for code.</p>
+<section id="requirements">
+<h3>🟠Requirements<a class="headerlink" href="#requirements" title="Link to this heading">¶</a></h3>
+<ol>
+<li><p>You need to [<u>install git/ check for</p>
+<blockquote>
+<div><p>installation</u>](https://github.com/git-guides/install-git).</p>
+</div></blockquote>
+</li>
+<li><p>[<u>Create a github</p>
+<blockquote>
+<div><p>account</u>](https://github.com/signup?source=header) (do not
+recommend using your school email)</p>
+</div></blockquote>
+</li>
+<li><p>Set up an ssh key for your account</p></li>
+</ol>
+<p>If you only have one github account, you should <a class="reference external" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys"><u>check if you already
+have an ssh
+key</u></a>
+on your machine.</p>
+<p>If you use multiple github accounts or do not already have an ssh key,
+you should <a class="reference external" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent"><u>generate an ssh key using
+ssh-agent</u></a></p>
+<p>Now once you have an ssh key, you should <a class="reference external" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account"><u>add it to your
+account</u></a>
+and then <a class="reference external" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection"><u>verify its
+connected</u></a>.</p>
+<p>Managing ssh keys with multiple accounts is pretty complicated so I’m
+not going to cover it here but if you’re interested I can show you how
+to set it up.</p>
+</section>
+<section id="git-overview">
+<h3>🟠Git Overview<a class="headerlink" href="#git-overview" title="Link to this heading">¶</a></h3>
+<p>If you’re familiar with git feel free to skip this:</p>
+<p><strong>Repository (Repo):</strong> A storage location for your project files and
+their history. It can be local (on your computer) or remote (on a server
+like GitHub). You can think of this as the equivalent of a folder. Local
+would be a folder of stuff on your desktop, and remote would be
+uploading that folder to google drive and then sharing it with others.</p>
+<p><strong>Commit:</strong> A snapshot of your project’s changes. Each commit has a
+unique ID and contains the changes you made, along with a message
+describing those changes. This can be paralleled with version history in
+a google doc.</p>
+<p><strong>Branch:</strong> A parallel version of the repository. Branches allow you to
+work on different features or fixes separately. The default branch in
+most repositories is main or master.</p>
+<p><strong>Pull Request (PR):</strong> A request to merge changes from one branch (often
+a fork) into another branch. This is commonly used in collaborative
+projects for code reviews before integrating changes.</p>
+<p><strong>HEAD:</strong> A pointer to the current commit or the latest commit in your
+checked-out branch.</p>
+<p>git clone [URL]: Copies an existing repository from a remote server to
+your local machine.</p>
+<p>git add [file]: Adds changes in the specified file to the staging
+area. You can also use git add . to add all changes in the current
+directory.</p>
+<p>git commit -m “message”: Records the changes in the staging area with a
+descriptive message.</p>
+<p>git status: Shows the current state of the working directory and the
+staging area, including any changes that have been staged, changes that
+haven’t been staged, and untracked files.</p>
+<p>git pull: Fetches and integrates changes from a remote repository into
+your current branch.</p>
+<p>git push: Uploads local commits to a remote repository.</p>
+<p>git branch: Lists all branches in your repository. Use git branch
+[branch-name] to create a new branch.</p>
+<p>git checkout [branch-name]: Switches to the specified branch. Can also
+be used to checkout a specific commit or file.</p>
+<p>git merge [branch-name]: Merges the specified branch into your current
+branch.</p>
+<p>git fetch: Retrieves updates from a remote repository without merging
+them into your local branch.</p>
+<p><s>git rebase: Reapplies commits on top of another base tip. It’s a way
+to move or combine a sequence of commits to a new base commit.</s></p>
+<p>git init: Initializes a new Git repository in your current directory.</p>
+<p>git diff: Shows the differences between commits, branches, files, etc.</p>
+<p>git log: Displays a log of commits. You can use various options to
+filter and format the log output.</p>
+<p>git stash: Saves your local modifications and reverts the working
+directory to match the HEAD commit. This is useful for quickly switching
+contexts without committing incomplete changes.</p>
+</section>
+<section id="try-it-yourself">
+<h3>🟠Try it yourself<a class="headerlink" href="#try-it-yourself" title="Link to this heading">¶</a></h3>
+<p>Once you have git installed, try these steps to get an understanding of
+how we use git</p>
+<ol>
+<li><p>Pull some repository from [<u>our team’s GitHub</p>
+<blockquote>
+<div><p>account</u>](https://github.com/Eaglestrike), for example <a class="reference external" href="https://github.com/Eaglestrike/2024-RobotCode"><u>2024
+robot code</u></a></p>
+</div></blockquote>
+<ol class="simple">
+<li></li>
+</ol>
+</li>
+<li><p>Make a new branch</p></li>
+</ol>
+<!-- --><ol>
+<li><p>Checkout that branch</p></li>
+<li><p>Make a new file or some random change</p></li>
+<li><p>Stage your changes (git add)</p></li>
+<li><p>Commit your staged changes</p></li>
+<li><p>If it’s not the team’s repository, try pushing your changes to the</p>
+<blockquote>
+<div><p>branch</p>
+</div></blockquote>
+</li>
+<li><p>Check github and see if the remote repository is updated and the</p>
+<blockquote>
+<div><p>same as your local one</p>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<section id="s-git-workflow">
+<h3>⚪114’s Git Workflow<a class="headerlink" href="#s-git-workflow" title="Link to this heading">¶</a></h3>
+<ol class="simple">
+<li><p><strong>Work in branches</strong> NOT in main</p></li>
+</ol>
+<p>We keep the latest working version of code in the main branch of the
+repository. If someone is working on a subsystem or an improvement, they
+create a separate branch and work there. This way we always have an
+easily accessible branch of working code. In general we try to keep the
+main branch clean.</p>
+<ol>
+<li><p>Create <strong>pull requests for code reviews</strong> OR to merge into main if</p>
+<blockquote>
+<div><p>your branch is tested and approved by the code lead</p>
+</div></blockquote>
+</li>
+</ol>
+<p>It’s only after that branch has been tested on the robot and approved by
+the code lead do they create a pull request, asking to be merged to
+main. Pull requests can also be used for code reviews. A good example of
+this is <a class="reference external" href="https://github.com/Eaglestrike/2024-RobotCode/pull/2"><u>this old
+PR.</u></a></p>
+<ol class="simple">
+<li><p>1 branch per change</p></li>
+</ol>
+<p>To avoid merge conflicts, create new branches for every conceptual
+change to the robot. For example if you’re working on a subsystem and
+suddenly find a way to improve the controller class, you’d have to open
+a new branch called controller-class-improvement or something.</p>
+</section>
+</section>
+<section id="team-practices">
+<h2>Team practices<a class="headerlink" href="#team-practices" title="Link to this heading">¶</a></h2>
+<p>Stuff we do to keep our code consistently readable, debuggable, and
+reusable.</p>
+<section id="style-practices">
+<h3>Style practices:<a class="headerlink" href="#style-practices" title="Link to this heading">¶</a></h3>
+<p>Generally we try to keep code as clean and easy to read as possible, in
+order to make debugging, peer review, and general comprehension easier.
+This means we follow some pretty standard practices:</p>
+<ol>
+<li><p>Use m_<em>varName</em> (preferably) or <em>varName_</em> for member variables</p>
+<blockquote>
+<div><p>(i.e. m_ampIntake)</p>
+</div></blockquote>
+</li>
+<li><p>Use camel or snake case (preferably camel) for variable names (i.e.</p>
+<blockquote>
+<div><p>ampIntake)</p>
+</div></blockquote>
+</li>
+<li><p>Class, struct, enum, and function names are capitalized camel case</p>
+<blockquote>
+<div><p>(i.e. AmpIntake)</p>
+</div></blockquote>
+</li>
+<li><p>Constants (and therefore enum values) are all caps snake case (i.e.</p>
+<blockquote>
+<div><p>AMP_INTAKE)</p>
+</div></blockquote>
+</li>
+<li><p>Indent anything in curly brackets or after colons (like private: and</p>
+<blockquote>
+<div><p>the cases of switch statements)</p>
+</div></blockquote>
+</li>
+<li><p>Instantiate variables in the constructor, not the header file</p>
+<blockquote>
+<div><p>(instantiation is different from declaration)</p>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<section id="conceptual-practices">
+<h3>Conceptual practices:<a class="headerlink" href="#conceptual-practices" title="Link to this heading">¶</a></h3>
+<ol>
+<li><p>Abstraction and encapsulation</p></li>
+<li><p>Meaningful variable and function names</p></li>
+<li><p>Comment the parts of your code that are hard to understand (do it</p>
+<blockquote>
+<div><p>for yourself trust me)</p>
+</div></blockquote>
+</li>
+<li><p>If time, add a comment explaining what each method does</p></li>
+</ol>
+</section>
+<section id="the-mechanism-class">
+<h3>The Mechanism class<a class="headerlink" href="#the-mechanism-class" title="Link to this heading">¶</a></h3>
+</section>
+<section id="the-controller-class">
+<h3>The Controller class<a class="headerlink" href="#the-controller-class" title="Link to this heading">¶</a></h3>
+</section>
+<section id="shuffleboard-sender">
+<h3>Shuffleboard Sender<a class="headerlink" href="#shuffleboard-sender" title="Link to this heading">¶</a></h3>
+</section>
+<section id="team-utils">
+<h3>Team Utils:<a class="headerlink" href="#team-utils" title="Link to this heading">¶</a></h3>
+<section id="id1">
+<h4>Trapezoidal motion profile<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h4>
+</section>
+<section id="timer">
+<h4>Timer<a class="headerlink" href="#timer" title="Link to this heading">¶</a></h4>
+</section>
+<section id="logger">
+<h4>Logger<a class="headerlink" href="#logger" title="Link to this heading">¶</a></h4>
+</section>
+<section id="poses">
+<h4>Poses<a class="headerlink" href="#poses" title="Link to this heading">¶</a></h4>
+</section>
+</section>
+<section id="feedforward-auto-tuner">
+<h3>Feedforward Auto Tuner<a class="headerlink" href="#feedforward-auto-tuner" title="Link to this heading">¶</a></h3>
+<p>Works kinda sometimes</p>
+</section>
+</section>
+</section>
+<section id="other-resources">
+<h1>Other Resources<a class="headerlink" href="#other-resources" title="Link to this heading">¶</a></h1>
+<p><a class="reference external" href="https://docs.wpilib.org/en/stable/index.html"><u>WPILib docs</u></a></p>
+<p>Has pretty well documented guides to a lot of code concepts and robotics
+concepts in general. For example installation guides and even conceptual
+stuff like motion profiles.</p>
+<p><a class="reference external" href="https://github.wpilib.org/allwpilib/docs/release/cpp/index.html"><u>WPILib C++
+docs</u></a></p>
+<p>Documentation of all the classes and namespaces and stuff that WPIlib
+offers. We don’t use WPILib’s classes that much, usually we opt to make
+our own utility classes because WPILib’s stuff can be sus sometimes and
+a little harder to follow/use. They also use really annoying units for
+everything instead of just keeping stuff as doubles. But if you’re just
+looking for a simple class to handle
+<a class="reference external" href="https://github.wpilib.org/allwpilib/docs/release/cpp/classfrc_1_1_p_i_d_controller.html"><u>PID</u></a>
+or something for you, WPILib’s helpers can be useful.</p>
+<p><a class="reference external" href="https://docs.google.com/document/d/111ZI8VX0vLwrTrQJfh3r7tGUT_dupv02ayNkIX2MrQc/edit#heading=h.pvgcrwk7prga"><u>The old tech
+binder</u></a><br />Pretty similar to this one,</p>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">114 Code</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Table of contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#informal-prerequisites">Informal Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#the-purpose-of-code">🟠The Purpose of Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#getting-started">⚪Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#wpilib-vscode">WPILib VScode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#making-a-project">Making a project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#h-and-cpp-files">.h and .cpp files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-robot-class">The Robot Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#building-and-deploying-code">🕳️Building and Deploying Code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#coding-a-motor">⚪Coding a motor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#motors-motor-controllers">Motors + Motor Controllers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-vendor-libraries">🔴Installing Vendor Libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-vendor-libraries">🔴Using Vendor Libraries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#control-theory">Control Theory</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#feedback-control">Feedback Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#motion-profiles">🔴Motion Profiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#feedforward-control">🔴Feedforward Control</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#coding-as-a-team">⚪Coding as a team</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#git-and-github">Git and GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#team-practices">Team practices</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#other-resources">Other Resources</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to 114 Code’s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, Sunayna Singh.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.3.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/114CodeDocs.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
