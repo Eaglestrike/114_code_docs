@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/source/getting_started/getting_started.md",
+                "file": "docs/source/introduction/purpose_of_code.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/source/getting_started/getting_started.md",
+                "file": "docs/source/introduction/purpose_of_code.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/source/getting_started/getting_started.md",
+                "file": "docs/source/introduction/purpose_of_code.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/source/getting_started/getting_started.md"
+                "file": "docs/source/introduction/purpose_of_code.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "3b3afcd8c38a3812",
   "lastOpenFiles": [
+    "docs/source/getting_started/getting_started.md",
     "docs/source/introduction/prerequisites.md",
-    "docs/source/introduction/purpose_of_code.md",
-    "docs/source/getting_started/getting_started.md"
+    "docs/source/introduction/purpose_of_code.md"
   ]
 }

@@ -6,13 +6,20 @@
 Welcome to 114 Code's documentation!
 ====================================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+.. sidebar:: Navigation
+   .. toctree::
+         :hidden:
+         :caption: Introduction
 
-   introduction/prerequisites
-   introduciton/purpose_of_code
-   getting_started/getting_started
+         introduction/prerequisites
+         introduction/purpose_of_code
+   .. toctree::
+      :hidden:
+      :caption: Getting Started
+
+      getting_started/installation
+      getting_started/making_a_project
+      getting_started/building_and_deploying
 
 Indices and tables
 ==================
