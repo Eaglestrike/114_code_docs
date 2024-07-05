@@ -1,0 +1,76 @@
+/* Define custom properties for colors */
+:root {
+    --color-primary: #133474;
+    /* Dark blue */
+    --color-secondary: #0b2545;
+    /* Darker blue */
+    --color-accent: #8da9c4;
+    /* Light blue */
+    --color-background: #eef4ed;
+    /* Lighter background */
+    --color-text: #333;
+    /* Default text color */
+    --color-white: #fff;
+    /* White */
+    --color-light-gray: #f7f7f7;
+    /* Light gray */
+    --color-table-header: #f0f0f0;
+    /* Table header background */
+}
+
+/* Custom styles using variables */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    /* Elegant and modern font */
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+.wy-side-nav-search,
+.wy-nav-top {
+    background-color: var(--color-primary);
+}
+
+.wy-nav-content {
+    background-color: var(--color-white);
+    border-left: 1px solid var(--color-accent);
+    border-right: 1px solid var(--color-accent);
+}
+
+a {
+    color: var(--color-primary);
+}
+
+a:hover {
+    color: var(--color-secondary);
+}
+
+.literal-block,
+.literal {
+    background-color: var(--color-light-gray);
+    border: 1px solid #ccc;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1.6em;
+    border: 1px solid #ccc;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--color-table-header);
+}
+
+.wy-footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
