@@ -67,7 +67,6 @@ a:hover {
     background-color: var(--primary-color);
     font-family: 'Lato', sans-serif;
     width: 320px;
-
 }
 
 .wy-side-scroll {
@@ -81,14 +80,9 @@ a:hover {
     color: var(--background-color);
 }
 
-.wy-nav-side a:hover {
-    background-color: var(--secondary-color);
-    /* color: var(--primary-color); */
-}
-
+.wy-nav-side a:hover,
 .wy-menu-vertical .current a {
     background-color: var(--secondary-color);
-    color: var(--primary-color);
 }
 
 /* Main content styling */
