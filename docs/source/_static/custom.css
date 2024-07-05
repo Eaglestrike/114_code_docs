@@ -8,8 +8,6 @@
     /* Light blue */
     --background-color: #E6E6E6;
     /* White */
-    --header-background-color: #44576D;
-    /* Darker blue */
     --text-color: #29353C;
     /* Dark grey */
     --link-color: #AAC7D8;
@@ -84,7 +82,7 @@ a:hover {
 .wy-nav-content {
     font-family: 'Open Sans', sans-serif;
     padding: 1rem 3rem;
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
 }
 
 .wy-nav-content h1,
@@ -99,7 +97,7 @@ a:hover {
 }
 
 .wy-nav-content h2 {
-    color: var(--header-background-color);
+    color: var(--secondary-color);
 }
 
 .wy-nav-content h3 {
