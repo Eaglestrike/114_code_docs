@@ -16,6 +16,7 @@ Getting started - will teach you about how we make and work on robotics code pro
 .. toctree::
    :maxdepth: 1
    :hidden:
+   :titlesonly:
    :caption: Introduction
 
    docs/introduction/prerequisites
@@ -46,6 +47,7 @@ Getting started - will teach you about how we make and work on robotics code pro
 .. toctree::
    :maxdepth: 2
    :hidden:
+   :titlesonly:
    :caption: Control Theory
 
    docs/control_theory/intro

@@ -4,33 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "97fab32abb039dff",
+        "id": "a0070088cea160f8",
         "type": "tabs",
         "children": [
           {
-            "id": "3b3afcd8c38a3812",
+            "id": "292e8505961536ad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/docs/team_practices/team_library/intro.md",
+                "file": "source/docs/vendor_libs/motors_and_controllers.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "5d97e792062f04cc",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.7"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/docs/team_practices/team_library/intro.md",
+                "file": "source/docs/vendor_libs/motors_and_controllers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/docs/team_practices/team_library/intro.md",
+                "file": "source/docs/vendor_libs/motors_and_controllers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/docs/team_practices/team_library/intro.md"
+                "file": "source/docs/vendor_libs/motors_and_controllers.md"
               }
             }
           }
@@ -157,42 +146,43 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5d97e792062f04cc",
+  "active": "292e8505961536ad",
   "lastOpenFiles": [
-    "source/docs/getting_started/media/image9.png",
-    "source/docs/getting_started/media/image8.png",
-    "source/docs/getting_started/media/image7.png",
-    "source/docs/getting_started/media/image6.png",
-    "source/docs/getting_started/media/image5.png",
-    "source/docs/getting_started/media/image4.png",
-    "source/docs/getting_started/media/image3.png",
-    "source/docs/getting_started/media/image20.png",
-    "source/docs/getting_started/media/image2.png",
-    "source/docs/getting_started/media/image19.png",
-    "source/docs/getting_started/media/image18.png",
+    "build/html/_images/image61.png",
+    "build/html/_images/image31.png",
+    "build/html/_images/image21.png",
+    "build/html/_images/image1.png",
+    "build/html/_images/image51.png",
+    "source/docs/vendor_libs/install_vendor_libs.md",
+    "source/docs/vendor_libs/using_vendor_libs/phoenix6.md",
+    "source/docs/vendor_libs/using_vendor_libs/using_vendor_libs.md",
+    "source/docs/vendor_libs/images/image6.png",
+    "source/docs/vendor_libs/images/Screenshot 2024-08-05 at 4.47.56 PM.png",
+    "source/docs/vendor_libs/images/image3.png",
+    "source/docs/vendor_libs/images/Screenshot 2024-08-05 at 4.42.29 PM.png",
+    "source/docs/vendor_libs/images/image2.png",
+    "source/docs/vendor_libs/images/Screenshot 2024-08-05 at 4.41.09 PM.png",
+    "source/docs/vendor_libs/what_is_vendor_lib.md",
+    "source/docs/team_practices/team_library/intro.md",
+    "source/docs/control_theory/feedback/images",
+    "source/docs/control_theory/images",
+    "source/docs/control_theory/untitled folder",
+    "source/docs/vendor_libs/images",
+    "source/docs/vendor_libs/untitled folder",
+    "build/html/_images",
     "source/docs/getting_started/media",
     "source/docs/media",
     "source/docs/images",
     "build/html/_sources/docs/getting_started/install.md.txt",
-    "build/html/docs/getting_started/install.html",
-    "build/doctrees/docs/getting_started/install.doctree",
     "source/docs/getting_started/install.md",
     "source/docs/getting_started/filetypes.md",
     "source/docs/getting_started/wpilib_vscode.md",
-    "build/html/_sources/docs/vendor_libs/using_vendor_libs/using_vendor_libs.md.txt",
-    "build/html/_sources/docs/vendor_libs/using_vendor_libs/revlib.md.txt",
-    "build/html/_sources/docs/vendor_libs/using_vendor_libs/phoenix6.md.txt",
-    "build/html/_sources/docs/vendor_libs/using_vendor_libs/index.rst.txt",
     "source/docs/vendor_libs/using_vendor_libs/revlib.md",
-    "source/docs/vendor_libs/using_vendor_libs/phoenix6.md",
-    "source/docs/vendor_libs/using_vendor_libs/using_vendor_libs.md",
-    "source/docs/vendor_libs/what_is_vendor_lib.md",
     "source/docs/vendor_libs/using/what_is_vendor_lib.md",
     "source/docs/getting_started/filetypes/filetypes.md",
     "source/docs/getting_started/wpilib/wpilib_vscode.md",
     "source/docs/getting_started/introduction.md",
     "source/docs/team_practices/team_library/ctrlr_class.md",
-    "source/docs/team_practices/team_library/intro.md",
     "source/docs/team_practices/team_library/mechanism_class.md",
     "source/docs/team_practices/git/overview.md",
     "source/docs/team_practices/git/intro_and_setup.md",
@@ -203,7 +193,6 @@
     "source/docs/control_theory/feedback/intro.md",
     "source/docs/control_theory/feedback/bang_bang.md",
     "source/docs/control_theory/feedback/PID.md",
-    "source/docs/vendor_libs/motors_and_controllers.md",
-    "source/docs/vendor_libs/install_vendor_libs.md"
+    "source/docs/vendor_libs/motors_and_controllers.md"
   ]
 }

@@ -14,16 +14,12 @@ author = 'Sunayna Singh'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    'recommonmark',
-    'sphinx_markdown_tables',
     'sphinx_rtd_theme',
+    'sphinx_markdown_tables',
+    'myst_parser'
 ]
 
-source_suffix = {
-    '.rst': 'restructuredtext',
-    '.md': 'markdown',
-}
-
+source_suffix = ['.rst', '.md']
 
 templates_path = ['_templates']
 exclude_patterns = []

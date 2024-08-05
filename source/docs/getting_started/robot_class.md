@@ -8,7 +8,12 @@ java or c++ program. You don’t need to worry about how this happens,
 just understand what functions are called and when.
 
 Driver Station has a display of the different states the robot can have:
-<img src="media/image14.png" style="width:6.5in;height:1.50019in" />
+
+```{image} media/image3.png
+:alt: Alt text
+:width: 650px
+:height: 150px
+```
 
 You can enable the robot in different states (TeleOperated, Autonomous,
 Practice, and Test) or keep it in the disabled state.

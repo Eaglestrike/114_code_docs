@@ -22,7 +22,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Using vendor libraries" href="using_vendor_libs.html" />
+    <link rel="next" title="&lt;no title&gt;" href="using_vendor_libs/index.html" />
     <link rel="prev" title="Motors + Motor Controllers" href="motors_and_controllers.html" /> 
 </head>
 
@@ -52,11 +52,16 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/introduction.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/wpilib_vscode.html">WPILib VScode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/making_project.html">Making a project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/filetypes.html">.h and .cpp files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/robot_class.html">Understanding the Robot Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/introduction.html">WPILib and VSCode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/making_project.html">Creating a project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/filetypes.html">.h and .cpp files</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/filetypes.html#header-files">Header files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/filetypes.html#cpp-files">cpp files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/filetypes.html#why-separate">Why separate?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/robot_class.html">The Robot Class</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/build_and_deploy.html">🕳️Building and Deploying Code</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Vendor Libraries</span></p>
@@ -64,19 +69,19 @@
 <li class="toctree-l1"><a class="reference internal" href="what_is_vendor_lib.html">What is a vendor library?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="motors_and_controllers.html">Motors + Motor Controllers</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Installing vendor libraries</a></li>
-<li class="toctree-l1"><a class="reference internal" href="using_vendor_libs.html">Using vendor libraries</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Control Theory</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../control_theory/intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/intro.html">Feedback Control</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/bang_bang.html">Bang-Bang Control</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/PID.html">PID Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html">What is a motion profile?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html#the-trapezoidal-motion-profile">The trapezoidal motion profile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html#feedforward-control">Feedforward control</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Team Practices</span></p>
+<p class="caption" role="heading"><span class="caption-text">Other Resources</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../team_practices/git/intro_and_setup.html">Setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../team_practices/git/114_workflow.html">⚪114’s Git Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources.html">Other Resources</a></li>
 </ul>
 
         </div>
@@ -105,7 +110,16 @@
              
   <section id="installing-vendor-libraries">
 <h1>Installing vendor libraries<a class="headerlink" href="#installing-vendor-libraries" title="Link to this heading"></a></h1>
-<p>To install a vendor dep, click the w in the top right corner</p>
+<p>To install a vendor library, click the <img alt="logo" src="../../_images/image51.png" /> in the top right corner.</p>
+<p>Then search for and click on “Manage vendor libraries”
+<img alt="search" src="../../_images/image1.png" /></p>
+<p>Then from there select “install new libraries (online)”
+<img alt="install" src="../../_images/image21.png" /></p>
+<p>After that it will prompt you to give it the vendor url.
+<img alt="install2" src="../../_images/image31.png" /></p>
+<p><a class="reference external" href="https://docs.wpilib.org/en/stable/docs/software/vscode-overview/3rd-party-libraries.html#vendor-libraries">Here</a> is a list of the vendor URLS for every vendor that WPILib supports. Copy the url and paste it into the prompt</p>
+<p>You can check if the library successfully installed if the vendordeps has a .json file for the library like this:
+<img alt="result" src="../../_images/image61.png" /></p>
 </section>
 
 
@@ -113,7 +127,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="motors_and_controllers.html" class="btn btn-neutral float-left" title="Motors + Motor Controllers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="using_vendor_libs.html" class="btn btn-neutral float-right" title="Using vendor libraries" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="using_vendor_libs/index.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

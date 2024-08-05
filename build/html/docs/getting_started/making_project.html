@@ -47,17 +47,12 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../introduction/prerequisites.html">Informal Prerequisites</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../introduction/prerequisites.html#code-knowledge-c-specific">Code knowledge (C++ specific)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../introduction/prerequisites.html#basic-physics">Basic physics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../introduction/prerequisites.html#frc">FRC</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/prerequisites.html">Informal Prerequisites</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../introduction/purpose_of_code.html">The Purpose of Code</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">WPILib and VSCode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Creating a project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="filetypes.html">.h and .cpp files</a><ul>
@@ -77,15 +72,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Control Theory</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../control_theory/intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/intro.html">Feedback Control</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/bang_bang.html">Bang-Bang Control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/PID.html">PID Control</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../control_theory/feedback/PID.html#tuning-tips">Tuning tips</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../control_theory/feedback/PID.html#implementation-tips">Implementation tips</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../control_theory/feedback/PID.html#shortcomings-of-pid">Shortcomings of PID</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/PID.html">PID Control</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html">What is a motion profile?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html#the-trapezoidal-motion-profile">The trapezoidal motion profile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html#feedforward-control">Feedforward control</a></li>
@@ -121,29 +110,28 @@
              
   <section id="creating-a-project">
 <h1>Creating a project<a class="headerlink" href="#creating-a-project" title="Link to this heading"></a></h1>
-<p>Open WPILib VScode and click the
-<img src="media/image4.png" style="width:0.42708in;height:0.46875in" />
-button in the top right corner.</p>
+<p>Open WPILib VScode and click the <img alt="logo" src="../../_images/image5.png" /></p>
 <p>A navigation bar should pop up. Type in or select Create New Project
-like
-this:<img src="media/image9.png" style="width:6.5in;height:1.80556in" /></p>
+like this:</p>
+<a class="reference internal image-reference" href="../../_images/image2.png"><img alt="../../_images/image2.png" src="../../_images/image2.png" style="width: 6.5in; height: 1.8in;" /></a>
 <p>Edit the settings as follows:</p>
-<img src="media/image15.png" style="width:6.5in;height:2.22917in" /><p>Then select the base folder this project will be held in (it’s good
+<a class="reference internal image-reference" href="../../_images/image20.png"><img alt="../../_images/image20.png" src="../../_images/image20.png" style="width: 6.5in; height: 2.22917in;" /></a>
+<p>Then select the base folder this project will be held in (it’s good
 practice to keep all your projects in an isolated folder called
 “robotics” or something), and name the project depending on what you’re
-doing. When all the settings are correct, click “generate
-project”.<img src="media/image1.png" style="width:1.81871in;height:2.77721in" /></p>
-<p>After navigating to the project in VSCode, open the explorer</p>
-<p>(on the left) with these files:</p>
+doing. When all the settings are correct, click “generate project”.</p>
+<p>After navigating to the project in VSCode, open the explorer with these files:</p>
 <ul class="simple">
 <li><p>src/main/cpp/Robot.cpp</p></li>
 <li><p>src/main/include/Robot.h</p></li>
 </ul>
+<a class="reference internal image-reference" href="../../_images/image6.png"><img alt="../../_images/image6.png" class="align-right" src="../../_images/image6.png" style="width: 1.81871in; height: 2.77721in;" /></a>
 <p>Don’t worry too much about the other folders and files; they’re just
-specific to running robot
-code.<img src="media/image7.png" style="width:2.33333in;height:1.73247in" /></p>
+specific to running robot code.</p>
 <p>Robot.h should look something like this:</p>
-<img src="media/image8.png" style="width:2.33333in;height:2.103in" /><p>And Robot.cpp something like this:</p>
+<a class="reference internal image-reference" href="../../_images/image12.png"><img alt="../../_images/image12.png" src="../../_images/image12.png" style="width: 2.33333in; height: 2.103in;" /></a>
+<p>And Robot.cpp something like this:</p>
+<a class="reference internal image-reference" href="../../_images/image19.png"><img alt="../../_images/image19.png" src="../../_images/image19.png" style="width: 2.33333in; height: 1.73247in;" /></a>
 </section>
 
 

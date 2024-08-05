@@ -22,7 +22,7 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="../motion_profiles.html" />
+    <link rel="next" title="What is a motion profile?" href="../motion_profiles.html" />
     <link rel="prev" title="Bang-Bang Control" href="bang_bang.html" /> 
 </head>
 
@@ -47,16 +47,26 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../introduction/prerequisites.html">Informal Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/prerequisites.html">Informal Prerequisites</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../introduction/prerequisites.html#code-knowledge-c-specific">Code knowledge (C++ specific)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduction/prerequisites.html#basic-physics">Basic physics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduction/prerequisites.html#frc">FRC</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../introduction/purpose_of_code.html">The Purpose of Code</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/introduction.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../getting_started/wpilib_vscode.html">WPILib VScode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../getting_started/making_project.html">Making a project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../getting_started/filetypes.html">.h and .cpp files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../getting_started/robot_class.html">Understanding the Robot Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/making_project.html">Creating a project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/filetypes.html">.h and .cpp files</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/filetypes.html#header-files">Header files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/filetypes.html#cpp-files">cpp files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/filetypes.html#why-separate">Why separate?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/robot_class.html">The Robot Class</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/build_and_deploy.html">🕳️Building and Deploying Code</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Vendor Libraries</span></p>
@@ -64,19 +74,25 @@
 <li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/what_is_vendor_lib.html">What is a vendor library?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/motors_and_controllers.html">Motors + Motor Controllers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/install_vendor_libs.html">Installing vendor libraries</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/using_vendor_libs.html">Using vendor libraries</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Control Theory</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Feedback Control</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bang_bang.html">Bang-Bang Control</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">PID Control</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PID Control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tuning-tips">Tuning tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#implementation-tips">Implementation tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#shortcomings-of-pid">Shortcomings of PID</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Team Practices</span></p>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../motion_profiles.html">What is a motion profile?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../motion_profiles.html#the-trapezoidal-motion-profile">The trapezoidal motion profile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../motion_profiles.html#feedforward-control">Feedforward control</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Other Resources</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../team_practices/git/intro_and_setup.html">Setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../team_practices/git/114_workflow.html">⚪114’s Git Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources.html">Other Resources</a></li>
 </ul>
 
         </div>
@@ -93,6 +109,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">&lt;no title&gt;</a></li>
       <li class="breadcrumb-item active">PID Control</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/docs/control_theory/feedback/PID.md.txt" rel="nofollow"> View page source</a>
@@ -151,7 +168,7 @@ too much or too little since they all serve their own unique purpose.</strong></
 <section id="tuning-tips">
 <h2>Tuning tips<a class="headerlink" href="#tuning-tips" title="Link to this heading"></a></h2>
 <p>A simple tuning process:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Start with kp =0, ki =0, kd = 0</p></li>
 <li><p>Increase p until it starts oscillating</p></li>
 <li><p>Increase d until it stops oscillating</p></li>
@@ -187,7 +204,7 @@ for this.</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="bang_bang.html" class="btn btn-neutral float-left" title="Bang-Bang Control" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../motion_profiles.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../motion_profiles.html" class="btn btn-neutral float-right" title="What is a motion profile?" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

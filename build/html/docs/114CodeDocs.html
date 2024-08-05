@@ -7,7 +7,7 @@
   <title>Table of contents &mdash; 114 Code  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=cc2022c9" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=941aba8c" />
 
   
   <!--[if lt IE 9]>
@@ -45,16 +45,52 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction/prerequisites.html">Informal Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction/prerequisites.html">Informal Prerequisites</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction/prerequisites.html#code-knowledge-c-specific">Code knowledge (C++ specific)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction/prerequisites.html#basic-physics">Basic physics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction/prerequisites.html#frc">FRC</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="introduction/purpose_of_code.html">The Purpose of Code</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="getting_started/getting_started.html">WPILib VScode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started/getting_started.html#making-a-project">Making a project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started/getting_started.html#h-and-cpp-files">.h and .cpp files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started/getting_started.html#the-robot-class">The Robot Class</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started/getting_started.html#building-and-deploying-code">🕳️Building and Deploying Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started/making_project.html">Creating a project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started/filetypes.html">.h and .cpp files</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting_started/filetypes.html#header-files">Header files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started/filetypes.html#cpp-files">cpp files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started/filetypes.html#why-separate">Why separate?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started/robot_class.html">The Robot Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started/build_and_deploy.html">🕳️Building and Deploying Code</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Vendor Libraries</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="vendor_libs/what_is_vendor_lib.html">What is a vendor library?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vendor_libs/motors_and_controllers.html">Motors + Motor Controllers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vendor_libs/install_vendor_libs.html">Installing vendor libraries</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Control Theory</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="control_theory/intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="control_theory/feedback/intro.html">Feedback Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="control_theory/feedback/bang_bang.html">Bang-Bang Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="control_theory/feedback/PID.html">PID Control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="control_theory/feedback/PID.html#tuning-tips">Tuning tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="control_theory/feedback/PID.html#implementation-tips">Implementation tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="control_theory/feedback/PID.html#shortcomings-of-pid">Shortcomings of PID</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="control_theory/motion_profiles.html">What is a motion profile?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="control_theory/motion_profiles.html#the-trapezoidal-motion-profile">The trapezoidal motion profile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="control_theory/motion_profiles.html#feedforward-control">Feedforward control</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Other Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">Other Resources</a></li>
 </ul>
 
         </div>
@@ -83,59 +119,59 @@
              
   <section id="table-of-contents">
 <h1>Table of contents<a class="headerlink" href="#table-of-contents" title="Link to this heading"></a></h1>
-<p><a class="reference external" href="#table-of-contents"><strong>Table of contents 2</strong></a></p>
-<p><a class="reference external" href="#informal-prerequisites"><strong>Informal Prerequisites 4</strong></a></p>
-<p><a class="reference external" href="#the-purpose-of-code"><strong>The Purpose of Code 5</strong></a></p>
-<p><a class="reference external" href="#getting-started"><strong>Getting started 6</strong></a></p>
+<p><a class="reference internal" href="#table-of-contents"><span class="xref myst"><strong>Table of contents 2</strong></span></a></p>
+<p><a class="reference internal" href="#informal-prerequisites"><span class="xref myst"><strong>Informal Prerequisites 4</strong></span></a></p>
+<p><a class="reference internal" href="#the-purpose-of-code"><span class="xref myst"><strong>The Purpose of Code 5</strong></span></a></p>
+<p><a class="reference internal" href="#getting-started"><span class="xref myst"><strong>Getting started 6</strong></span></a></p>
 <blockquote>
-<div><p><a class="reference external" href="#wpilib-vscode">WPILib VScode 6</a></p>
-<p><a class="reference external" href="#installation">Installation 6</a></p>
-<p><a class="reference external" href="#making-a-project">Making a project 6</a></p>
-<p><a class="reference external" href="#h-and-.cpp-files">.h and .cpp files 8</a></p>
-<p><a class="reference external" href="#why-separate">Why separate? 8</a></p>
-<p><a class="reference external" href="#the-robot-class">The Robot Class 8</a></p>
-<p><a class="reference external" href="#building-and-deploying-code">Building and Deploying Code 9</a></p>
+<div><p><a class="reference internal" href="#wpilib-vscode"><span class="xref myst">WPILib VScode 6</span></a></p>
+<p><a class="reference internal" href="#installation"><span class="xref myst">Installation 6</span></a></p>
+<p><a class="reference internal" href="#making-a-project"><span class="xref myst">Making a project 6</span></a></p>
+<p><a class="reference internal" href="#h-and-.cpp-files"><span class="xref myst">.h and .cpp files 8</span></a></p>
+<p><a class="reference internal" href="#why-separate"><span class="xref myst">Why separate? 8</span></a></p>
+<p><a class="reference internal" href="#the-robot-class"><span class="xref myst">The Robot Class 8</span></a></p>
+<p><a class="reference internal" href="#building-and-deploying-code"><span class="xref myst">Building and Deploying Code 9</span></a></p>
 </div></blockquote>
-<p><a class="reference external" href="#coding-a-motor"><strong>Coding a motor 11</strong></a></p>
+<p><a class="reference internal" href="#coding-a-motor"><span class="xref myst"><strong>Coding a motor 11</strong></span></a></p>
 <blockquote>
-<div><p><a class="reference external" href="#motors-motor-controllers">Motors + Motor Controllers 11</a></p>
-<p><a class="reference external" href="#installing-vendor-libraries">Installing Vendor Libraries 12</a></p>
-<p><a class="reference external" href="#using-vendor-libraries">Using Vendor Libraries 12</a></p>
-<p><a class="reference external" href="#phoenix6">TalonFX 12</a></p>
-<p><a class="reference external" href="#revlib">REVLib 12</a></p>
+<div><p><a class="reference internal" href="#motors-motor-controllers"><span class="xref myst">Motors + Motor Controllers 11</span></a></p>
+<p><a class="reference internal" href="#installing-vendor-libraries"><span class="xref myst">Installing Vendor Libraries 12</span></a></p>
+<p><a class="reference internal" href="#using-vendor-libraries"><span class="xref myst">Using Vendor Libraries 12</span></a></p>
+<p><a class="reference internal" href="#phoenix6"><span class="xref myst">TalonFX 12</span></a></p>
+<p><a class="reference internal" href="#revlib"><span class="xref myst">REVLib 12</span></a></p>
 </div></blockquote>
-<p><a class="reference external" href="#control-theory"><strong>Motion Control</strong> <strong>13</strong></a></p>
+<p><a class="reference internal" href="#control-theory"><span class="xref myst"><strong>Motion Control</strong> <strong>13</strong></span></a></p>
 <blockquote>
-<div><p><a class="reference external" href="#feedback-control">Feedback Control 13</a></p>
-<p><a class="reference external" href="#bang-bang-control">Bang-Bang Control 13</a></p>
-<p><a class="reference external" href="#pid-control">PID Control 13</a></p>
-<p><a class="reference external" href="#tuning-tips">Tuning tips 16</a></p>
-<p><a class="reference external" href="#implementation-tips">Implementation tips 17</a></p>
-<p><a class="reference external" href="#shortcomings-of-pid">Shortcomings of PID 17</a></p>
-<p><a class="reference external" href="#motion-profiles">Motion Profiles 17</a></p>
-<p><a class="reference external" href="#trapezoidal-motion-profile">Trapezoidal motion profile 17</a></p>
-<p><a class="reference external" href="#feedforward-control">Feedforward Control 17</a></p>
+<div><p><a class="reference internal" href="#feedback-control"><span class="xref myst">Feedback Control 13</span></a></p>
+<p><a class="reference internal" href="#bang-bang-control"><span class="xref myst">Bang-Bang Control 13</span></a></p>
+<p><a class="reference internal" href="#pid-control"><span class="xref myst">PID Control 13</span></a></p>
+<p><a class="reference internal" href="#tuning-tips"><span class="xref myst">Tuning tips 16</span></a></p>
+<p><a class="reference internal" href="#implementation-tips"><span class="xref myst">Implementation tips 17</span></a></p>
+<p><a class="reference internal" href="#shortcomings-of-pid"><span class="xref myst">Shortcomings of PID 17</span></a></p>
+<p><a class="reference internal" href="#motion-profiles"><span class="xref myst">Motion Profiles 17</span></a></p>
+<p><a class="reference internal" href="#trapezoidal-motion-profile"><span class="xref myst">Trapezoidal motion profile 17</span></a></p>
+<p><a class="reference internal" href="#feedforward-control"><span class="xref myst">Feedforward Control 17</span></a></p>
 </div></blockquote>
-<p><a class="reference external" href="#coding-as-a-team"><strong>Coding as a team 19</strong></a></p>
+<p><a class="reference internal" href="#coding-as-a-team"><span class="xref myst"><strong>Coding as a team 19</strong></span></a></p>
 <blockquote>
-<div><p><a class="reference external" href="#git-and-github">Git and GitHub 19</a></p>
-<p><a class="reference external" href="#git-overview">Git Terms: 19</a></p>
-<p><a class="reference external" href="#try-it-yourself">Git Actions: 19</a></p>
-<p><a class="reference external" href="#s-git-workflow">114’s Git Workflow 19</a></p>
-<p><a class="reference external" href="#team-practices">Team practices 20</a></p>
-<p><a class="reference external" href="#style-practices">Style practices: 20</a></p>
-<p><a class="reference external" href="#conceptual-practices">Conceptual practices: 20</a></p>
-<p><a class="reference external" href="#the-mechanism-class">The Mechanism class 21</a></p>
-<p><a class="reference external" href="#the-controller-class">The Controller class 21</a></p>
-<p><a class="reference external" href="#shuffleboard-sender">Shuffleboard Sender 21</a></p>
-<p><a class="reference external" href="#team-utils">Team Utils: 21</a></p>
-<p><a class="reference external" href="#trapezoidal-motion-profile-1">Trapezoidal motion profile 21</a></p>
-<p><a class="reference external" href="#timer">Timer 21</a></p>
-<p><a class="reference external" href="#logger">Logger 21</a></p>
-<p><a class="reference external" href="#poses">Poses 21</a></p>
-<p><a class="reference external" href="#feedforward-auto-tuner">Feedforward Auto Tuner 21</a></p>
+<div><p><a class="reference internal" href="#git-and-github"><span class="xref myst">Git and GitHub 19</span></a></p>
+<p><a class="reference internal" href="#git-overview"><span class="xref myst">Git Terms: 19</span></a></p>
+<p><a class="reference internal" href="#try-it-yourself"><span class="xref myst">Git Actions: 19</span></a></p>
+<p><a class="reference internal" href="#s-git-workflow"><span class="xref myst">114’s Git Workflow 19</span></a></p>
+<p><a class="reference internal" href="#team-practices"><span class="xref myst">Team practices 20</span></a></p>
+<p><a class="reference internal" href="#style-practices"><span class="xref myst">Style practices: 20</span></a></p>
+<p><a class="reference internal" href="#conceptual-practices"><span class="xref myst">Conceptual practices: 20</span></a></p>
+<p><a class="reference internal" href="#the-mechanism-class"><span class="xref myst">The Mechanism class 21</span></a></p>
+<p><a class="reference internal" href="#the-controller-class"><span class="xref myst">The Controller class 21</span></a></p>
+<p><a class="reference internal" href="#shuffleboard-sender"><span class="xref myst">Shuffleboard Sender 21</span></a></p>
+<p><a class="reference internal" href="#team-utils"><span class="xref myst">Team Utils: 21</span></a></p>
+<p><a class="reference internal" href="#trapezoidal-motion-profile-1"><span class="xref myst">Trapezoidal motion profile 21</span></a></p>
+<p><a class="reference internal" href="#timer"><span class="xref myst">Timer 21</span></a></p>
+<p><a class="reference internal" href="#logger"><span class="xref myst">Logger 21</span></a></p>
+<p><a class="reference internal" href="#poses"><span class="xref myst">Poses 21</span></a></p>
+<p><a class="reference internal" href="#feedforward-auto-tuner"><span class="xref myst">Feedforward Auto Tuner 21</span></a></p>
 </div></blockquote>
-<p><a class="reference external" href="#other-resources"><strong>Other Resources 22</strong></a></p>
+<p><a class="reference internal" href="#other-resources"><span class="xref myst"><strong>Other Resources 22</strong></span></a></p>
 </section>
 <section id="informal-prerequisites">
 <h1>Informal Prerequisites<a class="headerlink" href="#informal-prerequisites" title="Link to this heading"></a></h1>
@@ -292,7 +328,8 @@ button in the top right corner.</p>
 like
 this:<img src="media/image9.png" style="width:6.5in;height:1.80556in" /></p>
 <p>Edit the settings as follows:</p>
-<img src="media/image15.png" style="width:6.5in;height:2.22917in" /><p>Then select the base folder this project will be held in (it’s good
+<img src="media/image15.png" style="width:6.5in;height:2.22917in" />
+<p>Then select the base folder this project will be held in (it’s good
 practice to keep all your projects in an isolated folder called
 “robotics” or something), and name the project depending on what you’re
 doing. When all the settings are correct, click “generate
@@ -307,7 +344,8 @@ project”.<img src="media/image1.png" style="width:1.81871in;height:2.77721in" 
 specific to running robot
 code.<img src="media/image7.png" style="width:2.33333in;height:1.73247in" /></p>
 <p>Robot.h should look something like this:</p>
-<img src="media/image8.png" style="width:2.33333in;height:2.103in" /><p>And Robot.cpp something like this:</p>
+<img src="media/image8.png" style="width:2.33333in;height:2.103in" />
+<p>And Robot.cpp something like this:</p>
 </section>
 <section id="h-and-cpp-files">
 <h2>.h and .cpp files<a class="headerlink" href="#h-and-cpp-files" title="Link to this heading"></a></h2>
@@ -374,13 +412,15 @@ in the top right corner and search for “build” or “deploy”</p>
 <p><strong>Building</strong> the project simply compiles it. Since there’s nothing in
 the project at this point, it should succeed and show you a message like
 this:</p>
-<img src="media/image6.png" style="width:6.5in;height:0.72222in" /><p><strong>Deploying</strong> is a little more complicated and loads the code onto the
+<img src="media/image6.png" style="width:6.5in;height:0.72222in" />
+<p><strong>Deploying</strong> is a little more complicated and loads the code onto the
 robot. It does this via ethernet, so your computer has to be connected
 to the radio on the robot like this:</p>
 <p>INSERT PIC</p>
 <p>If the robot isn’t connected, the deploy will give you an error message
 like this:</p>
-<img src="media/image2.png" style="width:6.5in;height:1.70833in" /><p>Keep in mind deploying builds before it deploys the code to the robot,
+<img src="media/image2.png" style="width:6.5in;height:1.70833in" />
+<p>Keep in mind deploying builds before it deploys the code to the robot,
 and will not work if your code does not build.</p>
 <p>If the deploy works, it’ll open a RioLog that shows you all the error
 messages and warnings and prints the code is outputting as it runs. It
@@ -454,7 +494,8 @@ style="width:2.32762in;height:1.54734in" /></p></th>
 </thead>
 <tbody>
 </tbody>
-</table><p>There are definitely more motors (like mini NEOs and CIMs) and more
+</table>
+<p>There are definitely more motors (like mini NEOs and CIMs) and more
 controllers (like the TalonSRX) that we might use but they’re used way
 less often. If you want to know about those as well, let me know and
 I’ll add them.</p>
@@ -550,7 +591,7 @@ too much or too little since they all serve their own unique purpose.</strong></
 <section id="tuning-tips">
 <h4>Tuning tips<a class="headerlink" href="#tuning-tips" title="Link to this heading"></a></h4>
 <p>A simple tuning process:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Start with kp =0, ki =0, kd = 0</p></li>
 <li><p>Increase p until it starts oscillating</p></li>
 <li><p>Increase d until it stops oscillating</p></li>
@@ -587,7 +628,7 @@ for this.</p>
 <h3>🔴Trapezoidal motion profile<a class="headerlink" href="#trapezoidal-motion-profile" title="Link to this heading"></a></h3>
 <p>Blaj blah</p>
 <p>You should try making your own before using this but we have a
-<a class="reference external" href="#trapezoidal-motion-profile-1"><u>util</u></a> that implements this
+<a class="reference internal" href="#trapezoidal-motion-profile-1"><span class="xref myst"><u>util</u></span></a> that implements this
 reliably.</p>
 </section>
 </section>
@@ -606,8 +647,8 @@ get into this later).</p>
 <p>Intro blah blah</p>
 <section id="git-and-github">
 <h2>Git and GitHub<a class="headerlink" href="#git-and-github" title="Link to this heading"></a></h2>
-<p>If you are already familiar with git and GitHub, skip to <a class="reference external" href="#s-git-workflow"><u>the section
-about our git workflow</u></a>.</p>
+<p>If you are already familiar with git and GitHub, skip to <a class="reference internal" href="#s-git-workflow"><span class="xref myst"><u>the section
+about our git workflow</u></span></a>.</p>
 <p>In order for the whole team to work on a single code project, we have to
 use some sort of software to manage multiple people making changes to
 one file or set of files. For this, most of the world (our team
@@ -617,7 +658,7 @@ working version, revision and restoration of version, and easy . It’s
 essentially like google drive for code.</p>
 <section id="requirements">
 <h3>🟠Requirements<a class="headerlink" href="#requirements" title="Link to this heading"></a></h3>
-<ol>
+<ol class="arabic">
 <li><p>You need to [<u>install git/ check for</p>
 <blockquote>
 <div><p>installation</u>](https://github.com/git-guides/install-git).</p>
@@ -701,19 +742,20 @@ contexts without committing incomplete changes.</p>
 <h3>🟠Try it yourself<a class="headerlink" href="#try-it-yourself" title="Link to this heading"></a></h3>
 <p>Once you have git installed, try these steps to get an understanding of
 how we use git</p>
-<ol>
+<ol class="arabic">
 <li><p>Pull some repository from [<u>our team’s GitHub</p>
 <blockquote>
 <div><p>account</u>](https://github.com/Eaglestrike), for example <a class="reference external" href="https://github.com/Eaglestrike/2024-RobotCode"><u>2024
 robot code</u></a></p>
 </div></blockquote>
-<ol class="simple">
+<ol class="arabic simple">
 <li></li>
 </ol>
 </li>
 <li><p>Make a new branch</p></li>
 </ol>
-<!-- --><ol>
+<!-- -->
+<ol class="arabic">
 <li><p>Checkout that branch</p></li>
 <li><p>Make a new file or some random change</p></li>
 <li><p>Stage your changes (git add)</p></li>
@@ -732,7 +774,7 @@ robot code</u></a></p>
 </section>
 <section id="s-git-workflow">
 <h3>⚪114’s Git Workflow<a class="headerlink" href="#s-git-workflow" title="Link to this heading"></a></h3>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p><strong>Work in branches</strong> NOT in main</p></li>
 </ol>
 <p>We keep the latest working version of code in the main branch of the
@@ -740,7 +782,7 @@ repository. If someone is working on a subsystem or an improvement, they
 create a separate branch and work there. This way we always have an
 easily accessible branch of working code. In general we try to keep the
 main branch clean.</p>
-<ol>
+<ol class="arabic" start="2">
 <li><p>Create <strong>pull requests for code reviews</strong> OR to merge into main if</p>
 <blockquote>
 <div><p>your branch is tested and approved by the code lead</p>
@@ -752,7 +794,7 @@ the code lead do they create a pull request, asking to be merged to
 main. Pull requests can also be used for code reviews. A good example of
 this is <a class="reference external" href="https://github.com/Eaglestrike/2024-RobotCode/pull/2"><u>this old
 PR.</u></a></p>
-<ol class="simple">
+<ol class="arabic simple" start="3">
 <li><p>1 branch per change</p></li>
 </ol>
 <p>To avoid merge conflicts, create new branches for every conceptual
@@ -770,7 +812,7 @@ reusable.</p>
 <p>Generally we try to keep code as clean and easy to read as possible, in
 order to make debugging, peer review, and general comprehension easier.
 This means we follow some pretty standard practices:</p>
-<ol>
+<ol class="arabic">
 <li><p>Use m_<em>varName</em> (preferably) or <em>varName_</em> for member variables</p>
 <blockquote>
 <div><p>(i.e. m_ampIntake)</p>
@@ -805,7 +847,7 @@ This means we follow some pretty standard practices:</p>
 </section>
 <section id="conceptual-practices">
 <h3>Conceptual practices:<a class="headerlink" href="#conceptual-practices" title="Link to this heading"></a></h3>
-<ol>
+<ol class="arabic">
 <li><p>Abstraction and encapsulation</p></li>
 <li><p>Meaningful variable and function names</p></li>
 <li><p>Comment the parts of your code that are hard to understand (do it</p>
@@ -863,7 +905,8 @@ looking for a simple class to handle
 <a class="reference external" href="https://github.wpilib.org/allwpilib/docs/release/cpp/classfrc_1_1_p_i_d_controller.html"><u>PID</u></a>
 or something for you, WPILib’s helpers can be useful.</p>
 <p><a class="reference external" href="https://docs.google.com/document/d/111ZI8VX0vLwrTrQJfh3r7tGUT_dupv02ayNkIX2MrQc/edit#heading=h.pvgcrwk7prga"><u>The old tech
-binder</u></a><br />Pretty similar to this one,</p>
+binder</u></a><br />
+Pretty similar to this one,</p>
 </section>
 
 

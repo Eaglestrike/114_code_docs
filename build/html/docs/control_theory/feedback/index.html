@@ -22,8 +22,7 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Feedback Control" href="intro.html" />
-    <link rel="prev" title="Introduction" href="../intro.html" /> 
+    <link rel="next" title="Feedback Control" href="intro.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -47,17 +46,12 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../introduction/prerequisites.html">Informal Prerequisites</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../introduction/prerequisites.html#code-knowledge-c-specific">Code knowledge (C++ specific)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../introduction/prerequisites.html#basic-physics">Basic physics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../introduction/prerequisites.html#frc">FRC</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/prerequisites.html">Informal Prerequisites</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../introduction/purpose_of_code.html">The Purpose of Code</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting_started/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/introduction.html">WPILib and VSCode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/making_project.html">Creating a project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/filetypes.html">.h and .cpp files</a><ul>
@@ -77,15 +71,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Control Theory</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Feedback Control</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bang_bang.html">Bang-Bang Control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="PID.html">PID Control</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="PID.html#tuning-tips">Tuning tips</a></li>
-<li class="toctree-l2"><a class="reference internal" href="PID.html#implementation-tips">Implementation tips</a></li>
-<li class="toctree-l2"><a class="reference internal" href="PID.html#shortcomings-of-pid">Shortcomings of PID</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="PID.html">PID Control</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../motion_profiles.html">What is a motion profile?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../motion_profiles.html#the-trapezoidal-motion-profile">The trapezoidal motion profile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../motion_profiles.html#feedforward-control">Feedforward control</a></li>
@@ -119,14 +107,20 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="toctree-wrapper compound">
+  <p>Getting the motor to move is cool and all, but not quite useful yet. As code we need to get the motors to DO something which requires control and precision in order to produce reliable and consistent results. For example using a motor to extend an elevator to reach some height. And to produce consistent</p>
+<p>Anyway this is where we step away from syntax and boring stuff like that and get into the fun stuff.</p>
+<div class="toctree-wrapper compound" id="feedback-control">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Feedback Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bang_bang.html">Bang-Bang Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PID.html">PID Control</a></li>
+</ul>
 </div>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../intro.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="intro.html" class="btn btn-neutral float-right" title="Feedback Control" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
