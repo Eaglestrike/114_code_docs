@@ -1,0 +1,96 @@
+# PID Control
+
+PID consists of 3 parts: the proportional term (p), the integral term
+(i), and the derivative term (d), which have corresponding constants kp,
+ki, and kd respectively. **The output of the controller or the voltage
+is the sum of the 3 terms.**
+
+p = kp \* error
+
+**P** is proportional to the error: **when the mechanism is far away
+from its target, it will go fast and as it gets closer to the target it
+will go slow**(since the error is smaller). Keep in mind that error has
+a sign (positive/negative) so it always moves the mechanism in the
+direction of the target.
+
+<img src="media/image24.png" style="width:2.46397in;height:1.38596in" /><img src="media/image24.png" style="width:2.46397in;height:1.38596in" /><img src="media/image24.png" style="width:2.46397in;height:1.38596in" />
+
+When only using the p term, sometimes it is difficult to get to the
+setpoint quickly since it’s not slowing down fast enough and its
+momentum carries it past the setpoint, overshooting which leads to
+oscillation. This is where the d term comes into play.
+
+d= kd \* (change in error)/timePassed
+
+d = kd \* (0 - velocity)
+
+d = - kd \* velocity
+
+**D** is proportional to the derivative of the error. If you haven’t
+taken calculus, the derivative of the error is just the rate of change
+(or slope) of the error at some point in time. Since error is
+essentially position relative to the target (position if the target was
+the origin), the rate of change of this ’position’ is the velocity of
+the mechanism relative to the target. In simpler terms, D is
+proportional to the velocity error. The target velocity usually is 0, so
+the error in velocity is 0 - velocity, or just -velocity. **This can
+then be seen just as a term to slow down the mechanism (going against
+the way it is moving).** This allows us to get to the target quickly
+without oscillating.
+
+<img src="media/image24.png" style="width:2.46397in;height:1.38596in" /><img src="media/image24.png" style="width:2.46397in;height:1.38596in" />
+
+i= ki \* totalError
+
+**I** is proportional to the total error, or the integral. Its purpose
+is to work against any constant forces such as friction, and to make up
+for being constantly off if the p and d terms are too small to move the
+mechanism. **This consistent error is called steady-state error**, which
+the i term combats by increasing the output over time until it is large
+enough to overcome it. Common symptoms of steady state error that
+indicate a need for an i term are being consistently off, often stuck,
+or heavily resistant.
+
+The constants for each term essentially give different weights to the
+p,i,and d terms, scaling their effects. **We don’t want any term doing
+too much or too little since they all serve their own unique purpose.**
+
+<img src="media/image21.jpg" style="width:0.71654in;height:0.89129in" /><img src="media/image24.png" style="width:2.46397in;height:1.38596in" /><img src="media/image24.png" style="width:1.88799in;height:1.38596in" /><img src="media/image21.jpg" style="width:0.71654in;height:0.89129in" /><img src="media/image21.jpg" style="width:0.71654in;height:0.89129in" /><img src="media/image24.png" style="width:1.88799in;height:1.38596in" />
+
+## Tuning tips
+
+A simple tuning process:
+
+1.  Start with kp =0, ki =0, kd = 0
+
+2.  Increase p until it starts oscillating
+
+3.  Increase d until it stops oscillating
+
+4.  Increase i if it’s consistently a little off
+
+5.  Tweak values based on performance
+
+In general but specifically for the last step, knowing how each term is
+contributing to the motion of the mechanism is very useful. Since you
+know how each term contributes to the motion of the mechanism, you can
+respond to the speed and oscillation of the controller and manipulate
+the constants to minimize oscillation and maximize speed.
+
+From largest to smallest it should be: kp, kd, ki, although with weird
+mechanisms it can change. Always start small and increment with caution,
+especially for i.
+
+Mechanisms can also occasionally have no i and/or d terms.
+
+## Implementation tips
+
+Make sure you are resetting your total error when the target changes.
+Otherwise the i term will get super large and break stuff.
+
+## Shortcomings of PID
+
+PID assumes every position in a mechanism’s range takes the same effort
+to be at and to move to. If something like an intake has to resist
+gravity at different intensities based on its angle, PID cannot account
+for this.

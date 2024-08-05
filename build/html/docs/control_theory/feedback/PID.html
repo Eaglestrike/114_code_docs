@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PID Control &mdash; 114 Code  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=941aba8c" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="../motion_profiles.html" />
+    <link rel="prev" title="Bang-Bang Control" href="bang_bang.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            114 Code
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/prerequisites.html">Informal Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/purpose_of_code.html">The Purpose of Code</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/wpilib_vscode.html">WPILib VScode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/making_project.html">Making a project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/filetypes.html">.h and .cpp files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/robot_class.html">Understanding the Robot Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/build_and_deploy.html">🕳️Building and Deploying Code</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Vendor Libraries</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/what_is_vendor_lib.html">What is a vendor library?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/motors_and_controllers.html">Motors + Motor Controllers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/install_vendor_libs.html">Installing vendor libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/using_vendor_libs.html">Using vendor libraries</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Control Theory</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Feedback Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bang_bang.html">Bang-Bang Control</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PID Control</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Team Practices</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../team_practices/git/intro_and_setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../team_practices/git/114_workflow.html">⚪114’s Git Workflow</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">114 Code</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">PID Control</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/docs/control_theory/feedback/PID.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pid-control">
+<h1>PID Control<a class="headerlink" href="#pid-control" title="Link to this heading"></a></h1>
+<p>PID consists of 3 parts: the proportional term (p), the integral term
+(i), and the derivative term (d), which have corresponding constants kp,
+ki, and kd respectively. <strong>The output of the controller or the voltage
+is the sum of the 3 terms.</strong></p>
+<p>p = kp * error</p>
+<p><strong>P</strong> is proportional to the error: <strong>when the mechanism is far away
+from its target, it will go fast and as it gets closer to the target it
+will go slow</strong>(since the error is smaller). Keep in mind that error has
+a sign (positive/negative) so it always moves the mechanism in the
+direction of the target.</p>
+<p><img src="media/image24.png" style="width:2.46397in;height:1.38596in" /><img src="media/image24.png" style="width:2.46397in;height:1.38596in" /><img src="media/image24.png" style="width:2.46397in;height:1.38596in" /></p>
+<p>When only using the p term, sometimes it is difficult to get to the
+setpoint quickly since it’s not slowing down fast enough and its
+momentum carries it past the setpoint, overshooting which leads to
+oscillation. This is where the d term comes into play.</p>
+<p>d= kd * (change in error)/timePassed</p>
+<p>d = kd * (0 - velocity)</p>
+<p>d = - kd * velocity</p>
+<p><strong>D</strong> is proportional to the derivative of the error. If you haven’t
+taken calculus, the derivative of the error is just the rate of change
+(or slope) of the error at some point in time. Since error is
+essentially position relative to the target (position if the target was
+the origin), the rate of change of this ’position’ is the velocity of
+the mechanism relative to the target. In simpler terms, D is
+proportional to the velocity error. The target velocity usually is 0, so
+the error in velocity is 0 - velocity, or just -velocity. <strong>This can
+then be seen just as a term to slow down the mechanism (going against
+the way it is moving).</strong> This allows us to get to the target quickly
+without oscillating.</p>
+<p><img src="media/image24.png" style="width:2.46397in;height:1.38596in" /><img src="media/image24.png" style="width:2.46397in;height:1.38596in" /></p>
+<p>i= ki * totalError</p>
+<p><strong>I</strong> is proportional to the total error, or the integral. Its purpose
+is to work against any constant forces such as friction, and to make up
+for being constantly off if the p and d terms are too small to move the
+mechanism. <strong>This consistent error is called steady-state error</strong>, which
+the i term combats by increasing the output over time until it is large
+enough to overcome it. Common symptoms of steady state error that
+indicate a need for an i term are being consistently off, often stuck,
+or heavily resistant.</p>
+<p>The constants for each term essentially give different weights to the
+p,i,and d terms, scaling their effects. <strong>We don’t want any term doing
+too much or too little since they all serve their own unique purpose.</strong></p>
+<p><img src="media/image21.jpg" style="width:0.71654in;height:0.89129in" /><img src="media/image24.png" style="width:2.46397in;height:1.38596in" /><img src="media/image24.png" style="width:1.88799in;height:1.38596in" /><img src="media/image21.jpg" style="width:0.71654in;height:0.89129in" /><img src="media/image21.jpg" style="width:0.71654in;height:0.89129in" /><img src="media/image24.png" style="width:1.88799in;height:1.38596in" /></p>
+<section id="tuning-tips">
+<h2>Tuning tips<a class="headerlink" href="#tuning-tips" title="Link to this heading"></a></h2>
+<p>A simple tuning process:</p>
+<ol class="simple">
+<li><p>Start with kp =0, ki =0, kd = 0</p></li>
+<li><p>Increase p until it starts oscillating</p></li>
+<li><p>Increase d until it stops oscillating</p></li>
+<li><p>Increase i if it’s consistently a little off</p></li>
+<li><p>Tweak values based on performance</p></li>
+</ol>
+<p>In general but specifically for the last step, knowing how each term is
+contributing to the motion of the mechanism is very useful. Since you
+know how each term contributes to the motion of the mechanism, you can
+respond to the speed and oscillation of the controller and manipulate
+the constants to minimize oscillation and maximize speed.</p>
+<p>From largest to smallest it should be: kp, kd, ki, although with weird
+mechanisms it can change. Always start small and increment with caution,
+especially for i.</p>
+<p>Mechanisms can also occasionally have no i and/or d terms.</p>
+</section>
+<section id="implementation-tips">
+<h2>Implementation tips<a class="headerlink" href="#implementation-tips" title="Link to this heading"></a></h2>
+<p>Make sure you are resetting your total error when the target changes.
+Otherwise the i term will get super large and break stuff.</p>
+</section>
+<section id="shortcomings-of-pid">
+<h2>Shortcomings of PID<a class="headerlink" href="#shortcomings-of-pid" title="Link to this heading"></a></h2>
+<p>PID assumes every position in a mechanism’s range takes the same effort
+to be at and to move to. If something like an intake has to resist
+gravity at different intensities based on its angle, PID cannot account
+for this.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="bang_bang.html" class="btn btn-neutral float-left" title="Bang-Bang Control" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../motion_profiles.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Sunayna Singh.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

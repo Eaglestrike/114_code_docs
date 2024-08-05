@@ -7,7 +7,7 @@
   <title>The Purpose of Code &mdash; 114 Code  documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=cc2022c9" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=941aba8c" />
 
   
   <!--[if lt IE 9]>
@@ -22,7 +22,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="WPILib VScode" href="../getting_started/getting_started.html" />
+    <link rel="next" title="Introduction" href="../getting_started/introduction.html" />
     <link rel="prev" title="Informal Prerequisites" href="prerequisites.html" /> 
 </head>
 
@@ -52,11 +52,31 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/getting_started.html">WPILib VScode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/getting_started.html#making-a-project">Making a project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/getting_started.html#h-and-cpp-files">.h and .cpp files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/getting_started.html#the-robot-class">The Robot Class</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/getting_started.html#building-and-deploying-code">🕳️Building and Deploying Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/wpilib_vscode.html">WPILib VScode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/making_project.html">Making a project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/filetypes.html">.h and .cpp files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/robot_class.html">Understanding the Robot Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/build_and_deploy.html">🕳️Building and Deploying Code</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Vendor Libraries</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../vendor_libs/what_is_vendor_lib.html">What is a vendor library?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendor_libs/motors_and_controllers.html">Motors + Motor Controllers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendor_libs/install_vendor_libs.html">Installing vendor libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendor_libs/using_vendor_libs.html">Using vendor libraries</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Control Theory</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../control_theory/intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/intro.html">Feedback Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/bang_bang.html">Bang-Bang Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/PID.html">PID Control</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Team Practices</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../team_practices/git/intro_and_setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../team_practices/git/114_workflow.html">⚪114’s Git Workflow</a></li>
 </ul>
 
         </div>
@@ -85,13 +105,10 @@
              
   <section id="the-purpose-of-code">
 <h1>The Purpose of Code<a class="headerlink" href="#the-purpose-of-code" title="Link to this heading"></a></h1>
-<p>From the code’s POV, the robot’s composed of <strong>moving parts</strong>: motors
-and pneumatics, sensors: cameras, encoders and miscellaneous other
-parts, and inputs from the driver. Coding is about utilizing and
-integrating all the information given by the sensors and driver input to
-make the moving parts move—that is how the robot functions. As such, to
-actually make working code on the robot, a coder (you) must understand
-how each part functions.</p>
+<p>From the code’s POV, the robot is composed of moving parts like motors and pneumatics, and sensors like cameras, and inputs from the driver.</p>
+<p>Coding is about utilising and integrating all the information given by the sensors and driver input to make the moving parts move—that is how the robot functions.</p>
+<p>Basically code serves to answer one question:
+<strong>How do we move the robot to do what we want?</strong></p>
 </section>
 
 
@@ -99,7 +116,7 @@ how each part functions.</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="prerequisites.html" class="btn btn-neutral float-left" title="Informal Prerequisites" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../getting_started/getting_started.html" class="btn btn-neutral float-right" title="WPILib VScode" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../getting_started/introduction.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

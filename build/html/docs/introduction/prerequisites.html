@@ -7,7 +7,7 @@
   <title>Informal Prerequisites &mdash; 114 Code  documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=cc2022c9" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=941aba8c" />
 
   
   <!--[if lt IE 9]>
@@ -23,7 +23,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="The Purpose of Code" href="purpose_of_code.html" />
-    <link rel="prev" title="Welcome to 114 Code’s documentation!" href="../../index.html" /> 
+    <link rel="prev" title="Welcome to 114 FRC Code’s documentation!" href="../../index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -47,16 +47,52 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Informal Prerequisites</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Informal Prerequisites</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#code-knowledge-c-specific">Code knowledge (C++ specific)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#basic-physics">Basic physics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#frc">FRC</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="purpose_of_code.html">The Purpose of Code</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/getting_started.html">WPILib VScode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/getting_started.html#making-a-project">Making a project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/getting_started.html#h-and-cpp-files">.h and .cpp files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/getting_started.html#the-robot-class">The Robot Class</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/getting_started.html#building-and-deploying-code">🕳️Building and Deploying Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/making_project.html">Creating a project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/filetypes.html">.h and .cpp files</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/filetypes.html#header-files">Header files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/filetypes.html#cpp-files">cpp files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/filetypes.html#why-separate">Why separate?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/robot_class.html">The Robot Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/build_and_deploy.html">🕳️Building and Deploying Code</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Vendor Libraries</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../vendor_libs/what_is_vendor_lib.html">What is a vendor library?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendor_libs/motors_and_controllers.html">Motors + Motor Controllers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendor_libs/install_vendor_libs.html">Installing vendor libraries</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Control Theory</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../control_theory/intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/intro.html">Feedback Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/bang_bang.html">Bang-Bang Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/PID.html">PID Control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../control_theory/feedback/PID.html#tuning-tips">Tuning tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../control_theory/feedback/PID.html#implementation-tips">Implementation tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../control_theory/feedback/PID.html#shortcomings-of-pid">Shortcomings of PID</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html">What is a motion profile?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html#the-trapezoidal-motion-profile">The trapezoidal motion profile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html#feedforward-control">Feedforward control</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Other Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../resources.html">Other Resources</a></li>
 </ul>
 
         </div>
@@ -105,7 +141,7 @@ languages.</p>
 </li>
 <li><p>Object oriented programming</p>
 <ul>
-<li><p><a class="reference external" href="https://www.w3schools.com/cpp/cpp_classes.asp"><u>Classes</u></a>, <a class="reference external" href="https://www.geeksforgeeks.org/inheritance-in-c/"><u>inheritance</u></a>(C++ supports [<u>multiple inheritance</u>](https://www.geeksforgeeks.o  unlike Java)), <a class="reference external" href="https://learn.microsoft.com/en-us/cpp/cpp/constructors-cpp?view=msvc-170"><u>constructors</u></a></p></li>
+<li><p><a class="reference external" href="https://www.w3schools.com/cpp/cpp_classes.asp"><u>Classes</u></a>, <a class="reference external" href="https://www.geeksforgeeks.org/inheritance-in-c/"><u>inheritance</u></a>(C++ supports <a class="reference external" href="https://www.geeksforgeeks.org/multiple-inheritance-in-c/"><u>multiple inheritance</u></a>  unlike Java), <a class="reference external" href="https://learn.microsoft.com/en-us/cpp/cpp/constructors-cpp?view=msvc-170"><u>constructors</u></a></p></li>
 <li><p>Encapsulation (creating meaningful classes) and abstraction (keeping internal stuff hidden) are practices we follow but not super important and will improve the more you code</p></li>
 </ul>
 </li>
@@ -144,11 +180,9 @@ languages.</p>
 </ul>
 </li>
 </ul>
-<p><strong>Knowing calculus is helpful but not necessary</strong></p>
-<p>Keep in mind anything you don’t know can pretty easily be found online,
-especially for syntax stuff and coding concepts.</p>
-<p>That being said, these docs are written with the assumption the reader
-understands everything mentioned at a very basic level.</p>
+<p>Knowing calculus is helpful but not necessary</p>
+<p>Keep in mind anything you don’t know can pretty easily be found online, especially for syntax stuff and coding concepts. If you come across something and you don’t know what it is, <strong>look it up. The internet is your most valuable resource.</strong></p>
+<p>That being said, these docs are written with the assumption the reader understands most of the things mentioned at a very basic level.</p>
 </section>
 </section>
 
@@ -156,7 +190,7 @@ understands everything mentioned at a very basic level.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../../index.html" class="btn btn-neutral float-left" title="Welcome to 114 Code’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../index.html" class="btn btn-neutral float-left" title="Welcome to 114 FRC Code’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="purpose_of_code.html" class="btn btn-neutral float-right" title="The Purpose of Code" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
