@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/docs/vendor_libs/motors_and_controllers.md",
+                "file": "source/docs/vendor_libs/using_vendor_libs/phoenix6.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/docs/vendor_libs/motors_and_controllers.md",
+                "file": "source/docs/vendor_libs/using_vendor_libs/phoenix6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/docs/vendor_libs/motors_and_controllers.md",
+                "file": "source/docs/vendor_libs/using_vendor_libs/phoenix6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/docs/vendor_libs/motors_and_controllers.md"
+                "file": "source/docs/vendor_libs/using_vendor_libs/phoenix6.md"
               }
             }
           }
@@ -148,21 +148,31 @@
   },
   "active": "292e8505961536ad",
   "lastOpenFiles": [
+    "source/docs/getting_started/filetypes.md",
+    "source/docs/vendor_libs/using_vendor_libs/phoenix6.md",
+    "source/docs/vendor_libs/motors_and_controllers.md",
+    "2024-08-05.md",
+    "Untitled.canvas",
+    "source/docs/vendor_libs/what_is_vendor_lib.md",
+    "source/docs/control_theory/intro.md",
+    "source/docs/control_theory/feedback/intro.md",
+    "source/docs/control_theory/feedback/index.rst",
+    "source/docs/control_theory/feedback/index.md",
+    "build/html/_sources/docs/control_theory/feedback/index.md.txt",
+    "source/docs/vendor_libs/using_vendor_libs/index.rst",
+    "source/docs/vendor_libs/using_vendor_libs/index.md",
     "build/html/_images/image61.png",
     "build/html/_images/image31.png",
     "build/html/_images/image21.png",
     "build/html/_images/image1.png",
     "build/html/_images/image51.png",
     "source/docs/vendor_libs/install_vendor_libs.md",
-    "source/docs/vendor_libs/using_vendor_libs/phoenix6.md",
     "source/docs/vendor_libs/using_vendor_libs/using_vendor_libs.md",
     "source/docs/vendor_libs/images/image6.png",
     "source/docs/vendor_libs/images/Screenshot 2024-08-05 at 4.47.56 PM.png",
     "source/docs/vendor_libs/images/image3.png",
     "source/docs/vendor_libs/images/Screenshot 2024-08-05 at 4.42.29 PM.png",
     "source/docs/vendor_libs/images/image2.png",
-    "source/docs/vendor_libs/images/Screenshot 2024-08-05 at 4.41.09 PM.png",
-    "source/docs/vendor_libs/what_is_vendor_lib.md",
     "source/docs/team_practices/team_library/intro.md",
     "source/docs/control_theory/feedback/images",
     "source/docs/control_theory/images",
@@ -171,11 +181,7 @@
     "source/docs/vendor_libs/untitled folder",
     "build/html/_images",
     "source/docs/getting_started/media",
-    "source/docs/media",
-    "source/docs/images",
-    "build/html/_sources/docs/getting_started/install.md.txt",
     "source/docs/getting_started/install.md",
-    "source/docs/getting_started/filetypes.md",
     "source/docs/getting_started/wpilib_vscode.md",
     "source/docs/vendor_libs/using_vendor_libs/revlib.md",
     "source/docs/vendor_libs/using/what_is_vendor_lib.md",
@@ -187,12 +193,6 @@
     "source/docs/team_practices/git/overview.md",
     "source/docs/team_practices/git/intro_and_setup.md",
     "source/docs/team_practices/git/114_workflow.md",
-    "source/docs/programming_mechanisms/UGH.md",
-    "source/docs/control_theory/motion_profiles.md",
-    "source/docs/control_theory/intro.md",
-    "source/docs/control_theory/feedback/intro.md",
-    "source/docs/control_theory/feedback/bang_bang.md",
-    "source/docs/control_theory/feedback/PID.md",
-    "source/docs/vendor_libs/motors_and_controllers.md"
+    "source/docs/programming_mechanisms/UGH.md"
   ]
 }

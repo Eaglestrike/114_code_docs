@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; 114 Code  documentation</title>
+  <title>Feedback Control &mdash; 114 Code  documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=941aba8c" />
@@ -22,7 +22,8 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Feedback Control" href="intro.html" /> 
+    <link rel="next" title="Bang-Bang Control" href="bang_bang.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="../intro.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -68,12 +69,17 @@
 <li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/what_is_vendor_lib.html">What is a vendor library?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/motors_and_controllers.html">Motors + Motor Controllers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/install_vendor_libs.html">Installing vendor libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/index.html">Using Vendor Libraries</a><ul class="simple">
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Control Theory</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="intro.html">Feedback Control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bang_bang.html">Bang-Bang Control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="PID.html">PID Control</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Feedback Control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bang_bang.html">Bang-Bang Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PID.html">PID Control</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../motion_profiles.html">What is a motion profile?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../motion_profiles.html#the-trapezoidal-motion-profile">The trapezoidal motion profile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../motion_profiles.html#feedforward-control">Feedforward control</a></li>
@@ -97,7 +103,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">&lt;no title&gt;</li>
+      <li class="breadcrumb-item active">Feedback Control</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/docs/control_theory/feedback/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -107,21 +113,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <p>Getting the motor to move is cool and all, but not quite useful yet. As code we need to get the motors to DO something which requires control and precision in order to produce reliable and consistent results. For example using a motor to extend an elevator to reach some height. And to produce consistent</p>
-<p>Anyway this is where we step away from syntax and boring stuff like that and get into the fun stuff.</p>
-<div class="toctree-wrapper compound" id="feedback-control">
+  <section id="feedback-control">
+<h1>Feedback Control<a class="headerlink" href="#feedback-control" title="Link to this heading"></a></h1>
+<p>Feedback control usually is the most intuitive type of control, as it is
+what us humans do. We respond to the environment around us and change
+our movement accordingly.</p>
+<p>The code changes how the robot behaves, which impacts the sensor data,
+which then is fed back into the robot code, hence the name “feedback”.</p>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Feedback Control</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="intro.html">Feedback Control</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bang_bang.html">Bang-Bang Control</a></li>
 <li class="toctree-l1"><a class="reference internal" href="PID.html">PID Control</a></li>
 </ul>
 </div>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="intro.html" class="btn btn-neutral float-right" title="Feedback Control" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../intro.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="bang_bang.html" class="btn btn-neutral float-right" title="Bang-Bang Control" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

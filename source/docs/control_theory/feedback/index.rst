@@ -1,12 +1,18 @@
+================
+Feedback Control
+================
 
-Getting the motor to move is cool and all, but not quite useful yet. As code we need to get the motors to DO something which requires control and precision in order to produce reliable and consistent results. For example using a motor to extend an elevator to reach some height. And to produce consistent
+Feedback control usually is the most intuitive type of control, as it is
+what us humans do. We respond to the environment around us and change
+our movement accordingly.
 
-Anyway this is where we step away from syntax and boring stuff like that and get into the fun stuff.
+The code changes how the robot behaves, which impacts the sensor data,
+which then is fed back into the robot code, hence the name “feedback”.
 
 .. toctree::
    :maxdepth: 1
-   :name: Feedback Control
+   :titlesonly:
+   :caption: Feedback Control
 
-   intro
    bang_bang
    PID

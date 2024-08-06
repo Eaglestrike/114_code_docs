@@ -5,7 +5,6 @@ C++ has header (.h) and source code files (.cpp), which serve to make build time
 ### Header files
 **A header file serves as a skeleton of the source code**. It
 defines/declares data structures like classes, although it should not implement any of the things it defines (though it can).
-
 ### cpp files
 **A source file implements the methods the header file defines**. This is where all the logic and inner workings of the class is done.
 

@@ -52,7 +52,7 @@ Getting started - will teach you about how we make and work on robotics code pro
 
    docs/control_theory/intro
    docs/control_theory/feedback/index
-   docs/control_theory/motion_profiles.md
+   docs/control_theory/motion_profiles
 
 .. toctree::
    :maxdepth: 2

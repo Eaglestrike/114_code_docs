@@ -29,11 +29,14 @@ exclude_patterns = []
 
 html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
-    'collapse_navigation': False,
-    'sticky_navigation': True,
-    'navigation_depth': 4,
-    'includehidden': True,
-    'titles_only': False
+    # 'collapse_navigation': False,
+    # 'sticky_navigation': True,
+    # 'navigation_depth': 4,
+    # 'includehidden': True,
+    # 'titles_only': False
+    'logo_only': False,  # if we have a html_logo below, this shows /only/ the logo with no title text
+    'collapse_navigation': False,  # Collapse navigation (False makes it tree-like)
+    'prev_next_buttons_location': 'bottom',
 }
 html_static_path = ['_static']
 

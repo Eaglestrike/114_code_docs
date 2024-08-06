@@ -68,13 +68,33 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="what_is_vendor_lib.html">What is a vendor library?</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Motors + Motor Controllers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#motor-encoders">Motor Encoders</a></li>
 <li class="toctree-l1"><a class="reference internal" href="install_vendor_libs.html">Installing vendor libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_vendor_libs/index.html">Using Vendor Libraries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="using_vendor_libs/phoenix6.html">Phoenix6</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="using_vendor_libs/phoenix6.html#talonfx">TalonFX</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="using_vendor_libs/phoenix6.html#include-the-library">Include the library</a></li>
+<li class="toctree-l4"><a class="reference internal" href="using_vendor_libs/phoenix6.html#declare-the-object">Declare the object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="using_vendor_libs/phoenix6.html#construct-the-object">Construct the object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="using_vendor_libs/phoenix6.html#set-voltage">Set Voltage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="using_vendor_libs/phoenix6.html#using-the-relative-encoder">Using the relative encoder</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="using_vendor_libs/phoenix6.html#cancoder">CANcoder</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="using_vendor_libs/phoenix6.html#phoenix5">Phoenix5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="using_vendor_libs/revlib.html">REVLib</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Control Theory</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/intro.html">Feedback Control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/bang_bang.html">Bang-Bang Control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/PID.html">PID Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/index.html">Feedback Control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../control_theory/feedback/bang_bang.html">Bang-Bang Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../control_theory/feedback/PID.html">PID Control</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html">What is a motion profile?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html#the-trapezoidal-motion-profile">The trapezoidal motion profile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html#feedforward-control">Feedforward control</a></li>
@@ -123,8 +143,12 @@ column) supplied by the motor vendors (leftmost column).</p>
 <img alt="../../_images/table2.png" src="../../_images/table2.png" />
 <p>There are definitely more motors (like mini NEOs and CIMs) and more
 controllers (like the TalonSRX) that we might use but they’re used way
-less often. If you want to know about those as well, let me know and
-I’ll add them.</p>
+less often.</p>
+</section>
+<section id="motor-encoders">
+<h1>Motor Encoders<a class="headerlink" href="#motor-encoders" title="Link to this heading"></a></h1>
+<p>Motors apply voltage to make things spin. Encoders can give you information about the work a motor has done and the current state of the moving object. It can read “position”, as well as velocity and acceleration.</p>
+<p>These built in encoders are relative. This means every time the robot turns on, they reset their position. They are called relative encoders because their position is relative to where they are when they turn on, which can sometimes make it less accurate.</p>
 </section>
 
 

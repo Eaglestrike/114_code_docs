@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; 114 Code  documentation</title>
+  <title>Using Vendor Libraries &mdash; 114 Code  documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=941aba8c" />
@@ -22,7 +22,7 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Introduction" href="../../control_theory/intro.html" />
+    <link rel="next" title="Phoenix6" href="phoenix6.html" />
     <link rel="prev" title="Installing vendor libraries" href="../install_vendor_libs.html" /> 
 </head>
 
@@ -47,17 +47,12 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../introduction/prerequisites.html">Informal Prerequisites</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../introduction/prerequisites.html#code-knowledge-c-specific">Code knowledge (C++ specific)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../introduction/prerequisites.html#basic-physics">Basic physics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../introduction/prerequisites.html#frc">FRC</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/prerequisites.html">Informal Prerequisites</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../introduction/purpose_of_code.html">The Purpose of Code</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting_started/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/introduction.html">WPILib and VSCode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/making_project.html">Creating a project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/filetypes.html">.h and .cpp files</a><ul>
@@ -70,20 +65,34 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/build_and_deploy.html">🕳️Building and Deploying Code</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Vendor Libraries</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../what_is_vendor_lib.html">What is a vendor library?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../motors_and_controllers.html">Motors + Motor Controllers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../motors_and_controllers.html#motor-encoders">Motor Encoders</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../install_vendor_libs.html">Installing vendor libraries</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Using Vendor Libraries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="phoenix6.html">Phoenix6</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="phoenix6.html#talonfx">TalonFX</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="phoenix6.html#include-the-library">Include the library</a></li>
+<li class="toctree-l4"><a class="reference internal" href="phoenix6.html#declare-the-object">Declare the object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="phoenix6.html#construct-the-object">Construct the object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="phoenix6.html#set-voltage">Set Voltage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="phoenix6.html#using-the-relative-encoder">Using the relative encoder</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="phoenix6.html#cancoder">CANcoder</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="phoenix6.html#phoenix5">Phoenix5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="revlib.html">REVLib</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Control Theory</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../control_theory/intro.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../control_theory/feedback/intro.html">Feedback Control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../control_theory/feedback/bang_bang.html">Bang-Bang Control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../control_theory/feedback/PID.html">PID Control</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../control_theory/feedback/PID.html#tuning-tips">Tuning tips</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../control_theory/feedback/PID.html#implementation-tips">Implementation tips</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../control_theory/feedback/PID.html#shortcomings-of-pid">Shortcomings of PID</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../control_theory/feedback/index.html">Feedback Control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../control_theory/feedback/bang_bang.html">Bang-Bang Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../control_theory/feedback/PID.html">PID Control</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../control_theory/motion_profiles.html">What is a motion profile?</a></li>
@@ -109,7 +118,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">&lt;no title&gt;</li>
+      <li class="breadcrumb-item active">Using Vendor Libraries</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/docs/vendor_libs/using_vendor_libs/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -119,13 +128,24 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
+  <section id="using-vendor-libraries">
+<h1>Using Vendor Libraries<a class="headerlink" href="#using-vendor-libraries" title="Link to this heading"></a></h1>
+<p>Please keep in mind construction and naming conventions when creating objects.</p>
+<div class="toctree-wrapper compound" id="id1">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="phoenix6.html">Phoenix6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phoenix6.html#phoenix5">Phoenix5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="revlib.html">REVLib</a></li>
+</ul>
+</div>
+</section>
+
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../install_vendor_libs.html" class="btn btn-neutral float-left" title="Installing vendor libraries" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../../control_theory/intro.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="phoenix6.html" class="btn btn-neutral float-right" title="Phoenix6" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

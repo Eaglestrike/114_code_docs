@@ -1,6 +1,6 @@
 ## 🕳️Building and Deploying Code
 
-To build or deploy, press the ![logo](images/image5.png) in the top right corner and search for “build” or “deploy”
+To build or deploy, press the ![logo](media/image5.png) in the top right corner and search for “build” or “deploy”
 
 **Building** the project simply compiles it. Since there’s nothing in
 the project at this point, it should succeed and show you a message like

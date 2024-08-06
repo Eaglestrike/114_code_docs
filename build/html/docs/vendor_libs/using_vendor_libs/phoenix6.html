@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; 114 Code  documentation</title>
+  <title>Phoenix6 &mdash; 114 Code  documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=941aba8c" />
@@ -21,7 +21,9 @@
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" /> 
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="REVLib" href="revlib.html" />
+    <link rel="prev" title="Using Vendor Libraries" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,17 +47,12 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../introduction/prerequisites.html">Informal Prerequisites</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../introduction/prerequisites.html#code-knowledge-c-specific">Code knowledge (C++ specific)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../introduction/prerequisites.html#basic-physics">Basic physics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../introduction/prerequisites.html#frc">FRC</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/prerequisites.html">Informal Prerequisites</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../introduction/purpose_of_code.html">The Purpose of Code</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../getting_started/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/introduction.html">WPILib and VSCode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/making_project.html">Creating a project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/filetypes.html">.h and .cpp files</a><ul>
@@ -68,20 +65,34 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/build_and_deploy.html">🕳️Building and Deploying Code</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Vendor Libraries</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../what_is_vendor_lib.html">What is a vendor library?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../motors_and_controllers.html">Motors + Motor Controllers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../motors_and_controllers.html#motor-encoders">Motor Encoders</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../install_vendor_libs.html">Installing vendor libraries</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Using Vendor Libraries</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Phoenix6</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#talonfx">TalonFX</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#include-the-library">Include the library</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#declare-the-object">Declare the object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#construct-the-object">Construct the object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#set-voltage">Set Voltage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#using-the-relative-encoder">Using the relative encoder</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#cancoder">CANcoder</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#phoenix5">Phoenix5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="revlib.html">REVLib</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Control Theory</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../control_theory/intro.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../control_theory/feedback/intro.html">Feedback Control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../control_theory/feedback/bang_bang.html">Bang-Bang Control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../control_theory/feedback/PID.html">PID Control</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../control_theory/feedback/PID.html#tuning-tips">Tuning tips</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../control_theory/feedback/PID.html#implementation-tips">Implementation tips</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../control_theory/feedback/PID.html#shortcomings-of-pid">Shortcomings of PID</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../control_theory/feedback/index.html">Feedback Control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../control_theory/feedback/bang_bang.html">Bang-Bang Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../control_theory/feedback/PID.html">PID Control</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../control_theory/motion_profiles.html">What is a motion profile?</a></li>
@@ -107,7 +118,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">&lt;no title&gt;</li>
+          <li class="breadcrumb-item"><a href="index.html">Using Vendor Libraries</a></li>
+      <li class="breadcrumb-item active">Phoenix6</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/docs/vendor_libs/using_vendor_libs/phoenix6.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -117,11 +129,86 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
+  <section id="phoenix6">
+<h1>Phoenix6<a class="headerlink" href="#phoenix6" title="Link to this heading"></a></h1>
+<p>As of 2024 this is the most recent library released by CTRE.</p>
+<section id="talonfx">
+<h2>TalonFX<a class="headerlink" href="#talonfx" title="Link to this heading"></a></h2>
+<p>Phoenix6 has a class called <a class="reference external" href="https://api.ctr-electronics.com/phoenix6/release/cpp/classctre_1_1phoenix6_1_1hardware_1_1_talon_f_x.html">TalonFX</a> which has useful methods to send commands to TalonFX motor controllers as well as to read data from the built in encoders. Motors that use TalonFX include Krakens and Falcons.</p>
+<section id="include-the-library">
+<h3>Include the library<a class="headerlink" href="#include-the-library" title="Link to this heading"></a></h3>
+<p>Include the library at the top of the header file (but below the <code class="docutils literal notranslate"><span class="pre">#pragma</span> <span class="pre">once</span></code>)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#include &lt;ctre/phoenix6/TalonFX.hpp&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="declare-the-object">
+<h3>Declare the object<a class="headerlink" href="#declare-the-object" title="Link to this heading"></a></h3>
+<p>Declare the variable in the definition of the class in the header file.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ctre</span><span class="p">::</span><span class="n">phoenix6</span><span class="p">::</span><span class="n">hardware</span><span class="p">::</span><span class="n">TalonFX</span> <span class="n">m_motor</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Where you replace motor with whatever you want to call the motor. Make sure the variable is private.</p>
+<p>If you don’t want to type out the long path to get to TalonFX every time you create a motor, you can declare that you are</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">using</span> <span class="n">namespace</span> <span class="n">ctre</span><span class="p">::</span><span class="n">phoenix6</span><span class="p">::</span><span class="n">hardware</span><span class="p">::</span><span class="n">TalonFX</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>at the top of the file, and then when you construct the object you can simply write</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">TalonFX</span> <span class="n">m_motor</span><span class="p">;</span>
+</pre></div>
+</div>
+</section>
+<section id="construct-the-object">
+<h3>Construct the object<a class="headerlink" href="#construct-the-object" title="Link to this heading"></a></h3>
+<p>To construct the object, you must pass in the <strong>motor ID</strong> to the constructor. To find the motor ID, you have to run phoenix tuner X on the driver station. If you don’t know how to, ask someone from electronics to do it for you. Usually motor IDs are stored as constants in either the header file or in a constants file.</p>
+<p>You can also specify settings like whether or not the motor is inverted. <strong>Inverting the motor reverses which direction is positive to the encoder.</strong></p>
+<p>Another important setting is the <strong>brake mode</strong> (of type <a class="reference external" href="https://api.ctr-electronics.com/phoenix6/release/cpp/classctre_1_1phoenix6_1_1signals_1_1_neutral_mode_value.html">ctre::phoenix6::signals::NeutralModeValue</a>). This controls how the motor behaves when no voltage is applied. If the motor is on coast mode it will not attempt to resist motion when it is idle. If the motor is on brake mode, it will resist motion when idle.</p>
+<p>For example my constructor might include the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">m_motor</span><span class="p">{</span><span class="n">MOTOR_ID</span><span class="p">};</span>
+<span class="n">m_motor</span><span class="o">.</span><span class="n">SetNeutralMode</span><span class="p">(</span><span class="n">ctre</span><span class="p">::</span><span class="n">phoenix6</span><span class="p">::</span><span class="n">signals</span><span class="p">::</span><span class="n">NeutralModeValue</span><span class="p">::</span><span class="n">Brake</span><span class="p">);</span>
+<span class="n">m_motor</span><span class="o">.</span><span class="n">SetInverted</span><span class="p">(</span><span class="n">true</span><span class="p">);</span>
+</pre></div>
+</div>
+</section>
+<section id="set-voltage">
+<h3>Set Voltage<a class="headerlink" href="#set-voltage" title="Link to this heading"></a></h3>
+<p>Now that the object is constructed, we can use it to make the motor move!
+it is always good practice to clamp the voltage before setting it, so that it never goes above the max voltage. Since the <a class="reference external" href="https://api.ctr-electronics.com/phoenix6/release/cpp/classctre_1_1phoenix6_1_1hardware_1_1_talon_f_x.html#a95eeb271496559266ef5894d3671a3dd">SetVoltage function </a> doesn’t take doubles, we have to typecast the data. So setting the motor to a voltage of <em>v</em> might look something like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">double</span> <span class="n">volts</span> <span class="o">=</span> <span class="n">std</span><span class="p">::</span><span class="n">clamp</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="o">-</span><span class="n">MAX_VOLTS</span><span class="p">,</span> <span class="n">MAX_VOLTS</span><span class="p">);</span>
+<span class="n">m_motor</span><span class="o">.</span><span class="n">SetVoltage</span><span class="p">(</span><span class="n">units</span><span class="p">::</span><span class="n">volt_t</span><span class="p">{</span><span class="n">volts</span><span class="p">});</span>
+</pre></div>
+</div>
+</section>
+<section id="using-the-relative-encoder">
+<h3>Using the relative encoder<a class="headerlink" href="#using-the-relative-encoder" title="Link to this heading"></a></h3>
+<p><a class="reference external" href="https://api.ctr-electronics.com/phoenix6/release/cpp/classctre_1_1phoenix6_1_1hardware_1_1core_1_1_core_talon_f_x.html#ac0b84a1fb760ff692dc4eebae34a9b10">GetPosition()</a> returns the position of the motor in turns (1 full rotation = 1 turn)
+<a class="reference external" href="https://api.ctr-electronics.com/phoenix6/release/cpp/classctre_1_1phoenix6_1_1hardware_1_1core_1_1_core_talon_f_x.html#acfff8403da9f990793d61b32a135f174">GetVelocity()</a> returns the velocity of the motor in turns per second
+and <a class="reference external" href="https://api.ctr-electronics.com/phoenix6/release/cpp/classctre_1_1phoenix6_1_1hardware_1_1core_1_1_core_talon_f_x.html#ac0a869459063e34623dcaf413587a546">GetAcceleration()</a> returns the acceleration of the motor in turns per second squared</p>
+<p>In order to get this info as a double so its easier to work with you can do:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">double</span> <span class="n">position</span> <span class="o">=</span> <span class="n">m_motor</span><span class="o">.</span><span class="n">GetPosition</span><span class="p">()</span><span class="o">.</span><span class="n">GetValueAsDouble</span><span class="p">(),</span>
+<span class="n">velocity</span> <span class="o">=</span> <span class="n">m_motor</span><span class="o">.</span><span class="n">GetVelocity</span><span class="p">()</span><span class="o">.</span><span class="n">GetValueAsDouble</span><span class="p">(),</span>
+<span class="n">acceleration</span> <span class="o">=</span> <span class="n">m_motor</span><span class="o">.</span><span class="n">GetAcceleration</span><span class="p">()</span><span class="o">.</span><span class="n">GetValueAsDouble</span><span class="p">();</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="cancoder">
+<h2>CANcoder<a class="headerlink" href="#cancoder" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://api.ctr-electronics.com/phoenix6/release/cpp/">Here</a> is the phoenix6 documentation if you are interested in what other classes they have</p>
+</section>
+</section>
+<section id="phoenix5">
+<h1>Phoenix5<a class="headerlink" href="#phoenix5" title="Link to this heading"></a></h1>
+<p>Phoenix 5 is depreciated and should only be used if you are using a motor that uses the TalonSRX motor controller.</p>
+</section>
+
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Using Vendor Libraries" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="revlib.html" class="btn btn-neutral float-right" title="REVLib" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
