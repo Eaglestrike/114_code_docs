@@ -24,6 +24,7 @@ Getting started - will teach you about how we make and work on robotics code pro
 
 .. toctree::
    :maxdepth: 2
+   :titlesonly:
    :hidden:
    :caption: Getting Started
 
@@ -45,9 +46,8 @@ Getting started - will teach you about how we make and work on robotics code pro
    docs/vendor_libs/using_vendor_libs/index
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :hidden:
-   :titlesonly:
    :caption: Control Theory
 
    docs/control_theory/intro
@@ -77,6 +77,7 @@ Getting started - will teach you about how we make and work on robotics code pro
    :maxdepth: 2
    :titlesonly:
    :hidden:
-   :caption: Other Resources
+   :caption: Other Stuff
    
-   docs/resources      
+   docs/other/resources      
+   docs/other/todo      

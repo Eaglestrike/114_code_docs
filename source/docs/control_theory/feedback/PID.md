@@ -5,6 +5,8 @@ PID consists of 3 parts: the proportional term (p), the integral term
 ki, and kd respectively. **The output of the controller or the voltage
 is the sum of the 3 terms.**
 
+## P
+
 p = kp \* error
 
 **P** is proportional to the error: **when the mechanism is far away
@@ -13,7 +15,10 @@ will go slow**(since the error is smaller). Keep in mind that error has
 a sign (positive/negative) so it always moves the mechanism in the
 direction of the target.
 
-<img src="media/image24.png" style="width:2.46397in;height:1.38596in" /><img src="media/image24.png" style="width:2.46397in;height:1.38596in" /><img src="media/image24.png" style="width:2.46397in;height:1.38596in" />
+![diagram](images/image14.png)
+<br>
+
+## D
 
 When only using the p term, sometimes it is difficult to get to the
 setpoint quickly since it’s not slowing down fast enough and its
@@ -38,7 +43,9 @@ then be seen just as a term to slow down the mechanism (going against
 the way it is moving).** This allows us to get to the target quickly
 without oscillating.
 
-<img src="media/image24.png" style="width:2.46397in;height:1.38596in" /><img src="media/image24.png" style="width:2.46397in;height:1.38596in" />
+![diagram](images/image9.png)
+
+## I
 
 i= ki \* totalError
 
@@ -51,13 +58,17 @@ enough to overcome it. Common symptoms of steady state error that
 indicate a need for an i term are being consistently off, often stuck,
 or heavily resistant.
 
-The constants for each term essentially give different weights to the
-p,i,and d terms, scaling their effects. **We don’t want any term doing
-too much or too little since they all serve their own unique purpose.**
+For example:
+![diagram](images/image8.png)
 
-<img src="media/image21.jpg" style="width:0.71654in;height:0.89129in" /><img src="media/image24.png" style="width:2.46397in;height:1.38596in" /><img src="media/image24.png" style="width:1.88799in;height:1.38596in" /><img src="media/image21.jpg" style="width:0.71654in;height:0.89129in" /><img src="media/image21.jpg" style="width:0.71654in;height:0.89129in" /><img src="media/image24.png" style="width:1.88799in;height:1.38596in" />
+<br><br><br>
 
-## Tuning tips
+> The constants for each term essentially give different weights to the
+> p,i,and d terms, scaling their effects. **We don’t want any term doing
+> too much or too little since they all serve their own unique purpose.**
+
+
+## Tuning PID
 
 A simple tuning process:
 
@@ -88,7 +99,7 @@ Mechanisms can also occasionally have no i and/or d terms.
 Make sure you are resetting your total error when the target changes.
 Otherwise the i term will get super large and break stuff.
 
-## Shortcomings of PID
+## Problems with PID
 
 PID assumes every position in a mechanism’s range takes the same effort
 to be at and to move to. If something like an intake has to resist

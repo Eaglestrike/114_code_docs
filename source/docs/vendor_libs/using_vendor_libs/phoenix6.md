@@ -62,8 +62,6 @@ acceleration = m_motor.GetAcceleration().GetValueAsDouble();
 ## CANcoder
 
 
-[Here](https://api.ctr-electronics.com/phoenix6/release/cpp/) is the phoenix6 documentation if you are interested in what other classes they have
-
 # Phoenix5
 
 Phoenix 5 is depreciated and should only be used if you are using a motor that uses the TalonSRX motor controller.

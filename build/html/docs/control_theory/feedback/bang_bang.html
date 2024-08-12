@@ -21,7 +21,9 @@
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" /> 
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="PID Control" href="PID.html" />
+    <link rel="prev" title="Feedback Control" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -53,31 +55,49 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/introduction.html">WPILib and VSCode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/making_project.html">Creating a project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../getting_started/filetypes.html">.h and .cpp files</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../getting_started/filetypes.html#header-files">Header files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../getting_started/filetypes.html#cpp-files">cpp files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../getting_started/filetypes.html#why-separate">Why separate?</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/filetypes.html">.h and .cpp files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/robot_class.html">The Robot Class</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../getting_started/build_and_deploy.html">🕳️Building and Deploying Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/build_and_deploy.html">Building and Deploying Code</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Vendor Libraries</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/what_is_vendor_lib.html">What is a vendor library?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/motors_and_controllers.html">Motors + Motor Controllers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/motors_and_controllers.html#motor-encoders">Motor Encoders</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/install_vendor_libs.html">Installing vendor libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/index.html">Using Vendor Libraries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/phoenix6.html">Phoenix6</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/phoenix6.html#talonfx">TalonFX</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/phoenix6.html#include-the-library">Include the library</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/phoenix6.html#declare-the-object">Declare the object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/phoenix6.html#construct-the-object">Construct the object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/phoenix6.html#set-voltage">Set Voltage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/phoenix6.html#using-the-relative-encoder">Using the relative encoder</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/phoenix6.html#cancoder">CANcoder</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/phoenix6.html#phoenix5">Phoenix5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/revlib.html">REVLib</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Control Theory</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="intro.html">Feedback Control</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Feedback Control</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Bang-Bang Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PID.html">PID Control</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../motion_profiles.html">What is a motion profile?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../motion_profiles.html#the-trapezoidal-motion-profile">The trapezoidal motion profile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../motion_profiles.html#feedforward-control">Feedforward control</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Other Resources</span></p>
+<p class="caption" role="heading"><span class="caption-text">Other Stuff</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../resources.html">Other Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../other/resources.html">Other Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../other/todo.html">In progress</a></li>
 </ul>
 
         </div>
@@ -94,6 +114,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Feedback Control</a></li>
       <li class="breadcrumb-item active">Bang-Bang Control</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/docs/control_theory/feedback/bang_bang.md.txt" rel="nofollow"> View page source</a>
@@ -106,9 +127,8 @@
              
   <section id="bang-bang-control">
 <h1>Bang-Bang Control<a class="headerlink" href="#bang-bang-control" title="Link to this heading"></a></h1>
-<p>The simplest control. <strong>Apply a constant output negative to the sign of
-the error.</strong> In other words, if it’s positive/ahead, go backwards and if
-it’s negative/behind, go forwards.</p>
+<p>The simplest controller. If your target is in front of you, go forwards (with a constant output). If it’s behind you go backwards (with a constant output).</p>
+<p>In more technical terms, apply a constant output negative to the sign of the error.</p>
 <p>One problem with bang-bang control is that since it does not slow down
 as it gets to the target, it will consistently overshoot. Once it
 overshoots, it will go in the opposite direction and overshoot again,
@@ -119,7 +139,10 @@ want it to.</p>
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Feedback Control" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="PID.html" class="btn btn-neutral float-right" title="PID Control" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

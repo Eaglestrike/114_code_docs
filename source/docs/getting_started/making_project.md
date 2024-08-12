@@ -23,30 +23,45 @@ practice to keep all your projects in an isolated folder called
 doing. When all the settings are correct, click “generate project”.
 
 
+```{image} media/image6.png 
+:width: 1.81871in
+:height: 2.77721in
+:align: right
+```
 After navigating to the project in VSCode, open the explorer with these files:
 
 - src/main/cpp/Robot.cpp
 
 - src/main/include/Robot.h
 
-```{image} media/image6.png 
-:width: 1.81871in
-:height: 2.77721in
-:align: right
-```
 
 Don’t worry too much about the other folders and files; they’re just
 specific to running robot code.
 
-Robot.h should look something like this:
+<br>
+<br><br><br>
+
 
 ```{image} media/image12.png 
 :width: 2.33333in
 :height: 2.103in
+:align: right
 ```
+<br><br><br>
 
-And Robot.cpp something like this:
+Robot.h should look something like this:
+
+<br>
+<br>
+
+<br>
+<br><br><br>
+
 ```{image} media/image19.png 
 :width: 2.33333in
 :height: 1.73247in
+:align: right
 ```
+<br><br><br>
+
+And Robot.cpp something like this:

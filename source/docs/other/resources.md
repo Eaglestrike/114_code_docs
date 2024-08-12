@@ -20,4 +20,9 @@ or something for you, WPILib’s helpers can be useful.
 
 [<u>The old tech
 binder</u>](https://docs.google.com/document/d/111ZI8VX0vLwrTrQJfh3r7tGUT_dupv02ayNkIX2MrQc/edit#heading=h.pvgcrwk7prga)  
-Pretty similar to this one,
+Pretty similar to this one, covers some things this one might not, also missing some stuff this one covers
+
+[Phoenix6's C++ docs](https://api.ctr-electronics.com/phoenix6/release/cpp/) 
+If you want to see what other classes and functions that phoenix6 offer
+
+

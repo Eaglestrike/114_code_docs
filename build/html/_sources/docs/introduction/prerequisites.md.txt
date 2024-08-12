@@ -12,7 +12,7 @@ languages.
   - Scope
     - [<u>Access specifiers</u>](https://www.w3schools.com/cpp/cpp_access_specifiers.asp#:~:text=public%20%2D%20members%20are%20accessible%20from,be%20accessed%20in%20inherited%20classes.), (public/private/protected)
   - Object oriented programming
-    - [<u>Classes</u>](https://www.w3schools.com/cpp/cpp_classes.asp), [<u>inheritance</u>](https://www.geeksforgeeks.org/inheritance-in-c/)(C++ supports [<u>multiple inheritance</u>](https://www.geeksforgeeks.org/multiple-inheritance-in-c/)  unlike Java), [<u>constructors</u>](https://learn.microsoft.com/en-us/cpp/cpp/constructors-cpp?view=msvc-170)
+    - [<u>Classes</u>](https://www.w3schools.com/cpp/cpp_classes.asp), [<u>inheritance</u>](https://www.geeksforgeeks.org/inheritance-in-c/) (C++ supports [<u>multiple inheritance</u>](https://www.geeksforgeeks.org/multiple-inheritance-in-c/)  unlike Java), [<u>constructors</u>](https://learn.microsoft.com/en-us/cpp/cpp/constructors-cpp?view=msvc-170)
     - Encapsulation (creating meaningful classes) and abstraction (keeping internal stuff hidden) are practices we follow but not super important and will improve the more you code
   - Data structures
     - [<u>Namespaces</u>](https://cplusplus.com/doc/oldtutorial/namespaces/), [<u>Enums</u>](https://www.geeksforgeeks.org/enumeration-in-cpp/)

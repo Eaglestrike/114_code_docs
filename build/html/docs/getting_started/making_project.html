@@ -68,11 +68,33 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../vendor_libs/what_is_vendor_lib.html">What is a vendor library?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vendor_libs/motors_and_controllers.html">Motors + Motor Controllers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendor_libs/motors_and_controllers.html#motor-encoders">Motor Encoders</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vendor_libs/install_vendor_libs.html">Installing vendor libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendor_libs/using_vendor_libs/index.html">Using Vendor Libraries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../vendor_libs/using_vendor_libs/phoenix6.html">Phoenix6</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../vendor_libs/using_vendor_libs/phoenix6.html#talonfx">TalonFX</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../vendor_libs/using_vendor_libs/phoenix6.html#include-the-library">Include the library</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vendor_libs/using_vendor_libs/phoenix6.html#declare-the-object">Declare the object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vendor_libs/using_vendor_libs/phoenix6.html#construct-the-object">Construct the object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vendor_libs/using_vendor_libs/phoenix6.html#set-voltage">Set Voltage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vendor_libs/using_vendor_libs/phoenix6.html#using-the-relative-encoder">Using the relative encoder</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../vendor_libs/using_vendor_libs/phoenix6.html#cancoder">CANcoder</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../vendor_libs/using_vendor_libs/phoenix6.html#phoenix5">Phoenix5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vendor_libs/using_vendor_libs/revlib.html">REVLib</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Control Theory</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/intro.html">Feedback Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/index.html">Feedback Control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../control_theory/feedback/bang_bang.html">Bang-Bang Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../control_theory/feedback/PID.html">PID Control</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html">What is a motion profile?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html#the-trapezoidal-motion-profile">The trapezoidal motion profile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html#feedforward-control">Feedforward control</a></li>
@@ -118,18 +140,26 @@ like this:</p>
 practice to keep all your projects in an isolated folder called
 “robotics” or something), and name the project depending on what you’re
 doing. When all the settings are correct, click “generate project”.</p>
+<a class="reference internal image-reference" href="../../_images/image6.png"><img alt="../../_images/image6.png" class="align-right" src="../../_images/image6.png" style="width: 1.81871in; height: 2.77721in;" /></a>
 <p>After navigating to the project in VSCode, open the explorer with these files:</p>
 <ul class="simple">
 <li><p>src/main/cpp/Robot.cpp</p></li>
 <li><p>src/main/include/Robot.h</p></li>
 </ul>
-<a class="reference internal image-reference" href="../../_images/image6.png"><img alt="../../_images/image6.png" class="align-right" src="../../_images/image6.png" style="width: 1.81871in; height: 2.77721in;" /></a>
 <p>Don’t worry too much about the other folders and files; they’re just
 specific to running robot code.</p>
+<br>
+<br><br><br>
+<a class="reference internal image-reference" href="../../_images/image12.png"><img alt="../../_images/image12.png" class="align-right" src="../../_images/image12.png" style="width: 2.33333in; height: 2.103in;" /></a>
+<p><br><br><br></p>
 <p>Robot.h should look something like this:</p>
-<a class="reference internal image-reference" href="../../_images/image12.png"><img alt="../../_images/image12.png" src="../../_images/image12.png" style="width: 2.33333in; height: 2.103in;" /></a>
+<br>
+<br>
+<br>
+<br><br><br>
+<a class="reference internal image-reference" href="../../_images/image19.png"><img alt="../../_images/image19.png" class="align-right" src="../../_images/image19.png" style="width: 2.33333in; height: 1.73247in;" /></a>
+<p><br><br><br></p>
 <p>And Robot.cpp something like this:</p>
-<a class="reference internal image-reference" href="../../_images/image19.png"><img alt="../../_images/image19.png" src="../../_images/image19.png" style="width: 2.33333in; height: 1.73247in;" /></a>
 </section>
 
 

@@ -23,7 +23,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Feedback Control" href="feedback/index.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="../vendor_libs/using_vendor_libs/revlib.html" /> 
+    <link rel="prev" title="REVLib" href="../vendor_libs/using_vendor_libs/revlib.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -55,21 +55,31 @@
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/introduction.html">WPILib and VSCode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/making_project.html">Creating a project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/filetypes.html">.h and .cpp files</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../getting_started/filetypes.html#header-files">Header files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../getting_started/filetypes.html#cpp-files">cpp files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../getting_started/filetypes.html#why-separate">Why separate?</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/filetypes.html">.h and .cpp files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/robot_class.html">The Robot Class</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/build_and_deploy.html">🕳️Building and Deploying Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/build_and_deploy.html">Building and Deploying Code</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Vendor Libraries</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../vendor_libs/what_is_vendor_lib.html">What is a vendor library?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vendor_libs/motors_and_controllers.html">Motors + Motor Controllers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vendor_libs/motors_and_controllers.html#motor-encoders">Motor Encoders</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../vendor_libs/install_vendor_libs.html">Installing vendor libraries</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../vendor_libs/using_vendor_libs/index.html">Using Vendor Libraries</a><ul class="simple">
+<li class="toctree-l1"><a class="reference internal" href="../vendor_libs/using_vendor_libs/index.html">Using Vendor Libraries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../vendor_libs/using_vendor_libs/phoenix6.html">Phoenix6</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../vendor_libs/using_vendor_libs/phoenix6.html#talonfx">TalonFX</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../vendor_libs/using_vendor_libs/phoenix6.html#include-the-library">Include the library</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vendor_libs/using_vendor_libs/phoenix6.html#declare-the-object">Declare the object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vendor_libs/using_vendor_libs/phoenix6.html#construct-the-object">Construct the object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vendor_libs/using_vendor_libs/phoenix6.html#set-voltage">Set Voltage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../vendor_libs/using_vendor_libs/phoenix6.html#using-the-relative-encoder">Using the relative encoder</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../vendor_libs/using_vendor_libs/phoenix6.html#cancoder">CANcoder</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../vendor_libs/using_vendor_libs/phoenix6.html#phoenix5">Phoenix5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vendor_libs/using_vendor_libs/revlib.html">REVLib</a></li>
 </ul>
 </li>
 </ul>
@@ -77,16 +87,25 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="feedback/index.html">Feedback Control</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="feedback/bang_bang.html">Bang-Bang Control</a></li>
-<li class="toctree-l2"><a class="reference internal" href="feedback/PID.html">PID Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="feedback/PID.html">PID Control</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="feedback/PID.html#p">p</a></li>
+<li class="toctree-l3"><a class="reference internal" href="feedback/PID.html#d">d</a></li>
+<li class="toctree-l3"><a class="reference internal" href="feedback/PID.html#i">i</a></li>
+<li class="toctree-l3"><a class="reference internal" href="feedback/PID.html#tuning-tips">Tuning tips</a></li>
+<li class="toctree-l3"><a class="reference internal" href="feedback/PID.html#implementation-tips">Implementation tips</a></li>
+<li class="toctree-l3"><a class="reference internal" href="feedback/PID.html#shortcomings-of-pid">Shortcomings of PID</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="motion_profiles.html">What is a motion profile?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="motion_profiles.html#the-trapezoidal-motion-profile">The trapezoidal motion profile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="motion_profiles.html#feedforward-control">Feedforward control</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Other Resources</span></p>
+<p class="caption" role="heading"><span class="caption-text">Other Stuff</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../resources.html">Other Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/resources.html">Other Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/todo.html">In progress</a></li>
 </ul>
 
         </div>
@@ -114,14 +133,15 @@
            <div itemprop="articleBody">
              
   <p>#Introduction</p>
-<p>Getting the motor to move is cool and all, but not quite useful yet. As code we need to get the motors to DO something which requires control and precision in order to produce reliable and consistent results. For example using a motor to extend an elevator to reach some height. And to produce consistent</p>
-<p>Anyway this is where we step away from syntax and boring stuff like that and get into the fun stuff.</p>
+<p>Getting the motor to move is cool and all, but not quite useful yet. As code we need to get the motors to DO something which requires control and precision in order to produce reliable and consistent results. For example using a motor to extend an elevator to reach some height.</p>
+<p>As code we control the voltage the motor applies to spin. Control theory is all about manipulating the voltage applied such that the motor spins the way we want it to, whether that be at a specific speed, to get to a certain position, or both.</p>
+<p>This is where we step away from syntax and libraries and whatnot and get into the fun stuff.</p>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../vendor_libs/using_vendor_libs/revlib.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../vendor_libs/using_vendor_libs/revlib.html" class="btn btn-neutral float-left" title="REVLib" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="feedback/index.html" class="btn btn-neutral float-right" title="Feedback Control" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

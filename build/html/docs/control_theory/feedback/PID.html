@@ -21,7 +21,9 @@
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" /> 
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="What is a motion profile?" href="../motion_profiles.html" />
+    <link rel="prev" title="Bang-Bang Control" href="bang_bang.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -53,31 +55,49 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/introduction.html">WPILib and VSCode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/making_project.html">Creating a project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../getting_started/filetypes.html">.h and .cpp files</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../getting_started/filetypes.html#header-files">Header files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../getting_started/filetypes.html#cpp-files">cpp files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../getting_started/filetypes.html#why-separate">Why separate?</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/filetypes.html">.h and .cpp files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/robot_class.html">The Robot Class</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../getting_started/build_and_deploy.html">🕳️Building and Deploying Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/build_and_deploy.html">Building and Deploying Code</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Vendor Libraries</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/what_is_vendor_lib.html">What is a vendor library?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/motors_and_controllers.html">Motors + Motor Controllers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/motors_and_controllers.html#motor-encoders">Motor Encoders</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/install_vendor_libs.html">Installing vendor libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/index.html">Using Vendor Libraries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/phoenix6.html">Phoenix6</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/phoenix6.html#talonfx">TalonFX</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/phoenix6.html#include-the-library">Include the library</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/phoenix6.html#declare-the-object">Declare the object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/phoenix6.html#construct-the-object">Construct the object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/phoenix6.html#set-voltage">Set Voltage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/phoenix6.html#using-the-relative-encoder">Using the relative encoder</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/phoenix6.html#cancoder">CANcoder</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/phoenix6.html#phoenix5">Phoenix5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/revlib.html">REVLib</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Control Theory</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="intro.html">Feedback Control</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Feedback Control</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="bang_bang.html">Bang-Bang Control</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">PID Control</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../motion_profiles.html">What is a motion profile?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../motion_profiles.html#the-trapezoidal-motion-profile">The trapezoidal motion profile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../motion_profiles.html#feedforward-control">Feedforward control</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Other Resources</span></p>
+<p class="caption" role="heading"><span class="caption-text">Other Stuff</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../resources.html">Other Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../other/resources.html">Other Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../other/todo.html">In progress</a></li>
 </ul>
 
         </div>
@@ -94,6 +114,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Feedback Control</a></li>
       <li class="breadcrumb-item active">PID Control</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/docs/control_theory/feedback/PID.md.txt" rel="nofollow"> View page source</a>
@@ -110,13 +131,19 @@
 (i), and the derivative term (d), which have corresponding constants kp,
 ki, and kd respectively. <strong>The output of the controller or the voltage
 is the sum of the 3 terms.</strong></p>
+<section id="p">
+<h2>p<a class="headerlink" href="#p" title="Link to this heading"></a></h2>
 <p>p = kp * error</p>
 <p><strong>P</strong> is proportional to the error: <strong>when the mechanism is far away
 from its target, it will go fast and as it gets closer to the target it
 will go slow</strong>(since the error is smaller). Keep in mind that error has
 a sign (positive/negative) so it always moves the mechanism in the
 direction of the target.</p>
-<p><img src="media/image24.png" style="width:2.46397in;height:1.38596in" /><img src="media/image24.png" style="width:2.46397in;height:1.38596in" /><img src="media/image24.png" style="width:2.46397in;height:1.38596in" /></p>
+<p><img alt="diagram" src="../../../_images/image14.png" />
+<br></p>
+</section>
+<section id="d">
+<h2>d<a class="headerlink" href="#d" title="Link to this heading"></a></h2>
 <p>When only using the p term, sometimes it is difficult to get to the
 setpoint quickly since it’s not slowing down fast enough and its
 momentum carries it past the setpoint, overshooting which leads to
@@ -135,7 +162,10 @@ the error in velocity is 0 - velocity, or just -velocity. <strong>This can
 then be seen just as a term to slow down the mechanism (going against
 the way it is moving).</strong> This allows us to get to the target quickly
 without oscillating.</p>
-<p><img src="media/image24.png" style="width:2.46397in;height:1.38596in" /><img src="media/image24.png" style="width:2.46397in;height:1.38596in" /></p>
+<p><img alt="diagram" src="../../../_images/image9.png" /></p>
+</section>
+<section id="i">
+<h2>i<a class="headerlink" href="#i" title="Link to this heading"></a></h2>
 <p>i= ki * totalError</p>
 <p><strong>I</strong> is proportional to the total error, or the integral. Its purpose
 is to work against any constant forces such as friction, and to make up
@@ -145,10 +175,15 @@ the i term combats by increasing the output over time until it is large
 enough to overcome it. Common symptoms of steady state error that
 indicate a need for an i term are being consistently off, often stuck,
 or heavily resistant.</p>
-<p>The constants for each term essentially give different weights to the
+<p>For example:
+<img alt="diagram" src="../../../_images/image8.png" /></p>
+<p><br><br><br></p>
+<blockquote>
+<div><p>The constants for each term essentially give different weights to the
 p,i,and d terms, scaling their effects. <strong>We don’t want any term doing
 too much or too little since they all serve their own unique purpose.</strong></p>
-<p><img src="media/image21.jpg" style="width:0.71654in;height:0.89129in" /><img src="media/image24.png" style="width:2.46397in;height:1.38596in" /><img src="media/image24.png" style="width:1.88799in;height:1.38596in" /><img src="media/image21.jpg" style="width:0.71654in;height:0.89129in" /><img src="media/image21.jpg" style="width:0.71654in;height:0.89129in" /><img src="media/image24.png" style="width:1.88799in;height:1.38596in" /></p>
+</div></blockquote>
+</section>
 <section id="tuning-tips">
 <h2>Tuning tips<a class="headerlink" href="#tuning-tips" title="Link to this heading"></a></h2>
 <p>A simple tuning process:</p>
@@ -186,7 +221,10 @@ for this.</p>
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="bang_bang.html" class="btn btn-neutral float-left" title="Bang-Bang Control" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../motion_profiles.html" class="btn btn-neutral float-right" title="What is a motion profile?" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

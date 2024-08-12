@@ -1,4 +1,4 @@
-## 🕳️Building and Deploying Code
+## Building and Deploying Code
 
 To build or deploy, press the ![logo](media/image5.png) in the top right corner and search for “build” or “deploy”
 

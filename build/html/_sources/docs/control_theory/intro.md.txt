@@ -1,5 +1,7 @@
 #Introduction 
 
-Getting the motor to move is cool and all, but not quite useful yet. As code we need to get the motors to DO something which requires control and precision in order to produce reliable and consistent results. For example using a motor to extend an elevator to reach some height. And to produce consistent
+Getting the motor to move is cool and all, but not quite useful yet. As code we need to get the motors to DO something which requires control and precision in order to produce reliable and consistent results. For example using a motor to extend an elevator to reach some height. 
 
-Anyway this is where we step away from syntax and boring stuff like that and get into the fun stuff.
+As code we control the voltage the motor applies to spin. Control theory is all about manipulating the voltage applied such that the motor spins the way we want it to, whether that be at a specific speed, to get to a certain position, or both.
+
+This is where we step away from syntax and libraries and whatnot and get into the fun stuff.
