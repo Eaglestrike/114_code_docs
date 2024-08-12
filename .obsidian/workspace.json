@@ -11,9 +11,11 @@
             "id": "0c2387edeb1daad0",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "source/docs/control_theory/feedback/images/image15.png"
+                "file": "source/docs/vendor_libs/progress_check.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/docs/control_theory/feedback/images/image15.png",
+                "file": "source/docs/vendor_libs/progress_check.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/docs/control_theory/feedback/images/image15.png",
+                "file": "source/docs/vendor_libs/progress_check.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/docs/control_theory/feedback/images/image15.png"
+                "file": "source/docs/vendor_libs/progress_check.md"
               }
             }
           }
@@ -146,6 +148,12 @@
   },
   "active": "0c2387edeb1daad0",
   "lastOpenFiles": [
+    "source/docs/vendor_libs/what_is_vendor_lib.md",
+    "source/docs/vendor_libs/using_vendor_libs/phoenix6.md",
+    "source/docs/vendor_libs/progress_check.md",
+    "source/docs/vendor_libs/install_vendor_libs.md",
+    "source/docs/getting_started/progress_check.md",
+    "source/docs/control_theory/feedback/images/image15.png",
     "source/docs/control_theory/tolerance.md",
     "build/html/_images/image15.png",
     "source/docs/control_theory/feedback/images/image14.png",
@@ -168,10 +176,8 @@
     "build/doctrees/docs/other/todo.doctree",
     "build/doctrees/docs/other/resources.doctree",
     "source/docs/control_theory/feedback/bang_bang.md",
-    "source/docs/control_theory/feedback/images/image15.png",
     "images/image14.md",
     "source/docs/control_theory/feedback/images/Screenshot 2024-08-05 at 11.18.11 PM.png",
-    "source/docs/vendor_libs/using_vendor_libs/phoenix6.md",
     "source/docs/other/114CodeDocs.md",
     "source/docs/other/todo.md",
     "source/docs/resources.md",
@@ -184,14 +190,10 @@
     "source/docs/vendor_libs/motors_and_controllers.md",
     "2024-08-05.md",
     "Untitled.canvas",
-    "source/docs/vendor_libs/what_is_vendor_lib.md",
     "source/docs/control_theory/feedback/intro.md",
     "source/docs/control_theory/feedback/index.md",
     "source/docs/vendor_libs/using_vendor_libs/index.md",
-    "source/docs/vendor_libs/install_vendor_libs.md",
     "source/docs/vendor_libs/using_vendor_libs/using_vendor_libs.md",
-    "source/docs/team_practices/team_library/intro.md",
-    "source/docs/getting_started/install.md",
-    "source/docs/getting_started/wpilib_vscode.md"
+    "source/docs/team_practices/team_library/intro.md"
   ]
 }

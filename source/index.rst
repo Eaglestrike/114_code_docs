@@ -34,6 +34,8 @@ Getting started - will teach you about how we make and work on robotics code pro
    docs/getting_started/filetypes
    docs/getting_started/robot_class
    docs/getting_started/build_and_deploy
+   docs/getting_started/progress_check
+
 
 .. toctree::
    :maxdepth: 2
@@ -44,6 +46,8 @@ Getting started - will teach you about how we make and work on robotics code pro
    docs/vendor_libs/motors_and_controllers
    docs/vendor_libs/install_vendor_libs
    docs/vendor_libs/using_vendor_libs/index
+   docs/vendor_libs/progress_check
+
 
 .. toctree::
    :maxdepth: 3
