@@ -25,4 +25,5 @@ Pretty similar to this one, covers some things this one might not, also missing 
 [Phoenix6's C++ docs](https://api.ctr-electronics.com/phoenix6/release/cpp/) 
 If you want to see what other classes and functions that phoenix6 offer
 
-
+[Other projects](https://docs.google.com/document/d/1lZ9QPEKHUovHk4VbdymoTzIGU_vMTpaFrHK2uyWJ-WQ/edit)
+This documentation is certainly not exhaustive, so please take a look at this list of other concepts you can explore. Some of these no one our team has ever done and might advance the team for the better. So definately take a look.

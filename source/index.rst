@@ -66,15 +66,14 @@ Getting started - will teach you about how we make and work on robotics code pro
    docs/programming_mechanisms/UGH
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :hidden:
-   :caption: Team Practices
+   :caption: Coding as a Team
 
-   docs/team_practices/intro
-   docs/team_practices/git
-   docs/team_practices/team_library
-   docs/team_practices/style_practices
-   docs/team_practices/conceptual_practices
+   docs/code_as_team/intro
+   docs/code_as_team/git/index
+   docs/code_as_team/practices
+   docs/code_as_team/team_libs
       
 
 .. toctree::

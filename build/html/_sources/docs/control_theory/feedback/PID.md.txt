@@ -5,7 +5,7 @@ PID consists of 3 parts: the proportional term (p), the integral term
 ki, and kd respectively. **The output of the controller or the voltage
 is the sum of the 3 terms.**
 
-## p
+## P
 
 p = kp \* error
 
@@ -18,7 +18,7 @@ direction of the target.
 ![diagram](images/image14.png)
 <br>
 
-## d
+## D
 
 When only using the p term, sometimes it is difficult to get to the
 setpoint quickly since it’s not slowing down fast enough and its
@@ -45,7 +45,7 @@ without oscillating.
 
 ![diagram](images/image9.png)
 
-## i
+## I
 
 i= ki \* totalError
 
@@ -68,7 +68,7 @@ For example:
 > too much or too little since they all serve their own unique purpose.**
 
 
-## Tuning tips
+## Tuning PID
 
 A simple tuning process:
 
@@ -99,7 +99,7 @@ Mechanisms can also occasionally have no i and/or d terms.
 Make sure you are resetting your total error when the target changes.
 Otherwise the i term will get super large and break stuff.
 
-## Shortcomings of PID
+## Problems with PID
 
 PID assumes every position in a mechanism’s range takes the same effort
 to be at and to move to. If something like an intake has to resist

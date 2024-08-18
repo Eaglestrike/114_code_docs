@@ -23,7 +23,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="In progress" href="todo.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="../team_practices/conceptual_practices.html" /> 
+    <link rel="prev" title="Team Libraries" href="../code_as_team/team_libs.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -58,6 +58,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/filetypes.html">.h and .cpp files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/robot_class.html">The Robot Class</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/build_and_deploy.html">Building and Deploying Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/progress_check.html">Progress check</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Vendor Libraries</span></p>
 <ul>
@@ -82,17 +83,56 @@
 <li class="toctree-l2"><a class="reference internal" href="../vendor_libs/using_vendor_libs/revlib.html">REVLib</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../vendor_libs/progress_check.html">Progress check</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Control Theory</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../control_theory/intro.html">Introduction to control theory</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../control_theory/intro.html#robot-kinematics">Robot kinematics</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/index.html">Feedback Control</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../control_theory/feedback/bang_bang.html">Bang-Bang Control</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../control_theory/feedback/PID.html">PID Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../control_theory/feedback/PID.html">PID Control</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../control_theory/feedback/PID.html#p">P</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../control_theory/feedback/PID.html#d">D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../control_theory/feedback/PID.html#i">I</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../control_theory/feedback/PID.html#tuning-pid">Tuning PID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../control_theory/feedback/PID.html#implementation-tips">Implementation tips</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../control_theory/feedback/PID.html#problems-with-pid">Problems with PID</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html">What is a motion profile?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html#the-trapezoidal-motion-profile">The trapezoidal motion profile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html#feedforward-control">Feedforward control</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Coding as a Team</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../code_as_team/git/index.html">Git and Github</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/git/setup.html">Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../code_as_team/git/setup.html#how-to-set-up-an-ssh-key">How to set up an SSH key</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/git/overview.html">git overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/git/progress_check.html">Progress check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/git/114_workflow.html">⚪114’s Git Workflow</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../code_as_team/practices.html">Team practices</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/practices.html#conceptual-practices">Conceptual practices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/practices.html#style-practices">Style practices</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../code_as_team/team_libs.html">Team Libraries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/team_libs.html#the-controller-class">The Controller Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/team_libs.html#the-mechanism-class">The Mechanism Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/team_libs.html#shuffleboard-sender">Shuffleboard Sender</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/team_libs.html#logger">Logger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/team_libs.html#feedforwardautotuner">FeedforwardAutotuner</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Other Stuff</span></p>
 <ul class="current">
@@ -145,13 +185,15 @@ binder</u></a><br />
 Pretty similar to this one, covers some things this one might not, also missing some stuff this one covers</p>
 <p><a class="reference external" href="https://api.ctr-electronics.com/phoenix6/release/cpp/">Phoenix6’s C++ docs</a>
 If you want to see what other classes and functions that phoenix6 offer</p>
+<p><a class="reference external" href="https://docs.google.com/document/d/1lZ9QPEKHUovHk4VbdymoTzIGU_vMTpaFrHK2uyWJ-WQ/edit">Other projects</a>
+This documentation is certainly not exhaustive, so please take a look at this list of other concepts you can explore. Some of these no one our team has ever done and might advance the team for the better. So definately take a look.</p>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../team_practices/conceptual_practices.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../code_as_team/team_libs.html" class="btn btn-neutral float-left" title="Team Libraries" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="todo.html" class="btn btn-neutral float-right" title="In progress" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

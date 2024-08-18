@@ -55,14 +55,10 @@
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">WPILib and VSCode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="making_project.html">Creating a project</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">.h and .cpp files</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#header-files">Header files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#cpp-files">cpp files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#why-separate">Why separate?</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">.h and .cpp files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="robot_class.html">The Robot Class</a></li>
-<li class="toctree-l1"><a class="reference internal" href="build_and_deploy.html">🕳️Building and Deploying Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build_and_deploy.html">Building and Deploying Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="progress_check.html">Progress check</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Vendor Libraries</span></p>
 <ul>
@@ -87,21 +83,61 @@
 <li class="toctree-l2"><a class="reference internal" href="../vendor_libs/using_vendor_libs/revlib.html">REVLib</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../vendor_libs/progress_check.html">Progress check</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Control Theory</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../control_theory/intro.html">Introduction to control theory</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../control_theory/intro.html#robot-kinematics">Robot kinematics</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/index.html">Feedback Control</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../control_theory/feedback/bang_bang.html">Bang-Bang Control</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../control_theory/feedback/PID.html">PID Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../control_theory/feedback/PID.html">PID Control</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../control_theory/feedback/PID.html#p">P</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../control_theory/feedback/PID.html#d">D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../control_theory/feedback/PID.html#i">I</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../control_theory/feedback/PID.html#tuning-pid">Tuning PID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../control_theory/feedback/PID.html#implementation-tips">Implementation tips</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../control_theory/feedback/PID.html#problems-with-pid">Problems with PID</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html">What is a motion profile?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html#the-trapezoidal-motion-profile">The trapezoidal motion profile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html#feedforward-control">Feedforward control</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Other Resources</span></p>
+<p class="caption" role="heading"><span class="caption-text">Coding as a Team</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../resources.html">Other Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../code_as_team/git/index.html">Git and Github</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/git/setup.html">Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../code_as_team/git/setup.html#how-to-set-up-an-ssh-key">How to set up an SSH key</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/git/overview.html">git overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/git/progress_check.html">Progress check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/git/114_workflow.html">⚪114’s Git Workflow</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../code_as_team/practices.html">Team practices</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/practices.html#conceptual-practices">Conceptual practices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/practices.html#style-practices">Style practices</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../code_as_team/team_libs.html">Team Libraries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/team_libs.html#the-controller-class">The Controller Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/team_libs.html#the-mechanism-class">The Mechanism Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/team_libs.html#shuffleboard-sender">Shuffleboard Sender</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/team_libs.html#logger">Logger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/team_libs.html#feedforwardautotuner">FeedforwardAutotuner</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Other Stuff</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../other/resources.html">Other Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/todo.html">In progress</a></li>
 </ul>
 
         </div>
@@ -143,7 +179,6 @@ defines/declares data structures like classes, although it should not implement 
 </section>
 <section id="why-separate">
 <h2>Why separate?<a class="headerlink" href="#why-separate" title="Link to this heading"></a></h2>
-<p>You can skip this part if you don’t care why (it’s not that important)</p>
 <p>By separating the skeleton from the body of the code, it creates an
 easily readable view of what a class is capable of doing, which makes
 the class easier to understand for other people who want to use your

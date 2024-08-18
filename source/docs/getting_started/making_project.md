@@ -20,7 +20,7 @@ Edit the settings as follows:
 Then select the base folder this project will be held in (it’s good
 practice to keep all your projects in an isolated folder called
 “robotics” or something), and name the project depending on what you’re
-doing. When all the settings are correct, click “generate project”.
+doing. For example "test_project". When all the settings are correct, click “generate project”.
 
 
 ```{image} media/image6.png 
@@ -35,8 +35,7 @@ After navigating to the project in VSCode, open the explorer with these files:
 - src/main/include/Robot.h
 
 
-Don’t worry too much about the other folders and files; they’re just
-specific to running robot code.
+Don’t worry too much about folders other than the source code folder; They are mostly specific to building and running the code.
 
 <br>
 <br><br><br>

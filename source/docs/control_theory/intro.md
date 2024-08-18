@@ -1,4 +1,4 @@
-#Introduction to control theory
+# Introduction to control theory
 
 Getting the motor to move is cool and all, but not quite useful yet. As code we need to get the motors to DO something which requires control and precision in order to produce reliable and consistent results. For example using a motor to extend an elevator to reach some height. 
 

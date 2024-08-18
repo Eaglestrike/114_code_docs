@@ -14,8 +14,6 @@ For example if you look at Robot.h, the class Robot is declared to have methods 
 
 ### Why separate?
 
-You can skip this part if you don’t care why (it’s not that important)
-
 By separating the skeleton from the body of the code, it creates an
 easily readable view of what a class is capable of doing, which makes
 the class easier to understand for other people who want to use your

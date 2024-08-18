@@ -23,7 +23,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Motors + Motor Controllers" href="motors_and_controllers.html" />
-    <link rel="prev" title="🕳️Building and Deploying Code" href="../getting_started/build_and_deploy.html" /> 
+    <link rel="prev" title="Progress check" href="../getting_started/progress_check.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -55,31 +55,89 @@
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/introduction.html">WPILib and VSCode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/making_project.html">Creating a project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/filetypes.html">.h and .cpp files</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../getting_started/filetypes.html#header-files">Header files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../getting_started/filetypes.html#cpp-files">cpp files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../getting_started/filetypes.html#why-separate">Why separate?</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/filetypes.html">.h and .cpp files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/robot_class.html">The Robot Class</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/build_and_deploy.html">🕳️Building and Deploying Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/build_and_deploy.html">Building and Deploying Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/progress_check.html">Progress check</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Vendor Libraries</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">What is a vendor library?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="motors_and_controllers.html">Motors + Motor Controllers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="motors_and_controllers.html#motor-encoders">Motor Encoders</a></li>
 <li class="toctree-l1"><a class="reference internal" href="install_vendor_libs.html">Installing vendor libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_vendor_libs/index.html">Using Vendor Libraries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="using_vendor_libs/phoenix6.html">Phoenix6</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="using_vendor_libs/phoenix6.html#talonfx">TalonFX</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="using_vendor_libs/phoenix6.html#include-the-library">Include the library</a></li>
+<li class="toctree-l4"><a class="reference internal" href="using_vendor_libs/phoenix6.html#declare-the-object">Declare the object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="using_vendor_libs/phoenix6.html#construct-the-object">Construct the object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="using_vendor_libs/phoenix6.html#set-voltage">Set Voltage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="using_vendor_libs/phoenix6.html#using-the-relative-encoder">Using the relative encoder</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="using_vendor_libs/phoenix6.html#cancoder">CANcoder</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="using_vendor_libs/phoenix6.html#phoenix5">Phoenix5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="using_vendor_libs/revlib.html">REVLib</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="progress_check.html">Progress check</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Control Theory</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/intro.html">Feedback Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control_theory/intro.html">Introduction to control theory</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../control_theory/intro.html#robot-kinematics">Robot kinematics</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../control_theory/feedback/index.html">Feedback Control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../control_theory/feedback/bang_bang.html">Bang-Bang Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../control_theory/feedback/PID.html">PID Control</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../control_theory/feedback/PID.html#p">P</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../control_theory/feedback/PID.html#d">D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../control_theory/feedback/PID.html#i">I</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../control_theory/feedback/PID.html#tuning-pid">Tuning PID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../control_theory/feedback/PID.html#implementation-tips">Implementation tips</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../control_theory/feedback/PID.html#problems-with-pid">Problems with PID</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html">What is a motion profile?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html#the-trapezoidal-motion-profile">The trapezoidal motion profile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control_theory/motion_profiles.html#feedforward-control">Feedforward control</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Other Resources</span></p>
+<p class="caption" role="heading"><span class="caption-text">Coding as a Team</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../resources.html">Other Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../code_as_team/git/index.html">Git and Github</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/git/setup.html">Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../code_as_team/git/setup.html#how-to-set-up-an-ssh-key">How to set up an SSH key</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/git/overview.html">git overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/git/progress_check.html">Progress check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/git/114_workflow.html">⚪114’s Git Workflow</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../code_as_team/practices.html">Team practices</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/practices.html#conceptual-practices">Conceptual practices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/practices.html#style-practices">Style practices</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../code_as_team/team_libs.html">Team Libraries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/team_libs.html#the-controller-class">The Controller Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/team_libs.html#the-mechanism-class">The Mechanism Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/team_libs.html#shuffleboard-sender">Shuffleboard Sender</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/team_libs.html#logger">Logger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code_as_team/team_libs.html#feedforwardautotuner">FeedforwardAutotuner</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Other Stuff</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../other/resources.html">Other Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/todo.html">In progress</a></li>
 </ul>
 
         </div>
@@ -108,7 +166,7 @@
              
   <section id="what-is-a-vendor-library">
 <h1>What is a vendor library?<a class="headerlink" href="#what-is-a-vendor-library" title="Link to this heading"></a></h1>
-<p>The robot is comprised of things like motors and sensors which are produced and distributed by external vendors.</p>
+<p>The robot is comprised motors and sensors which are produced and distributed by external vendors.</p>
 <p>These vendors create software libraries so that people can easily use their hardware.</p>
 <p>Basically <strong>vendor libraries allow us to use products like motors and sensors</strong> and make it really simple to retrieve and send data to them.</p>
 </section>
@@ -117,7 +175,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../getting_started/build_and_deploy.html" class="btn btn-neutral float-left" title="🕳️Building and Deploying Code" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../getting_started/progress_check.html" class="btn btn-neutral float-left" title="Progress check" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="motors_and_controllers.html" class="btn btn-neutral float-right" title="Motors + Motor Controllers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

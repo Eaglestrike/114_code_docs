@@ -1,6 +1,6 @@
 # What is a vendor library?
 
-The robot is comprised of things like motors and sensors which are produced and distributed by external vendors. 
+The robot is comprised motors and sensors which are produced and distributed by external vendors. 
 
 These vendors create software libraries so that people can easily use their hardware. 
 

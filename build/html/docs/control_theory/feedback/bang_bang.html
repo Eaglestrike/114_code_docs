@@ -58,6 +58,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/filetypes.html">.h and .cpp files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/robot_class.html">The Robot Class</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/build_and_deploy.html">Building and Deploying Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/progress_check.html">Progress check</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Vendor Libraries</span></p>
 <ul>
@@ -82,17 +83,39 @@
 <li class="toctree-l2"><a class="reference internal" href="../../vendor_libs/using_vendor_libs/revlib.html">REVLib</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../vendor_libs/progress_check.html">Progress check</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Control Theory</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduction to control theory</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../intro.html#robot-kinematics">Robot kinematics</a></li>
+</ul>
+</li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Feedback Control</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Bang-Bang Control</a></li>
-<li class="toctree-l2"><a class="reference internal" href="PID.html">PID Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PID.html">PID Control</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PID.html#p">P</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PID.html#d">D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PID.html#i">I</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PID.html#tuning-pid">Tuning PID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PID.html#implementation-tips">Implementation tips</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PID.html#problems-with-pid">Problems with PID</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../motion_profiles.html">What is a motion profile?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../motion_profiles.html#the-trapezoidal-motion-profile">The trapezoidal motion profile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../motion_profiles.html#feedforward-control">Feedforward control</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Team Practices</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../team_practices/git/intro_and_setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../team_practices/git/overview.html">git overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../team_practices/git/114_workflow.html">⚪114’s Git Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../team_practices/team_library/mechanism_class.html">Mechanism class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../team_practices/team_library/ctrlr_class.html">Controller class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../team_practices/team_library/shuff_sender.html">Shuffleboard Sender</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Other Stuff</span></p>
 <ul>
@@ -127,13 +150,14 @@
              
   <section id="bang-bang-control">
 <h1>Bang-Bang Control<a class="headerlink" href="#bang-bang-control" title="Link to this heading"></a></h1>
-<p>The simplest controller. If your target is in front of you, go forwards (with a constant output). If it’s behind you go backwards (with a constant output).</p>
-<p>In more technical terms, apply a constant output negative to the sign of the error.</p>
+<p>Bang bang control is the simplest controller. If your target is in front of you, go forwards. If it’s behind you, go backwards.</p>
+<p>In more technical terms, it’s applying a constant output negative to the sign of the error.</p>
 <p>One problem with bang-bang control is that since it does not slow down
 as it gets to the target, it will consistently overshoot. Once it
 overshoots, it will go in the opposite direction and overshoot again,
 oscillating and never reaching the target and coming to a stop like we
 want it to.</p>
+<p>Even if you use <a class="reference internal" href="../tolerance.html"><span class="std std-doc">tolerances</span></a> and stop applying voltage when you reach near the target, the robot will take time to come to a stop and miss the target, making it either continue to oscillate or to have high error.</p>
 </section>
 
 

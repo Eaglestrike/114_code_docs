@@ -8,6 +8,8 @@ The [using vendor libraries](../vendor_libs/using_vendor_libs/index.rst) section
 
 A page about motion profiles, and a section about feedforward (and feedforward PID) need to be added to the control theory section. (also the introduction page could be better)
 
-A section about programming mechanisms that covers state machines, position calculation, and refrences the mechanism class and the controller class should be added.
+A section about programming mechanisms that covers state machines, position calculation, and talks about the mechanism class and the controller class in context should be added.
 
-A section about debugging and logging could also be useful
+Documentation for the mechanism class.
+
+A section about debugging could also be useful.

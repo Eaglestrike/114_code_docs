@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/docs/vendor_libs/progress_check.md",
+                "file": "source/docs/code_as_team/team_libs.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/docs/vendor_libs/progress_check.md",
+                "file": "source/docs/code_as_team/team_libs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/docs/vendor_libs/progress_check.md",
+                "file": "source/docs/code_as_team/team_libs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/docs/vendor_libs/progress_check.md"
+                "file": "source/docs/code_as_team/team_libs.md"
               }
             }
           }
@@ -148,9 +148,35 @@
   },
   "active": "0c2387edeb1daad0",
   "lastOpenFiles": [
-    "source/docs/vendor_libs/what_is_vendor_lib.md",
+    "build/html/_sources/docs/code_as_team/team_libs.md.txt",
+    "build/html/docs/code_as_team/team_libs.html",
+    "build/doctrees/docs/code_as_team/team_libs.doctree",
+    "source/docs/code_as_team/git/overview.md",
+    "source/docs/code_as_team/team_libs.md",
+    "source/docs/code_as_team/git/setup.md",
+    "source/docs/code_as_team/git/progress_check.md",
+    "source/docs/code_as_team/git/114_workflow.md",
     "source/docs/vendor_libs/using_vendor_libs/phoenix6.md",
     "source/docs/vendor_libs/progress_check.md",
+    "build/html/_sources/docs/code_as_team/team_library/shuff_sender.md.txt",
+    "build/html/_sources/docs/code_as_team/team_library/mechanism_class.md.txt",
+    "build/html/_sources/docs/code_as_team/team_library/index.rst.txt",
+    "build/html/_sources/docs/code_as_team/team_library/ctrlr_class.md.txt",
+    "build/html/_sources/docs/code_as_team/team_library",
+    "build/html/docs/code_as_team/team_library/shuff_sender.html",
+    "build/html/docs/code_as_team/team_library/mechanism_class.html",
+    "build/html/docs/code_as_team/team_library/index.html",
+    "source/docs/team_practices/git/progress_check.md",
+    "source/docs/code_as_team/team_library/shuff_sender.md",
+    "source/docs/code_as_team/team_library/mechanism_class.md",
+    "source/docs/code_as_team/team_library/ctrlr_class.md",
+    "source/docs/code_as_team/practices.md",
+    "source/docs/code_as_team/intro.md",
+    "source/docs/team_practices/practices.md",
+    "source/docs/team_practices/git/overview.md",
+    "source/docs/team_practices/git/114_workflow.md",
+    "source/docs/team_practices/git/setup.md",
+    "source/docs/vendor_libs/what_is_vendor_lib.md",
     "source/docs/vendor_libs/install_vendor_libs.md",
     "source/docs/getting_started/progress_check.md",
     "source/docs/control_theory/feedback/images/image15.png",
@@ -165,35 +191,9 @@
     "build/html/_images/image8.png",
     "build/html/_images/image9.png",
     "build/html/_images/image14.png",
-    "build/html/_sources/docs/other/todo.md.txt",
-    "build/html/docs/other/todo.html",
-    "build/html/_sources/docs/other/resources.md.txt",
-    "build/html/_sources/docs/other/114CodeDocs.md.txt",
-    "build/html/_sources/docs/other",
-    "build/html/docs/other/resources.html",
-    "build/html/docs/other/114CodeDocs.html",
-    "build/html/docs/other",
-    "build/doctrees/docs/other/todo.doctree",
-    "build/doctrees/docs/other/resources.doctree",
     "source/docs/control_theory/feedback/bang_bang.md",
     "images/image14.md",
     "source/docs/control_theory/feedback/images/Screenshot 2024-08-05 at 11.18.11 PM.png",
-    "source/docs/other/114CodeDocs.md",
-    "source/docs/other/todo.md",
-    "source/docs/resources.md",
-    "source/docs/other/resources.md",
-    "source/docs/getting_started/build_and_deploy.md",
-    "source/docs/introduction/purpose_of_code.md",
-    "source/docs/introduction/prerequisites.md",
-    "source/docs/getting_started/robot_class.md",
-    "source/docs/getting_started/filetypes.md",
-    "source/docs/vendor_libs/motors_and_controllers.md",
-    "2024-08-05.md",
-    "Untitled.canvas",
-    "source/docs/control_theory/feedback/intro.md",
-    "source/docs/control_theory/feedback/index.md",
-    "source/docs/vendor_libs/using_vendor_libs/index.md",
-    "source/docs/vendor_libs/using_vendor_libs/using_vendor_libs.md",
-    "source/docs/team_practices/team_library/intro.md"
+    "Untitled.canvas"
   ]
 }
